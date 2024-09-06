@@ -1,0 +1,60 @@
+CRITICAL - 2023-04-17 18:49:54 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\Inventario.php on line 68.
+ 1 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 18:51:43 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\Inventario.php on line 68.
+ 1 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 18:53:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\Inventario.php on line 68.
+ 1 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 18:54:16 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\Inventario.php on line 68.
+ 1 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 18:55:05 --> Too few arguments to function CodeIgniter\Database\BaseBuilder::join(), 1 passed in D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php on line 70 and at least 2 expected
+in SYSTEMPATH\Database\BaseBuilder.php on line 617.
+ 1 APPPATH\Models\Inventario.php(70): CodeIgniter\Database\BaseBuilder->join('(SELECT @running_total:=0) r')
+ 2 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 18:59:17 --> mysqli_sql_exception: Unknown column '@running_total:=@running_total + t.cantidad' in 'field list' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 18:59:17 --> Unknown column '@running_total:=@running_total + t.cantidad' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fechacompra`, `t`.`cantidad`, `@running_total:=@running_total + t`.`cantidad` AS `cumulative_sum`
+FROM `ProdCompras`, (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = 1 AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`
+ORDER BY `t`.`Fechacompra`', [], false)
+ 2 APPPATH\Models\Inventario.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

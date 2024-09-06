@@ -1,0 +1,383 @@
+ERROR - 2024-07-05 09:32:43 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=23224 in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'D:\\wamp64\\www\\A...', 173)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cointic_initoro', 3306, '', 0)
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pais_re...', Array, false)
+#5 D:\wamp64\www\ApiGlobalOro\app\Models\Cliente.php(72): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(137): App\Models\Cliente->selectPais()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->obtenerpaises()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cointic_initoro', 3306, '', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pais_re...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Cliente.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(137): App\Models\Cliente->selectPais()
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->obtenerpaises()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pais_re...', Array, false)
+#3 D:\wamp64\www\ApiGlobalOro\app\Models\Cliente.php(72): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(137): App\Models\Cliente->selectPais()
+#5 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->obtenerpaises()
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-07-05 09:32:43 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pais_residencia`.*
+FROM `pais_residencia`', [], false)
+ 3 APPPATH\Models\Cliente.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Clientes.php(137): App\Models\Cliente->selectPais()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerpaises()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-05 09:33:09 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cointic_initoro', 3306, '', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pais_re...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Cliente.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(137): App\Models\Cliente->selectPais()
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->obtenerpaises()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pais_re...', Array, false)
+#3 D:\wamp64\www\ApiGlobalOro\app\Models\Cliente.php(72): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(137): App\Models\Cliente->selectPais()
+#5 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->obtenerpaises()
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-07-05 09:33:09 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pais_residencia`.*
+FROM `pais_residencia`', [], false)
+ 3 APPPATH\Models\Cliente.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Clientes.php(137): App\Models\Cliente->selectPais()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerpaises()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-05 09:36:00 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #11, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(277): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-05 09:36:00 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-05 09:36:00 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-07-05 10:07:45 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #10, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(273): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-05 10:07:45 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-05 10:07:45 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-07-05 11:01:59 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #9, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(273): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-05 11:01:59 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-05 11:01:59 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-07-05 11:22:08 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL: Se ha forzado la interrupción de una conexión existente por el host remoto in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #10, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(273): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-05 11:22:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-05 11:22:08 --> 
+hello: 
+The following SMTP error was encountered: 
+Unable to send data: STARTTLS
+
+starttls: 
+The following SMTP error was encountered: 
+ERROR - 2024-07-05 11:32:02 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL: Se ha forzado la interrupción de una conexión existente por el host remoto in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #10, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(273): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-05 11:32:02 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-05 11:32:02 --> 
+hello: 
+The following SMTP error was encountered: 
+Unable to send data: STARTTLS
+
+starttls: 
+The following SMTP error was encountered: 
+ERROR - 2024-07-05 11:55:33 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #10, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(273): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-05 11:55:33 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-05 11:55:33 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-07-05 12:58:59 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #9, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(273): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-05 12:58:59 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-05 12:58:59 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-07-05 13:41:52 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #9, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(273): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-05 13:41:52 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-05 13:41:52 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+CRITICAL - 2024-07-05 17:44:47 --> require(../../../PHPMailer/src/Exception.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Clientes.php on line 10.
+ 1 APPPATH\Controllers\Clientes.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(../../../PHPMailer/src/Exception.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Clientes.php', 10)
+ 2 APPPATH\Controllers\Clientes.php(10): require()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('APPPATH\\Controllers\\Clientes.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Clientes.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Clientes')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Clientes')
+ 7 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Clientes', true)
+ 8 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-05 17:45:12 --> require(../../../PHPMailer/src/Exception.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Clientes.php on line 10.
+ 1 APPPATH\Controllers\Clientes.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(../../../PHPMailer/src/Exception.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Clientes.php', 10)
+ 2 APPPATH\Controllers\Clientes.php(10): require()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('APPPATH\\Controllers\\Clientes.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Clientes.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Clientes')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Clientes')
+ 7 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Clientes', true)
+ 8 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-05 17:46:37 --> require(../../PHPMailer/src/Exception.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Clientes.php on line 10.
+ 1 APPPATH\Controllers\Clientes.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(../../PHPMailer/src/Exception.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Clientes.php', 10)
+ 2 APPPATH\Controllers\Clientes.php(10): require()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('APPPATH\\Controllers\\Clientes.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Clientes.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Clientes')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Clientes')
+ 7 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Clientes', true)
+ 8 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-05 17:47:20 --> require(../../PHPMailer/src/Exception.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Clientes.php on line 3.
+ 1 APPPATH\Controllers\Clientes.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(../../PHPMailer/src/Exception.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Clientes.php', 3)
+ 2 APPPATH\Controllers\Clientes.php(3): require()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('APPPATH\\Controllers\\Clientes.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Clientes.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Clientes')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Clientes')
+ 7 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Clientes', true)
+ 8 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-05 17:51:42 --> Class "App\Controllers\SMTP" not found
+in APPPATH\Controllers\Clientes.php on line 289.
+ 1 APPPATH\Controllers\Clientes.php(180): App\Controllers\Clientes->enviarCorreo('dylanarellano0711@gmail.com', 'Creación de cuenta', '<p>Buen día Dylan</p>
+			<p>Su cuenta se ha creado de manera exitosa, estos son los accesos para acceder a su cuenta, por favor mantengalos bajo resguardo</p>
+			<p>Usuario:dylanarellano0711@gmail.com</p>
+			<p>Contraseña:12345678</p>')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-05 17:58:11 --> Class "App\Controllers\SMTP" not found
+in APPPATH\Controllers\Clientes.php on line 289.
+ 1 APPPATH\Controllers\Clientes.php(180): App\Controllers\Clientes->enviarCorreo('dylanarellano0711@gmail.com', 'Creación de cuenta', '<p>Buen día Dylan</p>
+			<p>Su cuenta se ha creado de manera exitosa, estos son los accesos para acceder a su cuenta, por favor mantengalos bajo resguardo</p>
+			<p>Usuario:dylanarellano0711@gmail.com</p>
+			<p>Contraseña:12345678</p>')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

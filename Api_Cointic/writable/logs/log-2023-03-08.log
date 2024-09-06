@@ -1,0 +1,340 @@
+CRITICAL - 2023-03-08 16:49:55 --> Call to a member function subirArchivoExcel() on null
+in APPPATH\Controllers\Proyecciones.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 16:50:34 --> Undefined variable: Archivo
+in APPPATH\Controllers\Proyecciones.php on line 41.
+ 1 APPPATH\Controllers\Proyecciones.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Archivo', 'APPPATH\\Controllers\\Proyecciones.php', 41, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 16:51:46 --> Undefined variable: Archivo
+in APPPATH\Controllers\Proyecciones.php on line 41.
+ 1 APPPATH\Controllers\Proyecciones.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Archivo', 'APPPATH\\Controllers\\Proyecciones.php', 41, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 16:53:33 --> Undefined variable: conexion
+in APPPATH\Controllers\Proyecciones.php on line 52.
+ 1 APPPATH\Controllers\Proyecciones.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: conexion', 'APPPATH\\Controllers\\Proyecciones.php', 52, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 16:53:33 --> Uncaught PhpOffice\PhpSpreadsheet\Exception: Spreadsheet objects cannot be json encoded in D:\wamp64\www\ApiGasolineras\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php:1655
+Stack trace:
+#0 [internal function]: PhpOffice\PhpSpreadsheet\Spreadsheet->jsonSerialize()
+#1 D:\wamp64\www\ApiGasolineras\system\Format\JSONFormatter.php(38): json_encode(Array, 960, 512)
+#2 D:\wamp64\www\ApiGasolineras\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#3 D:\wamp64\www\ApiGasolineras\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#4 D:\wamp64\www\ApiGasolineras\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#6 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined variable: conexion
+#0 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\wamp64\\www\\A...', 52, Array)
+#1 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+#2 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#3 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 1655.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-08 17:32:13 --> date_format() expects parameter 1 to be DateTimeInterface, string given
+in APPPATH\Controllers\Proyecciones.php on line 53.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() expects parameter 1 to be DateTimeInterface, string given', 'APPPATH\\Controllers\\Proyecciones.php', 53, [...])
+ 2 APPPATH\Controllers\Proyecciones.php(53): date_format('3/13/2023', 'd/m/Y')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 17:32:13 --> Uncaught PhpOffice\PhpSpreadsheet\Exception: Spreadsheet objects cannot be json encoded in D:\wamp64\www\ApiGasolineras\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php:1655
+Stack trace:
+#0 [internal function]: PhpOffice\PhpSpreadsheet\Spreadsheet->jsonSerialize()
+#1 D:\wamp64\www\ApiGasolineras\system\Format\JSONFormatter.php(38): json_encode(Array, 960, 512)
+#2 D:\wamp64\www\ApiGasolineras\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#3 D:\wamp64\www\ApiGasolineras\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#4 D:\wamp64\www\ApiGasolineras\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#6 {main}
+  thrown
+【Previous Exception】
+ErrorException
+date_format() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', 'D:\\wamp64\\www\\A...', 53, Array)
+#1 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(53): date_format('3/13/2023', 'd/m/Y')
+#2 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+#3 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#4 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#6 {main}
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 1655.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-08 17:34:36 --> date_format() expects parameter 1 to be DateTimeInterface, string given
+in APPPATH\Controllers\Proyecciones.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() expects parameter 1 to be DateTimeInterface, string given', 'APPPATH\\Controllers\\Proyecciones.php', 92, [...])
+ 2 APPPATH\Controllers\Proyecciones.php(92): date_format('3/13/2023', 'd/m/Y')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 17:34:36 --> Uncaught PhpOffice\PhpSpreadsheet\Exception: Spreadsheet objects cannot be json encoded in D:\wamp64\www\ApiGasolineras\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php:1655
+Stack trace:
+#0 [internal function]: PhpOffice\PhpSpreadsheet\Spreadsheet->jsonSerialize()
+#1 D:\wamp64\www\ApiGasolineras\system\Format\JSONFormatter.php(38): json_encode(Array, 960, 512)
+#2 D:\wamp64\www\ApiGasolineras\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#3 D:\wamp64\www\ApiGasolineras\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#4 D:\wamp64\www\ApiGasolineras\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#6 {main}
+  thrown
+【Previous Exception】
+ErrorException
+date_format() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', 'D:\\wamp64\\www\\A...', 92, Array)
+#1 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(92): date_format('3/13/2023', 'd/m/Y')
+#2 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+#3 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#4 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#6 {main}
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 1655.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-08 17:37:34 --> date_format() expects parameter 1 to be DateTimeInterface, string given
+in APPPATH\Controllers\Proyecciones.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() expects parameter 1 to be DateTimeInterface, string given', 'APPPATH\\Controllers\\Proyecciones.php', 92, [...])
+ 2 APPPATH\Controllers\Proyecciones.php(92): date_format('3/13/2023', 'd-m-Y')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 17:37:34 --> Uncaught PhpOffice\PhpSpreadsheet\Exception: Spreadsheet objects cannot be json encoded in D:\wamp64\www\ApiGasolineras\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php:1655
+Stack trace:
+#0 [internal function]: PhpOffice\PhpSpreadsheet\Spreadsheet->jsonSerialize()
+#1 D:\wamp64\www\ApiGasolineras\system\Format\JSONFormatter.php(38): json_encode(Array, 960, 512)
+#2 D:\wamp64\www\ApiGasolineras\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#3 D:\wamp64\www\ApiGasolineras\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#4 D:\wamp64\www\ApiGasolineras\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#6 {main}
+  thrown
+【Previous Exception】
+ErrorException
+date_format() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', 'D:\\wamp64\\www\\A...', 92, Array)
+#1 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(92): date_format('3/13/2023', 'd-m-Y')
+#2 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+#3 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#4 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#6 {main}
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 1655.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-08 17:44:19 --> date_format() expects parameter 1 to be DateTimeInterface, string given
+in APPPATH\Controllers\Proyecciones.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() expects parameter 1 to be DateTimeInterface, string given', 'APPPATH\\Controllers\\Proyecciones.php', 92, [...])
+ 2 APPPATH\Controllers\Proyecciones.php(92): date_format('3/13/2023', 'd-m-Y')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 17:44:19 --> Uncaught PhpOffice\PhpSpreadsheet\Exception: Spreadsheet objects cannot be json encoded in D:\wamp64\www\ApiGasolineras\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php:1655
+Stack trace:
+#0 [internal function]: PhpOffice\PhpSpreadsheet\Spreadsheet->jsonSerialize()
+#1 D:\wamp64\www\ApiGasolineras\system\Format\JSONFormatter.php(38): json_encode(Array, 960, 512)
+#2 D:\wamp64\www\ApiGasolineras\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#3 D:\wamp64\www\ApiGasolineras\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#4 D:\wamp64\www\ApiGasolineras\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#6 {main}
+  thrown
+【Previous Exception】
+ErrorException
+date_format() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', 'D:\\wamp64\\www\\A...', 92, Array)
+#1 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(92): date_format('3/13/2023', 'd-m-Y')
+#2 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+#3 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#4 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#6 {main}
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 1655.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-08 18:15:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Proyeccion.php on line 72.
+ 1 APPPATH\Controllers\Proyecciones.php(48): App\Models\Proyeccion->getProyeccionesContador()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-08 18:16:46 --> mysqli_sql_exception: Unknown column 'ProdHistoricoPrecios.consecutivo' in 'order clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(48): App\Models\Proyeccion->getProyeccionesContador()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-08 18:16:47 --> Unknown column 'ProdHistoricoPrecios.consecutivo' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.*
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` `G` ON `G`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+ORDER BY `ProdHistoricoPrecios`.`consecutivo` DESC
+ LIMIT 1', [], false)
+ 2 APPPATH\Models\Proyeccion.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(48): App\Models\Proyeccion->getProyeccionesContador()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 18:17:59 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Proyecciones.php on line 48.
+ 1 APPPATH\Controllers\Proyecciones.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Proyecciones.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 18:17:59 --> Uncaught PhpOffice\PhpSpreadsheet\Exception: Spreadsheet objects cannot be json encoded in D:\wamp64\www\ApiGasolineras\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php:1655
+Stack trace:
+#0 [internal function]: PhpOffice\PhpSpreadsheet\Spreadsheet->jsonSerialize()
+#1 D:\wamp64\www\ApiGasolineras\system\Format\JSONFormatter.php(38): json_encode(Array, 960, 512)
+#2 D:\wamp64\www\ApiGasolineras\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#3 D:\wamp64\www\ApiGasolineras\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#4 D:\wamp64\www\ApiGasolineras\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#6 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Trying to access array offset on value of type null
+#0 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\wamp64\\www\\A...', 48, Array)
+#1 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+#2 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#3 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 1655.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-08 18:21:32 --> Undefined variable: 
+in APPPATH\Controllers\Proyecciones.php on line 45.
+ 1 APPPATH\Controllers\Proyecciones.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ', 'APPPATH\\Controllers\\Proyecciones.php', 45, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 18:21:58 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Proyecciones.php on line 45.
+ 1 APPPATH\Controllers\Proyecciones.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Proyecciones.php', 45, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 18:22:51 --> Undefined variable: data
+in APPPATH\Controllers\Proyecciones.php on line 45.
+ 1 APPPATH\Controllers\Proyecciones.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Controllers\\Proyecciones.php', 45, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 18:24:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Proyecciones.php on line 46.
+ 1 APPPATH\Controllers\Proyecciones.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Proyecciones.php', 46, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 22:05:50 --> Undefined variable: jwt
+in APPPATH\Controllers\Proyecciones.php on line 14.
+ 1 APPPATH\Controllers\Proyecciones.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jwt', 'APPPATH\\Controllers\\Proyecciones.php', 14, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-08 22:26:44 --> mysqli_sql_exception: Unknown column 'ProdVentas.FechaVenta' in 'order clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(24): App\Models\Proyeccion->getProyecciones(NULL, NULL, NULL, NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-08 22:26:44 --> Unknown column 'ProdVentas.FechaVenta' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.*, `G`.`nombreGasolinera` as `nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` `G` ON `G`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+ORDER BY `ProdVentas`.`FechaVenta` ASC', [], false)
+ 2 APPPATH\Models\Proyeccion.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(24): App\Models\Proyeccion->getProyecciones(null, null, null, null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-08 22:26:57 --> mysqli_sql_exception: Unknown column 'ProdVentas.FechaVenta' in 'order clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(24): App\Models\Proyeccion->getProyecciones(NULL, NULL, NULL, NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-08 22:26:57 --> Unknown column 'ProdVentas.FechaVenta' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.*, `G`.`nombreGasolinera` as `nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` `G` ON `G`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+ORDER BY `ProdVentas`.`FechaVenta` ASC', [], false)
+ 2 APPPATH\Models\Proyeccion.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(24): App\Models\Proyeccion->getProyecciones(null, null, null, null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-08 22:45:19 --> mysqli_sql_exception: Unknown column 'CatGasolineras.nombreGasolinera' in 'field list' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(24): App\Models\Proyeccion->getProyecciones(NULL, NULL, NULL, NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-08 22:45:19 --> Unknown column 'CatGasolineras.nombreGasolinera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.`consecutivo`, `ProdProyecciones`.`idGasolinera`, MIN(ProdProyecciones.fechaProyeccion) as FechaMinima, max(ProdProyecciones.fechaProyeccion)as FechaMaxima, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` `G` ON `G`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+GROUP BY `ProdProyecciones`.`consecutivo`
+ORDER BY `ProdProyecciones`.`consecutivo` DESC', [], false)
+ 2 APPPATH\Models\Proyeccion.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(24): App\Models\Proyeccion->getProyecciones(null, null, null, null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

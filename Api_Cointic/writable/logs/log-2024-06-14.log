@@ -1,0 +1,108 @@
+CRITICAL - 2024-06-14 13:11:10 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Ventas.php(25): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 13:11:10 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Ventas.php(15): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 13:14:58 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(74): MercadoPago\SDK::setAccessToken('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 13:38:21 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(74): MercadoPago\SDK::setAccessToken('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 13:38:47 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(13): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 13:38:47 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(24): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerNumeroClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 13:39:03 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(74): MercadoPago\SDK::setAccessToken('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 13:39:51 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(74): MercadoPago\SDK::setAccessToken('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 13:44:31 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(74): MercadoPago\SDK::setAccessToken('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 23:50:23 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Ventas.php(25): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 23:50:23 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Ventas.php(15): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

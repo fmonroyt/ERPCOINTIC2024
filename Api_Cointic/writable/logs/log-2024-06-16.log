@@ -1,0 +1,635 @@
+CRITICAL - 2024-06-16 00:05:17 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(145): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 00:07:27 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(145): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 00:08:13 --> Undefined variable $Usuario
+in APPPATH\Controllers\Clientes.php on line 154.
+ 1 APPPATH\Controllers\Clientes.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Usuario', 'APPPATH\\Controllers\\Clientes.php', 154)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 00:09:07 --> Undefined variable $Usuario
+in APPPATH\Controllers\Clientes.php on line 154.
+ 1 APPPATH\Controllers\Clientes.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Usuario', 'APPPATH\\Controllers\\Clientes.php', 154)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-16 00:09:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`mx`) VALUES ('')' at line 1 in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `cl...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Cliente.php(30): CodeIgniter\Database\BaseBuilder->insert('dylan.arellano@...')
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(154): App\Models\Cliente->insert('dylan.arellano@...')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-16 00:09:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`mx`) VALUES ('')' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `clientes` (`dylan`.`arellano@cointic`.`com`.`mx`) VALUES (:dylan.arellano@cointic.com.mx:)', [...], false)
+ 2 APPPATH\Models\Cliente.php(30): CodeIgniter\Database\BaseBuilder->insert('dylan.arellano@cointic.com.mx')
+ 3 APPPATH\Controllers\Clientes.php(154): App\Models\Cliente->insert('dylan.arellano@cointic.com.mx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-16 00:10:08 --> mysqli_sql_exception: Column 'pais_residencia' cannot be null in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `cl...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Cliente.php(30): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(165): App\Models\Cliente->insert(Array)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-16 00:10:08 --> Column 'pais_residencia' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `clientes` (`nombre_cliente`, `telefono_cliente`, `correo`, `direccion`, `passwordUsuario`, `pais_residencia`, `status`) VALUES (:nombre_cliente:, :telefono_cliente:, :correo:, :direccion:, :passwordUsuario:, :pais_residencia:, :status:)', [...], false)
+ 2 APPPATH\Models\Cliente.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Clientes.php(165): App\Models\Cliente->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 03:15:35 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(75): MercadoPago\SDK::setAccessToken('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 03:19:29 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(75): MercadoPago\SDK::setAccessToken('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 03:19:47 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(75): MercadoPago\SDK::setAccessToken('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 03:20:21 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(75): MercadoPago\SDK::setAccessToken('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 03:22:22 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(75): MercadoPago\SDK::setAccessToken('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:36:16 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Ventas.php on line 152.
+ 1 APPPATH\Controllers\Ventas.php(152): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:36:17 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Ventas.php on line 152.
+ 1 APPPATH\Controllers\Ventas.php(152): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:36:17 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Ventas.php on line 152.
+ 1 APPPATH\Controllers\Ventas.php(152): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:36:17 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Ventas.php on line 152.
+ 1 APPPATH\Controllers\Ventas.php(152): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:37:18 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Ventas.php on line 152.
+ 1 APPPATH\Controllers\Ventas.php(152): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:37:18 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Ventas.php on line 152.
+ 1 APPPATH\Controllers\Ventas.php(152): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:37:18 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Ventas.php on line 152.
+ 1 APPPATH\Controllers\Ventas.php(152): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:37:19 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Ventas.php on line 152.
+ 1 APPPATH\Controllers\Ventas.php(152): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:37:19 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Ventas.php on line 152.
+ 1 APPPATH\Controllers\Ventas.php(152): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:37:20 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Ventas.php on line 152.
+ 1 APPPATH\Controllers\Ventas.php(152): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:37:54 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Ventas.php on line 152.
+ 1 APPPATH\Controllers\Ventas.php(152): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:37:55 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Ventas.php on line 152.
+ 1 APPPATH\Controllers\Ventas.php(152): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:45:37 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:45:38 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:45:38 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:45:39 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:46:38 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:46:39 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:46:39 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:46:39 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:46:40 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:46:40 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:47:15 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:47:16 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:47:39 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:47:40 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:47:40 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:47:40 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:47:51 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:47:51 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:48:40 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:48:41 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:48:42 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:48:42 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:48:43 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:48:43 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:49:17 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:49:18 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Ventas.php(156): CodeIgniter\Model->update('22', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 05:05:21 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 151.
+ 1 APPPATH\Controllers\Ventas.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 05:05:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 151.
+ 1 APPPATH\Controllers\Ventas.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 05:06:06 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 151.
+ 1 APPPATH\Controllers\Ventas.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 05:06:13 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 151.
+ 1 APPPATH\Controllers\Ventas.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 05:06:14 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 151.
+ 1 APPPATH\Controllers\Ventas.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 05:06:14 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 151.
+ 1 APPPATH\Controllers\Ventas.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 05:40:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 151.
+ 1 APPPATH\Controllers\Ventas.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 05:40:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 151.
+ 1 APPPATH\Controllers\Ventas.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 05:40:53 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 151.
+ 1 APPPATH\Controllers\Ventas.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 05:40:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 151.
+ 1 APPPATH\Controllers\Ventas.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 05:41:20 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 151.
+ 1 APPPATH\Controllers\Ventas.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 05:41:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 151.
+ 1 APPPATH\Controllers\Ventas.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 05:58:58 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Ventas.php(26): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 05:58:58 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Ventas.php(16): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 06:14:34 --> Undefined variable $Cliente
+in APPPATH\Controllers\Clientes.php on line 189.
+ 1 APPPATH\Controllers\Clientes.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Cliente', 'APPPATH\\Controllers\\Clientes.php', 189)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerClientexId()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 06:14:50 --> Undefined variable $Cliente
+in APPPATH\Controllers\Clientes.php on line 189.
+ 1 APPPATH\Controllers\Clientes.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Cliente', 'APPPATH\\Controllers\\Clientes.php', 189)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerClientexId()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 06:15:17 --> Undefined variable $Cliente
+in APPPATH\Controllers\Clientes.php on line 189.
+ 1 APPPATH\Controllers\Clientes.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Cliente', 'APPPATH\\Controllers\\Clientes.php', 189)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerClientexId()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 06:16:25 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Clientes.php(190): CodeIgniter\Model->__call('selecttransaccionxidCliente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerClientexId()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 06:16:30 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Clientes.php(190): CodeIgniter\Model->__call('selecttransaccionxidCliente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerClientexId()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 06:16:43 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Clientes.php(190): CodeIgniter\Model->__call('selecttransaccionxidCliente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerClientexId()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 06:17:03 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Clientes.php(190): CodeIgniter\Model->__call('selecttransaccionxidCliente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerClientexId()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,734 @@
+CRITICAL - 2024-09-06 09:47:43 --> Unmatched '}'
+in APPPATH\Controllers\Usuarios.php on line 371.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 09:47:43 --> Unmatched '}'
+in APPPATH\Controllers\Usuarios.php on line 371.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:01:41 --> mysqli_sql_exception: Unknown column 'nombre_cliente' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(188): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:01:41 --> Unknown column 'nombre_cliente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombre_cliente` = :nombre_cliente:, `telefono_cliente` = :telefono_cliente:, `correo` = :correo:, `direccion` = :direccion:, `pais_residencia` = :pais_residencia:, `idtipoUsuario` = :idtipoUsuario:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(188): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:01:55 --> mysqli_sql_exception: Unknown column 'nombre_cliente' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(188): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:01:55 --> Unknown column 'nombre_cliente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombre_cliente` = :nombre_cliente:, `telefono_cliente` = :telefono_cliente:, `correo` = :correo:, `direccion` = :direccion:, `pais_residencia` = :pais_residencia:, `idtipoUsuario` = :idtipoUsuario:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(188): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 10:13:54 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Usuarios.php(236): CodeIgniter\Model->update('10', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->cambiarStatusUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:17:00 --> mysqli_sql_exception: Unknown column 'nombre_cliente' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(188): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarUsuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:17:00 --> Unknown column 'nombre_cliente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombre_cliente` = :nombre_cliente:, `telefono_cliente` = :telefono_cliente:, `correo` = :correo:, `direccion` = :direccion:, `pais_residencia` = :pais_residencia:, `idtipoUsuario` = :idtipoUsuario:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(188): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:20:20 --> mysqli_sql_exception: Unknown column 'nombre_cliente' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(188): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:20:20 --> Unknown column 'nombre_cliente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombre_cliente` = :nombre_cliente:, `telefono_cliente` = :telefono_cliente:, `correo` = :correo:, `direccion` = :direccion:, `pais_residencia` = :pais_residencia:, `idtipoUsuario` = :idtipoUsuario:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(188): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:20:34 --> mysqli_sql_exception: Unknown column 'nombre_cliente' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(188): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:20:34 --> Unknown column 'nombre_cliente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombre_cliente` = :nombre_cliente:, `telefono_cliente` = :telefono_cliente:, `correo` = :correo:, `direccion` = :direccion:, `pais_residencia` = :pais_residencia:, `idtipoUsuario` = :idtipoUsuario:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(188): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:21:33 --> mysqli_sql_exception: Unknown column 'nombre_cliente' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(188): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:21:33 --> Unknown column 'nombre_cliente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombre_cliente` = :nombre_cliente:, `telefono_cliente` = :telefono_cliente:, `correo` = :correo:, `direccion` = :direccion:, `pais_residencia` = :pais_residencia:, `idtipoUsuario` = :idtipoUsuario:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(188): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:25:21 --> mysqli_sql_exception: Unknown column 'telefono_cliente' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(188): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:25:21 --> Unknown column 'telefono_cliente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombreUsuario` = :nombreUsuario:, `telefono_cliente` = :telefono_cliente:, `correo` = :correo:, `direccion` = :direccion:, `pais_residencia` = :pais_residencia:, `idtipoUsuario` = :idtipoUsuario:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(188): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:30:38 --> mysqli_sql_exception: Unknown column 'telefono_cliente' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(193): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:30:38 --> Unknown column 'telefono_cliente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombreUsuario` = :nombreUsuario:, `telefono_cliente` = :telefono_cliente:, `correo` = :correo:, `direccion` = :direccion:, `pais_residencia` = :pais_residencia:, `idtipoUsuario` = :idtipoUsuario:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(193): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:30:49 --> mysqli_sql_exception: Unknown column 'telefono_cliente' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(193): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:30:49 --> Unknown column 'telefono_cliente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombreUsuario` = :nombreUsuario:, `telefono_cliente` = :telefono_cliente:, `correo` = :correo:, `direccion` = :direccion:, `pais_residencia` = :pais_residencia:, `idtipoUsuario` = :idtipoUsuario:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(193): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:31:33 --> mysqli_sql_exception: Unknown column 'correo' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(191): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:31:33 --> Unknown column 'correo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombreUsuario` = :nombreUsuario:, `correo` = :correo:, `direccion` = :direccion:, `pais_residencia` = :pais_residencia:, `idtipoUsuario` = :idtipoUsuario:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(191): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 10:32:27 --> Undefined variable $correo
+in APPPATH\Controllers\Usuarios.php on line 182.
+ 1 APPPATH\Controllers\Usuarios.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $correo', 'APPPATH\\Controllers\\Usuarios.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:32:50 --> mysqli_sql_exception: Unknown column 'direccion' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(191): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:32:50 --> Unknown column 'direccion' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombreUsuario` = :nombreUsuario:, `correoDestino` = :correoDestino:, `direccion` = :direccion:, `pais_residencia` = :pais_residencia:, `idtipoUsuario` = :idtipoUsuario:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(191): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:34:18 --> mysqli_sql_exception: Unknown column 'pais_residencia' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(191): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:34:18 --> Unknown column 'pais_residencia' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombreUsuario` = :nombreUsuario:, `correoDestino` = :correoDestino:, `pais_residencia` = :pais_residencia:, `idtipoUsuario` = :idtipoUsuario:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(191): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:35:11 --> mysqli_sql_exception: Unknown column 'idtipoUsuario' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(191): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:35:11 --> Unknown column 'idtipoUsuario' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombreUsuario` = :nombreUsuario:, `correoDestino` = :correoDestino:, `idtipoUsuario` = :idtipoUsuario:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(191): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:36:50 --> mysqli_sql_exception: Unknown column 'aceptoFlujo' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(237): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:36:50 --> Unknown column 'aceptoFlujo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombreUsuario` = :nombreUsuario:, `correoDestino` = :correoDestino:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(237): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 10:37:15 --> Undefined variable $correo
+in APPPATH\Controllers\Usuarios.php on line 248.
+ 1 APPPATH\Controllers\Usuarios.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $correo', 'APPPATH\\Controllers\\Usuarios.php', 248)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 10:37:38 --> Undefined variable $correo
+in APPPATH\Controllers\Usuarios.php on line 248.
+ 1 APPPATH\Controllers\Usuarios.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $correo', 'APPPATH\\Controllers\\Usuarios.php', 248)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:44:40 --> mysqli_sql_exception: Unknown column 'telefono_cliente' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(187): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:44:40 --> Unknown column 'telefono_cliente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombreUsuario` = :nombreUsuario:, `telefono_cliente` = :telefono_cliente:, `correo` = :correo:, `direccion` = :direccion:, `pais_residencia` = :pais_residencia:, `idtipoUsuario` = :idtipoUsuario:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(187): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 10:44:52 --> mysqli_sql_exception: Unknown column 'telefono_cliente' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(187): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 10:44:52 --> Unknown column 'telefono_cliente' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombreUsuario` = :nombreUsuario:, `telefono_cliente` = :telefono_cliente:, `correo` = :correo:, `direccion` = :direccion:, `pais_residencia` = :pais_residencia:, `idtipoUsuario` = :idtipoUsuario:, `aceptoFlujo` = :aceptoFlujo:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(53): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(187): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 10:46:29 --> Undefined variable $direccion
+in APPPATH\Controllers\Usuarios.php on line 181.
+ 1 APPPATH\Controllers\Usuarios.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $direccion', 'APPPATH\\Controllers\\Usuarios.php', 181)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 10:46:47 --> Undefined variable $nombre_cliente
+in APPPATH\Controllers\Usuarios.php on line 195.
+ 1 APPPATH\Controllers\Usuarios.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nombre_cliente', 'APPPATH\\Controllers\\Usuarios.php', 195)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 10:47:31 --> Undefined variable $correo
+in APPPATH\Controllers\Usuarios.php on line 197.
+ 1 APPPATH\Controllers\Usuarios.php(197): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $correo', 'APPPATH\\Controllers\\Usuarios.php', 197)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 11:00:09 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Usuarios.php(237): CodeIgniter\Model->update('10', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->CambiarStatusUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 11:02:07 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Usuarios.php(237): CodeIgniter\Model->update('10', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->cambiarStatusUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 11:06:07 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Usuarios.php(237): CodeIgniter\Model->update('10', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->cambiarStatusUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 11:26:34 --> Undefined variable $idCliente
+in APPPATH\Controllers\Usuarios.php on line 188.
+ 1 APPPATH\Controllers\Usuarios.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idCliente', 'APPPATH\\Controllers\\Usuarios.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 11:26:56 --> Undefined variable $idCliente
+in APPPATH\Controllers\Usuarios.php on line 188.
+ 1 APPPATH\Controllers\Usuarios.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idCliente', 'APPPATH\\Controllers\\Usuarios.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 11:30:01 --> Undefined variable $idCliente
+in APPPATH\Controllers\Usuarios.php on line 187.
+ 1 APPPATH\Controllers\Usuarios.php(187): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idCliente', 'APPPATH\\Controllers\\Usuarios.php', 187)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 11:39:34 --> Undefined variable $password
+in APPPATH\Controllers\Usuarios.php on line 187.
+ 1 APPPATH\Controllers\Usuarios.php(187): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password', 'APPPATH\\Controllers\\Usuarios.php', 187)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 11:48:53 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Usuarios.php(237): CodeIgniter\Model->update('10', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->cambiarStatusUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 12:02:14 --> Undefined variable $password
+in APPPATH\Controllers\Usuarios.php on line 188.
+ 1 APPPATH\Controllers\Usuarios.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password', 'APPPATH\\Controllers\\Usuarios.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 12:02:30 --> Undefined variable $password
+in APPPATH\Controllers\Usuarios.php on line 188.
+ 1 APPPATH\Controllers\Usuarios.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password', 'APPPATH\\Controllers\\Usuarios.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 12:03:00 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(54): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(199): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 12:03:00 --> Unknown column 'password' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `nombreUsuario` = :nombreUsuario:, `apellidoPaterno` = :apellidoPaterno:, `apellidoMaterno` = :apellidoMaterno:, `nickName` = :nickName:, `password` = :password:, `correoDestino` = :correoDestino:, `idDepartamento` = :idDepartamento:, `idPerfil` = :idPerfil:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(54): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(199): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 12:03:56 --> Undefined variable $pass
+in APPPATH\Controllers\Usuarios.php on line 179.
+ 1 APPPATH\Controllers\Usuarios.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pass', 'APPPATH\\Controllers\\Usuarios.php', 179)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 12:06:44 --> Undefined variable $idUsuarioEditar
+in APPPATH\Controllers\Usuarios.php on line 185.
+ 1 APPPATH\Controllers\Usuarios.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idUsuarioEditar', 'APPPATH\\Controllers\\Usuarios.php', 185)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 12:07:13 --> mysqli_sql_exception: Unknown column 'idUsuarioEditar' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(54): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(201): App\Models\Usuario->updateUsuario(NULL, Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 12:07:13 --> Unknown column 'idUsuarioEditar' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `idUsuarioEditar` = :idUsuarioEditar:, `nombreUsuario` = :nombreUsuario:, `apellidoPaterno` = :apellidoPaterno:, `apellidoMaterno` = :apellidoMaterno:, `nickName` = :nickName:, `correoDestino` = :correoDestino:, `idDepartamento` = :idDepartamento:, `idPerfil` = :idPerfil:, `status` = :status:
+WHERE `idUsuario` IS NULL', [...], false)
+ 2 APPPATH\Models\Usuario.php(54): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(201): App\Models\Usuario->updateUsuario(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 12:13:58 --> mysqli_sql_exception: Unknown column 'idUsuarioEditar' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(54): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(199): App\Models\Usuario->updateUsuario('10', Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 12:13:58 --> Unknown column 'idUsuarioEditar' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `idUsuarioEditar` = :idUsuarioEditar:, `nombreUsuario` = :nombreUsuario:, `apellidoPaterno` = :apellidoPaterno:, `apellidoMaterno` = :apellidoMaterno:, `nickName` = :nickName:, `correoDestino` = :correoDestino:, `idDepartamento` = :idDepartamento:, `idPerfil` = :idPerfil:, `status` = :status:
+WHERE `idUsuario` = :idUsuario:', [...], false)
+ 2 APPPATH\Models\Usuario.php(54): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(199): App\Models\Usuario->updateUsuario('10', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-06 12:16:07 --> mysqli_sql_exception: Unknown column 'idUsuarioEditar' in 'field list' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(54): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(199): App\Models\Usuario->updateUsuario('10', Array)
+#6 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-06 12:16:07 --> Unknown column 'idUsuarioEditar' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `CatUsuarios` SET `idUsuarioEditar` = :idUsuarioEditar:, `nombreUsuario` = :nombreUsuario:, `apellidoPaterno` = :apellidoPaterno:, `apellidoMaterno` = :apellidoMaterno:, `nickName` = :nickName:, `correoDestino` = :correoDestino:, `idDepartamento` = :idDepartamento:, `idPerfil` = :idPerfil:, `status` = :status:
+WHERE `idUsuario` = :idUsuario:', [...], false)
+ 2 APPPATH\Models\Usuario.php(54): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Usuarios.php(199): App\Models\Usuario->updateUsuario('10', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->editarusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 12:18:55 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Usuarios.php(249): CodeIgniter\Model->update('10', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->cambiarStatusUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 12:19:11 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Usuarios.php(249): CodeIgniter\Model->update('10', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->cambiarStatusUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 12:23:15 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Usuarios.php(249): CodeIgniter\Model->update('10', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->cambiarStatusUsuarios()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 12:27:46 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Usuarios.php(249): CodeIgniter\Model->update('10', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->cambiarStatusUsuarios()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 12:29:41 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Usuarios.php(254): CodeIgniter\Model->update('10', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->cambiarStatusUsuarios()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 12:32:27 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Usuarios.php(254): CodeIgniter\Model->update('10', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->cambiarStatusUsuarios()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 12:33:13 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Usuarios.php(254): CodeIgniter\Model->update('10', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->cambiarStatusUsuarios()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 12:34:59 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Usuarios.php(254): CodeIgniter\Model->update('10', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->cambiarStatusUsuarios()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 12:39:37 --> Declaration of App\Models\Usuario::update($idUsuario = null, $data = null) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\Usuario.php on line 54.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-06 12:39:37 --> Declaration of App\Models\Usuario::update($idUsuario = null, $data = null) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\Usuario.php on line 54.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-06 12:39:42 --> Declaration of App\Models\Usuario::update($idUsuario = null, $data = null) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\Usuario.php on line 54.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-06 12:39:42 --> Declaration of App\Models\Usuario::update($idUsuario = null, $data = null) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\Usuario.php on line 54.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-06 12:54:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::group_by()
+in APPPATH\Models\Usuario.php on line 96.
+ 1 APPPATH\Controllers\Usuarios.php(310): App\Models\Usuario->getUsuarios('0', '5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 12:54:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::group_by()
+in APPPATH\Models\Usuario.php on line 96.
+ 1 APPPATH\Controllers\Usuarios.php(310): App\Models\Usuario->getUsuarios('0', '5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-06 12:54:34 --> Undefined variable $order
+in APPPATH\Models\Usuario.php on line 97.
+ 1 APPPATH\Models\Usuario.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order', 'APPPATH\\Models\\Usuario.php', 97)
+ 2 APPPATH\Controllers\Usuarios.php(310): App\Models\Usuario->getUsuarios('0', '5')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

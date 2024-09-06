@@ -1,0 +1,92 @@
+ERROR - 2024-07-09 14:13:06 --> mysqli_sql_exception: Unknown column 'aceptoFlujo' in 'field list' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `prodtra...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `prodtra...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prodtra...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `prodtra...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(248): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(363): App\Models\Venta->actualizarCompra('26', Array)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->negarFlujo()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-09 14:13:06 --> Unknown column 'aceptoFlujo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `prodtransaccion` SET `aceptoFlujo` = :aceptoFlujo:
+WHERE `idTransaccion` = :idTransaccion:', [...], false)
+ 2 APPPATH\Models\Venta.php(248): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Ventas.php(363): App\Models\Venta->actualizarCompra('26', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->negarFlujo()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 14:13:13 --> mysqli_sql_exception: Unknown column 'aceptoFlujo' in 'field list' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `prodtra...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `prodtra...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prodtra...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `prodtra...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(248): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(363): App\Models\Venta->actualizarCompra('26', Array)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->negarFlujo()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-09 14:13:13 --> Unknown column 'aceptoFlujo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `prodtransaccion` SET `aceptoFlujo` = :aceptoFlujo:
+WHERE `idTransaccion` = :idTransaccion:', [...], false)
+ 2 APPPATH\Models\Venta.php(248): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Ventas.php(363): App\Models\Venta->actualizarCompra('26', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->negarFlujo()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 14:13:30 --> mysqli_sql_exception: Unknown column 'aceptoFlujo' in 'field list' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `prodtra...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `prodtra...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prodtra...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `prodtra...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(248): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(363): App\Models\Venta->actualizarCompra('26', Array)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->negarFlujo()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-09 14:13:30 --> Unknown column 'aceptoFlujo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `prodtransaccion` SET `aceptoFlujo` = :aceptoFlujo:
+WHERE `idTransaccion` = :idTransaccion:', [...], false)
+ 2 APPPATH\Models\Venta.php(248): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Ventas.php(363): App\Models\Venta->actualizarCompra('26', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->negarFlujo()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 14:13:57 --> mysqli_sql_exception: Unknown column 'aceptoFlujo' in 'field list' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `prodtra...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `prodtra...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prodtra...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `prodtra...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(248): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(363): App\Models\Venta->actualizarCompra('26', Array)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->negarFlujo()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-09 14:13:57 --> Unknown column 'aceptoFlujo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `prodtransaccion` SET `aceptoFlujo` = :aceptoFlujo:
+WHERE `idTransaccion` = :idTransaccion:', [...], false)
+ 2 APPPATH\Models\Venta.php(248): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Ventas.php(363): App\Models\Venta->actualizarCompra('26', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->negarFlujo()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

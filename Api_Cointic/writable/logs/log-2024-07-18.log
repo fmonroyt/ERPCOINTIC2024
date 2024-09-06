@@ -1,0 +1,24 @@
+CRITICAL - 2024-07-18 17:52:35 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Ventas.php(36): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-18 17:52:35 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Ventas.php(454): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerProductosCompradosxCliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-18 17:52:35 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Ventas.php(26): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

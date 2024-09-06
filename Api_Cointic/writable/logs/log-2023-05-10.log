@@ -1,0 +1,70 @@
+CRITICAL - 2023-05-10 11:02:43 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::orderBy() must be of the type string, null given, called in D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php on line 29
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 APPPATH\Models\Inventario.php(29): CodeIgniter\Database\BaseBuilder->orderBy('ProdInventario.Fecha', null)
+ 2 APPPATH\Controllers\Inventarios.php(25): App\Models\Inventario->getInventarios('0', '8', null, null, '1', '\'1950-01-01\'', '\'2050-12-31\'')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerInventarios()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:03:31 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::orderBy() must be of the type string, null given, called in D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php on line 29
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 APPPATH\Models\Inventario.php(29): CodeIgniter\Database\BaseBuilder->orderBy('ProdInventario.Fecha', null)
+ 2 APPPATH\Controllers\Inventarios.php(25): App\Models\Inventario->getInventarios('0', '8', null, null, '1', '\'1950-01-01\'', '\'2050-12-31\'')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerInventarios()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:15:25 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::orderBy() must be of the type string, null given, called in D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php on line 29
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 APPPATH\Models\Inventario.php(29): CodeIgniter\Database\BaseBuilder->orderBy('ProdInventario.Fecha', null)
+ 2 APPPATH\Controllers\Inventarios.php(25): App\Models\Inventario->getInventarios('0', '8', null, null, '1', '\'1950-01-01\'', '\'2050-12-31\'')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerInventarios()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:17:07 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::orderBy() must be of the type string, null given, called in D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php on line 29
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 APPPATH\Models\Inventario.php(29): CodeIgniter\Database\BaseBuilder->orderBy('ProdInventario.Fecha', null)
+ 2 APPPATH\Controllers\Inventarios.php(25): App\Models\Inventario->getInventarios('0', '8', null, null, '1', '\'1950-01-01\'', '\'2050-12-31\'')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerInventarios()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:18:41 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::orderBy() must be of the type string, null given, called in D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php on line 29
+in SYSTEMPATH\Database\BaseBuilder.php on line 1438.
+ 1 APPPATH\Models\Inventario.php(29): CodeIgniter\Database\BaseBuilder->orderBy('ProdInventario.Fecha', null)
+ 2 APPPATH\Controllers\Inventarios.php(25): App\Models\Inventario->getInventarios('0', '8', null, null, '1', '\'1950-01-01\'', '\'2050-12-31\'')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerInventarios()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-10 13:22:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(146): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(139): App\Models\Proyeccion->getProyeccionessiguientes(NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->update('6')
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-10 13:22:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.*
+FROM `ProdProyecciones`
+WHERE `ProdProyecciones`.`idProyeccion` > IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`.`idProyeccion` ASC', [], false)
+ 2 APPPATH\Models\Proyeccion.php(146): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Inventarios.php(139): App\Models\Proyeccion->getProyeccionessiguientes(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->update('6')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

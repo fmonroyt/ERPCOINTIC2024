@@ -1,0 +1,32 @@
+CRITICAL - 2023-03-24 06:28:00 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Permisos.php(13): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 12:42:57 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Precios.php on line 195.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->ActualizarPreciosCompetenciaM()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 12:43:04 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Precios.php on line 195.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->ActualizarPreciosCompetenciaM()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 12:43:14 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Precios.php on line 195.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->ActualizarPreciosCompetenciaM()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 13:13:42 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Precios.php on line 195.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->ActualizarPreciosCompetenciaM()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,234 @@
+ERROR - 2023-03-15 13:56:41 --> mysqli_sql_exception: Unknown column 'FechaVenta.FechaVenta' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', '', '1', ''1950-01-01'', ''2050-12-31'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-15 13:56:41 --> Unknown column 'FechaVenta.FechaVenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ProdVentas`
+WHERE `ProdVentas`.`idGasolinera` = :ProdVentas.idGasolinera:
+AND `FechaVenta`.`FechaVenta` >= \'1950-01-01\'
+AND `FechaVenta`.`FechaVenta` <= \'2050-12-31\'', [...], false)
+ 2 APPPATH\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'1950-01-01\'', '\'2050-12-31\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-15 13:56:57 --> mysqli_sql_exception: Unknown column 'FechaVenta.FechaVenta' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', '', '1', ''1950-01-01'', ''2050-12-31'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-15 13:56:57 --> Unknown column 'FechaVenta.FechaVenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ProdVentas`
+WHERE `ProdVentas`.`idGasolinera` = :ProdVentas.idGasolinera:
+AND `FechaVenta`.`FechaVenta` >= \'1950-01-01\'
+AND `FechaVenta`.`FechaVenta` <= \'2050-12-31\'', [...], false)
+ 2 APPPATH\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'1950-01-01\'', '\'2050-12-31\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-15 13:58:22 --> mysqli_sql_exception: Unknown column 'FechaVenta.FechaVenta' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', '', '1', ''1950-01-01'', ''2050-12-31'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-15 13:58:22 --> Unknown column 'FechaVenta.FechaVenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ProdVentas`
+WHERE `ProdVentas`.`idGasolinera` = :ProdVentas.idGasolinera:
+AND `FechaVenta`.`FechaVenta` >= \'1950-01-01\'
+AND `FechaVenta`.`FechaVenta` <= \'2050-12-31\'', [...], false)
+ 2 APPPATH\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'1950-01-01\'', '\'2050-12-31\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-15 13:59:24 --> mysqli_sql_exception: Unknown column 'FechaVenta.FechaVenta' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', '', '1', ''1950-01-01'', ''2050-12-31'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-15 13:59:24 --> Unknown column 'FechaVenta.FechaVenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ProdVentas`
+WHERE `ProdVentas`.`idGasolinera` = :ProdVentas.idGasolinera:
+AND `FechaVenta`.`FechaVenta` >= \'1950-01-01\'
+AND `FechaVenta`.`FechaVenta` <= \'2050-12-31\'', [...], false)
+ 2 APPPATH\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'1950-01-01\'', '\'2050-12-31\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-15 13:59:33 --> mysqli_sql_exception: Unknown column 'FechaVenta.FechaVenta' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', '', '1', ''2023-03-15'', ''2023-03-15'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-15 13:59:33 --> Unknown column 'FechaVenta.FechaVenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ProdVentas`
+WHERE `ProdVentas`.`idGasolinera` = :ProdVentas.idGasolinera:
+AND `FechaVenta`.`FechaVenta` >= \'2023-03-15\'
+AND `FechaVenta`.`FechaVenta` <= \'2023-03-15\'', [...], false)
+ 2 APPPATH\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-15\'', '\'2023-03-15\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-15 14:01:16 --> mysqli_sql_exception: Unknown column 'FechaVenta.FechaVenta' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', '', '1', ''2023-03-15'', ''2023-03-15'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-15 14:01:16 --> Unknown column 'FechaVenta.FechaVenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ProdVentas`
+WHERE `ProdVentas`.`idGasolinera` = :ProdVentas.idGasolinera:
+AND `FechaVenta`.`FechaVenta` >= \'2023-03-15\'
+AND `FechaVenta`.`FechaVenta` <= \'2023-03-15\'', [...], false)
+ 2 APPPATH\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-15\'', '\'2023-03-15\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-15 14:02:07 --> mysqli_sql_exception: Unknown column 'FechaVenta.FechaVenta' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', '', '1', ''2023-03-15'', ''2023-03-15'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-15 14:02:07 --> Unknown column 'FechaVenta.FechaVenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ProdVentas`
+WHERE `ProdVentas`.`idGasolinera` = :ProdVentas.idGasolinera:
+AND `FechaVenta`.`FechaVenta` >= \'2023-03-15\'
+AND `ProdVentas`.`FechaVenta` <= \'2023-03-15\'', [...], false)
+ 2 APPPATH\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-15\'', '\'2023-03-15\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-15 14:02:14 --> mysqli_sql_exception: Unknown column 'FechaVenta.FechaVenta' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', '', '1', ''2023-03-15'', ''2023-03-15'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-15 14:02:14 --> Unknown column 'FechaVenta.FechaVenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ProdVentas`
+WHERE `ProdVentas`.`idGasolinera` = :ProdVentas.idGasolinera:
+AND `FechaVenta`.`FechaVenta` >= \'2023-03-15\'
+AND `ProdVentas`.`FechaVenta` <= \'2023-03-15\'', [...], false)
+ 2 APPPATH\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-15\'', '\'2023-03-15\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-15 14:02:36 --> mysqli_sql_exception: Unknown column 'FechaVenta.FechaVenta' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', '', '1', ''2023-03-15'', ''2023-03-15'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-15 14:02:36 --> Unknown column 'FechaVenta.FechaVenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ProdVentas`
+WHERE `ProdVentas`.`idGasolinera` = :ProdVentas.idGasolinera:
+AND `FechaVenta`.`FechaVenta` >= \'2023-03-15\'
+AND `ProdVentas`.`FechaVenta` <= \'2023-03-15\'', [...], false)
+ 2 APPPATH\Models\Venta.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(41): App\Models\Venta->getNumeroVentas('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-15\'', '\'2023-03-15\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

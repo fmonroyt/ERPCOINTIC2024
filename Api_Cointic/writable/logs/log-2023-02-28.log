@@ -1,0 +1,16 @@
+CRITICAL - 2023-02-28 16:07:26 --> Undefined variable: Route
+in APPPATH\Config\Routes.php on line 34.
+ 1 APPPATH\Config\Routes.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Route', 'APPPATH\\Config\\Routes.php', 34, [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(267): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-28 16:08:05 --> Undefined variable: Route
+in APPPATH\Config\Routes.php on line 34.
+ 1 APPPATH\Config\Routes.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Route', 'APPPATH\\Config\\Routes.php', 34, [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(267): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

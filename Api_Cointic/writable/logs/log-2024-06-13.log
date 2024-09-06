@@ -1,0 +1,81 @@
+ERROR - 2024-06-13 13:15:23 --> mysqli_sql_exception: Unknown column 'prodtransaccion.idTransaccion' in 'order clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `prodcom...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prodcom...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prodcom...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodcom...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(39): App\Models\Venta->getProductos('0', '5', NULL)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerproductos()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-13 13:15:23 --> Unknown column 'prodtransaccion.idTransaccion' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodcompras`.`idTransaccion`, `prodcompras`.`idProducto`, `catproductos`.`nombreProducto`, `prodcompras`.`cantidad`, `prodcompras`.`preciounitario`
+FROM `prodcompras`
+LEFT JOIN `catproductos` ON `catproductos`.`idProducto`=`prodcompras`.`idProducto`
+WHERE `prodcompras`.`idTransaccion` IS NULL
+ORDER BY `prodtransaccion`.`idTransaccion` ASC
+ LIMIT 5', [], false)
+ 2 APPPATH\Models\Venta.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(39): App\Models\Venta->getProductos('0', '5', null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerproductos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 13:15:31 --> mysqli_sql_exception: Unknown column 'prodtransaccion.idTransaccion' in 'order clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `prodcom...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prodcom...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prodcom...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodcom...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(39): App\Models\Venta->getProductos('0', '5', NULL)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerproductos()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-13 13:15:31 --> Unknown column 'prodtransaccion.idTransaccion' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodcompras`.`idTransaccion`, `prodcompras`.`idProducto`, `catproductos`.`nombreProducto`, `prodcompras`.`cantidad`, `prodcompras`.`preciounitario`
+FROM `prodcompras`
+LEFT JOIN `catproductos` ON `catproductos`.`idProducto`=`prodcompras`.`idProducto`
+WHERE `prodcompras`.`idTransaccion` IS NULL
+ORDER BY `prodtransaccion`.`idTransaccion` ASC
+ LIMIT 5', [], false)
+ 2 APPPATH\Models\Venta.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(39): App\Models\Venta->getProductos('0', '5', null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerproductos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 13:16:34 --> mysqli_sql_exception: Unknown column 'prodtransaccion.idTransaccion' in 'order clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `prodcom...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prodcom...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prodcom...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodcom...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(39): App\Models\Venta->getProductos('0', '5', NULL)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerproductos()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-13 13:16:34 --> Unknown column 'prodtransaccion.idTransaccion' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodcompras`.`idTransaccion`, `prodcompras`.`idProducto`, `catproductos`.`nombreProducto`, `prodcompras`.`cantidad`, `prodcompras`.`preciounitario`
+FROM `prodcompras`
+LEFT JOIN `catproductos` ON `catproductos`.`idProducto`=`prodcompras`.`idProducto`
+WHERE `prodcompras`.`idTransaccion` IS NULL
+ORDER BY `prodtransaccion`.`idTransaccion` ASC
+ LIMIT 5', [], false)
+ 2 APPPATH\Models\Venta.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(39): App\Models\Venta->getProductos('0', '5', null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerproductos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

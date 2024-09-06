@@ -1,0 +1,41 @@
+CRITICAL - 2023-05-08 12:34:48 --> Undefined index: Fecha
+in APPPATH\Controllers\Proyecciones.php on line 363.
+ 1 APPPATH\Controllers\Proyecciones.php(363): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Fecha', 'APPPATH\\Controllers\\Proyecciones.php', 363, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->ModificarVenta()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-08 13:42:12 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\Inventario.php(64): CodeIgniter\Database\BaseBuilder->update(null)
+ 3 APPPATH\Controllers\Proyecciones.php(224): App\Models\Inventario->actualizarInventario('3', null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->ModificarInventario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-08 13:45:27 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\Inventario.php(64): CodeIgniter\Database\BaseBuilder->update(null)
+ 3 APPPATH\Controllers\Proyecciones.php(224): App\Models\Inventario->actualizarInventario('3', null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->ModificarInventario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-08 13:45:37 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\Inventario.php(64): CodeIgniter\Database\BaseBuilder->update(null)
+ 3 APPPATH\Controllers\Proyecciones.php(224): App\Models\Inventario->actualizarInventario('3', null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->ModificarInventario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-08 13:45:49 --> Undefined variable: Proyecciones
+in APPPATH\Controllers\Proyecciones.php on line 224.
+ 1 APPPATH\Controllers\Proyecciones.php(224): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Proyecciones', 'APPPATH\\Controllers\\Proyecciones.php', 224, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->ModificarInventario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

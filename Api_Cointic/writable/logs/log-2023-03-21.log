@@ -1,0 +1,6 @@
+CRITICAL - 2023-03-21 10:58:07 --> Call to a member function deletePrecio() on null
+in APPPATH\Controllers\Proyecciones.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->deleteProyeccion()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

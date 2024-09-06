@@ -1,0 +1,243 @@
+ERROR - 2023-04-18 01:29:33 --> mysqli_sql_exception: Unknown column '@running_total:=@running_total + t.cantidad' in 'field list' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-18 01:29:33 --> Unknown column '@running_total:=@running_total + t.cantidad' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fechacompra`, `t`.`cantidad`, `@running_total:=@running_total + t`.`cantidad` AS `cumulative_sum`
+FROM `ProdCompras`, (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = 1 AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`
+ORDER BY `t`.`Fechacompra`', [], false)
+ 2 APPPATH\Models\Inventario.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 01:29:57 --> mysqli_sql_exception: Unknown column '@running_total:=@running_total + t.cantidad' in 'field list' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-18 01:29:57 --> Unknown column '@running_total:=@running_total + t.cantidad' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fechacompra`, `t`.`cantidad`, `@running_total:=@running_total + t`.`cantidad` AS `cumulative_sum`
+FROM `ProdCompras`, (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = 1 AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`
+ORDER BY `t`.`Fechacompra`', [], false)
+ 2 APPPATH\Models\Inventario.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 17:29:05 --> mysqli_sql_exception: Unknown column '@running_total:=@running_total + t.cantidad' in 'field list' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-18 17:29:05 --> Unknown column '@running_total:=@running_total + t.cantidad' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fechacompra`, `t`.`cantidad`, `@running_total:=@running_total + t`.`cantidad` AS `cumulative_sum`
+FROM `ProdCompras`, (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = 1 AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`
+ORDER BY `t`.`Fechacompra`', [], false)
+ 2 APPPATH\Models\Inventario.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 17:30:15 --> Undefined variable: builder
+in APPPATH\Models\Inventario.php on line 63.
+ 1 APPPATH\Models\Inventario.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: builder', 'APPPATH\\Models\\Inventario.php', 63, [...])
+ 2 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 17:32:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET @runningTotal = 0;
+            SELECT `t`.`Fechacompra`, `t`.`cantidad`, @r' at line 1 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SET @run...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SET @run...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SET @run...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SET @run...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(68): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-18 17:32:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET @runningTotal = 0;
+            SELECT `t`.`Fechacompra`, `t`.`cantidad`, @r' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SET @runningTotal = 0;
+            SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.cantidad AS `cumulative_sum` 
+            FROM (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = 1 AND `ProdCompras`.`idGasolinera` = \'1\' 
+            GROUP BY `ProdCompras`.`Fechacompra`) `t`  ORDER BY `t`.`Fechacompra`;
+FROM `ProdCompras`', [], false)
+ 2 APPPATH\Models\Inventario.php(68): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 17:49:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.can' at line 2 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SET @runningTot...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SET @runningTot...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SET @runningTot...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(66): CodeIgniter\Database\BaseConnection->query('SET @runningTot...', false)
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', NULL, NULL)
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-18 17:49:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.can' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(66): CodeIgniter\Database\BaseConnection->query('SET @runningTotal = 0;
+            SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.cantidad AS `cumulative_sum` 
+            FROM (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = 1 AND `ProdCompras`.`idGasolinera` = \'1\' 
+            GROUP BY `ProdCompras`.`Fechacompra`) `t`  ORDER BY `t`.`Fechacompra`;', false)
+ 2 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 17:50:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.can' at line 2 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SET @runningTot...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SET @runningTot...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SET @runningTot...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(64): CodeIgniter\Database\BaseConnection->query('SET @runningTot...', false)
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', NULL, NULL)
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-18 17:50:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.can' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(64): CodeIgniter\Database\BaseConnection->query('SET @runningTotal = 0;
+            SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.cantidad AS `cumulative_sum`  FROM (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = 1 AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`  ORDER BY `t`.`Fechacompra`;', false)
+ 2 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 18:05:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.can' at line 2 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SET @runningTot...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SET @runningTot...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SET @runningTot...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(63): CodeIgniter\Database\BaseConnection->query('SET @runningTot...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', NULL, NULL)
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-18 18:05:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.can' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(63): CodeIgniter\Database\BaseConnection->query('SET @runningTotal = 0;
+            SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.cantidad AS `cumulative_sum`  FROM (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = 1 AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`  ORDER BY `t`.`Fechacompra`;')
+ 2 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 18:06:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.can' at line 2 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SET @runningTot...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SET @runningTot...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SET @runningTot...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(63): CodeIgniter\Database\BaseConnection->query('SET @runningTot...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', NULL, NULL)
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-18 18:06:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.can' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(63): CodeIgniter\Database\BaseConnection->query('SET @runningTotal = 0;
+            SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.cantidad AS `cumulative_sum` FROM (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = 1 AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`  ORDER BY `t`.`Fechacompra`;')
+ 2 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 18:25:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.can' at line 2 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SET @runningTot...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SET @runningTot...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SET @runningTot...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(63): CodeIgniter\Database\BaseConnection->query('SET @runningTot...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', NULL, NULL)
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-18 18:25:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.can' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(63): CodeIgniter\Database\BaseConnection->query('SET @runningTotal = 0;
+            SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.cantidad AS `cumulative_sum` FROM (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = 1 AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`  ORDER BY `t`.`Fechacompra`;')
+ 2 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-18 18:26:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.can' at line 1 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SET @runningTot...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SET @runningTot...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SET @runningTot...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(63): CodeIgniter\Database\BaseConnection->query('SET @runningTot...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', NULL, NULL)
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-18 18:26:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.can' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(63): CodeIgniter\Database\BaseConnection->query('SET @runningTotal = 0;SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.cantidad AS `cumulative_sum` FROM (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = 1 AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`  ORDER BY `t`.`Fechacompra`;')
+ 2 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 19:04:10 --> Undefined variable: title
+in APPPATH\Models\Inventario.php on line 64.
+ 1 APPPATH\Models\Inventario.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Models\\Inventario.php', 64, [...])
+ 2 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selecttotalCompraSuperdia('1', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

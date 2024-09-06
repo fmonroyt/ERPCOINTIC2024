@@ -1,0 +1,195 @@
+CRITICAL - 2024-07-31 09:25:53 --> Too few arguments to function App\Models\Usuario::getUsuariosNumero(), 4 passed in D:\wamp64\www\ApiGlobalOro\app\Controllers\Usuarios.php on line 269 and exactly 5 expected
+in APPPATH\Models\Usuario.php on line 108.
+ 1 APPPATH\Controllers\Usuarios.php(269): App\Models\Usuario->getUsuariosNumero('0', '5', null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 09:47:51 --> Too few arguments to function App\Models\Usuario::getUsuariosNumero(), 4 passed in D:\wamp64\www\ApiGlobalOro\app\Controllers\Usuarios.php on line 269 and exactly 5 expected
+in APPPATH\Models\Usuario.php on line 108.
+ 1 APPPATH\Controllers\Usuarios.php(269): App\Models\Usuario->getUsuariosNumero('0', '5', null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 09:49:00 --> Too few arguments to function App\Models\Usuario::getUsuariosNumero(), 4 passed in D:\wamp64\www\ApiGlobalOro\app\Controllers\Usuarios.php on line 269 and exactly 5 expected
+in APPPATH\Models\Usuario.php on line 108.
+ 1 APPPATH\Controllers\Usuarios.php(269): App\Models\Usuario->getUsuariosNumero('0', '5', null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-31 09:54:20 --> mysqli_sql_exception: Operand should contain 1 column(s) in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `cliente...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cliente...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cliente...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cliente...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Usuario.php(126): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Usuarios.php(269): App\Models\Usuario->getUsuariosNumero('0', '5')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-31 09:54:20 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `clientes`.`id_cliente`, `clientes`.`nombre_cliente`, `clientes`.`telefono_cliente`, `clientes`.`pais_residencia`, `clientes`.`correo`, `clientes`.`clave`, `clientes`.`aceptoFlujo`, `clientes`.`status`, `clientes`.`idtipoUsuario`
+FROM `clientes`
+WHERE `clientes`.`idtipoUsuario` = :clientes.idtipoUsuario:
+ORDER BY `clientes`.`nombreUsuario` ASC', [...], false)
+ 2 APPPATH\Models\Usuario.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Usuarios.php(269): App\Models\Usuario->getUsuariosNumero('0', '5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 09:59:51 --> Undefined variable $order
+in APPPATH\Models\Usuario.php on line 102.
+ 1 APPPATH\Models\Usuario.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order', 'APPPATH\\Models\\Usuario.php', 102)
+ 2 APPPATH\Controllers\Usuarios.php(257): App\Models\Usuario->getUsuarios('0', '5')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-31 09:59:51 --> mysqli_sql_exception: Operand should contain 1 column(s) in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `cliente...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cliente...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cliente...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cliente...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Usuario.php(126): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Usuarios.php(269): App\Models\Usuario->getUsuariosNumero('0', '5')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-31 09:59:51 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `clientes`.`id_cliente`, `clientes`.`nombre_cliente`, `clientes`.`telefono_cliente`, `clientes`.`pais_residencia`, `clientes`.`correo`, `clientes`.`clave`, `clientes`.`aceptoFlujo`, `clientes`.`status`, `clientes`.`idtipoUsuario`
+FROM `clientes`
+WHERE `clientes`.`idtipoUsuario` = :clientes.idtipoUsuario:
+ORDER BY `clientes`.`nombreUsuario` ASC', [...], false)
+ 2 APPPATH\Models\Usuario.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Usuarios.php(269): App\Models\Usuario->getUsuariosNumero('0', '5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-31 10:00:41 --> mysqli_sql_exception: Operand should contain 1 column(s) in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `cliente...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cliente...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cliente...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cliente...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Usuario.php(126): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Usuarios.php(269): App\Models\Usuario->getUsuariosNumero('0', '5')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-31 10:00:41 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `clientes`.`id_cliente`, `clientes`.`nombre_cliente`, `clientes`.`telefono_cliente`, `clientes`.`pais_residencia`, `clientes`.`correo`, `clientes`.`clave`, `clientes`.`aceptoFlujo`, `clientes`.`status`, `clientes`.`idtipoUsuario`
+FROM `clientes`
+WHERE `clientes`.`idtipoUsuario` = :clientes.idtipoUsuario:
+ORDER BY `clientes`.`nombreUsuario` ASC', [...], false)
+ 2 APPPATH\Models\Usuario.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Usuarios.php(269): App\Models\Usuario->getUsuariosNumero('0', '5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-31 10:00:41 --> mysqli_sql_exception: Operand should contain 1 column(s) in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `cliente...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cliente...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cliente...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cliente...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Usuario.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Usuarios.php(257): App\Models\Usuario->getUsuarios('0', '5')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-31 10:00:41 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `clientes`.`id_cliente`, `clientes`.`nombre_cliente`, `clientes`.`telefono_cliente`, `clientes`.`pais_residencia`, `clientes`.`correo`, `clientes`.`clave`, `clientes`.`aceptoFlujo`, `clientes`.`status`, `clientes`.`idtipoUsuario`
+FROM `clientes`
+WHERE `clientes`.`idtipoUsuario` = :clientes.idtipoUsuario:
+ORDER BY `CatUsuarios`.`nombre_cliente` ASC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Usuario.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Usuarios.php(257): App\Models\Usuario->getUsuarios('0', '5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-31 10:01:35 --> mysqli_sql_exception: Operand should contain 1 column(s) in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `cliente...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cliente...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cliente...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cliente...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Usuario.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Usuarios.php(257): App\Models\Usuario->getUsuarios('0', '5')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-31 10:01:35 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `clientes`.`id_cliente`, `clientes`.`nombre_cliente`, `clientes`.`telefono_cliente`, `clientes`.`pais_residencia`, `clientes`.`correo`, `clientes`.`clave`, `clientes`.`aceptoFlujo`, `clientes`.`status`, `clientes`.`idtipoUsuario`
+FROM `clientes`
+WHERE `clientes`.`idtipoUsuario` = :clientes.idtipoUsuario:
+ORDER BY `clientes`.`nombre_cliente` ASC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Usuario.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Usuarios.php(257): App\Models\Usuario->getUsuarios('0', '5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-31 10:01:35 --> mysqli_sql_exception: Operand should contain 1 column(s) in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `cliente...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cliente...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cliente...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cliente...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Usuario.php(126): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Usuarios.php(269): App\Models\Usuario->getUsuariosNumero('0', '5')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-31 10:01:35 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `clientes`.`id_cliente`, `clientes`.`nombre_cliente`, `clientes`.`telefono_cliente`, `clientes`.`pais_residencia`, `clientes`.`correo`, `clientes`.`clave`, `clientes`.`aceptoFlujo`, `clientes`.`status`, `clientes`.`idtipoUsuario`
+FROM `clientes`
+WHERE `clientes`.`idtipoUsuario` = :clientes.idtipoUsuario:
+ORDER BY `clientes`.`nombre_cliente` ASC', [...], false)
+ 2 APPPATH\Models\Usuario.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Usuarios.php(269): App\Models\Usuario->getUsuariosNumero('0', '5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 10:03:55 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::where_in()
+in APPPATH\Models\Usuario.php on line 100.
+ 1 APPPATH\Controllers\Usuarios.php(257): App\Models\Usuario->getUsuarios('0', '5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 10:03:55 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::where_in()
+in APPPATH\Models\Usuario.php on line 123.
+ 1 APPPATH\Controllers\Usuarios.php(269): App\Models\Usuario->getUsuariosNumero('0', '5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

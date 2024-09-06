@@ -1,0 +1,45 @@
+CRITICAL - 2024-06-26 16:25:27 --> Cannot redeclare App\Controllers\Ventas::obtenerProductosCompradosxCliente()
+in APPPATH\Controllers\Ventas.php on line 318.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-26 16:25:27 --> Cannot redeclare App\Controllers\Ventas::obtenerProductosCompradosxCliente()
+in APPPATH\Controllers\Ventas.php on line 318.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-26 16:25:27 --> Cannot redeclare App\Controllers\Ventas::obtenerProductosCompradosxCliente()
+in APPPATH\Controllers\Ventas.php on line 318.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-26 16:25:33 --> Cannot redeclare App\Controllers\Ventas::obtenerProductosCompradosxCliente()
+in APPPATH\Controllers\Ventas.php on line 318.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-26 16:25:33 --> Cannot redeclare App\Controllers\Ventas::obtenerProductosCompradosxCliente()
+in APPPATH\Controllers\Ventas.php on line 318.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-26 16:25:33 --> Cannot redeclare App\Controllers\Ventas::obtenerProductosCompradosxCliente()
+in APPPATH\Controllers\Ventas.php on line 318.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-26 16:25:40 --> Cannot redeclare App\Controllers\Ventas::obtenerProductosCompradosxCliente()
+in APPPATH\Controllers\Ventas.php on line 318.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-26 16:25:40 --> Cannot redeclare App\Controllers\Ventas::obtenerProductosCompradosxCliente()
+in APPPATH\Controllers\Ventas.php on line 318.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-26 16:25:40 --> Cannot redeclare App\Controllers\Ventas::obtenerProductosCompradosxCliente()
+in APPPATH\Controllers\Ventas.php on line 318.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-26 16:25:57 --> Cannot redeclare App\Controllers\Ventas::obtenerProductosCompradosxCliente()
+in APPPATH\Controllers\Ventas.php on line 318.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-26 16:25:57 --> Cannot redeclare App\Controllers\Ventas::obtenerProductosCompradosxCliente()
+in APPPATH\Controllers\Ventas.php on line 318.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-26 16:25:57 --> Cannot redeclare App\Controllers\Ventas::obtenerProductosCompradosxCliente()
+in APPPATH\Controllers\Ventas.php on line 318.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-26 16:27:15 --> Cannot redeclare App\Controllers\Ventas::obtenerProductosCompradosxCliente()
+in APPPATH\Controllers\Ventas.php on line 318.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-26 16:27:15 --> Cannot redeclare App\Controllers\Ventas::obtenerProductosCompradosxCliente()
+in APPPATH\Controllers\Ventas.php on line 318.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-26 16:27:15 --> Cannot redeclare App\Controllers\Ventas::obtenerProductosCompradosxCliente()
+in APPPATH\Controllers\Ventas.php on line 318.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

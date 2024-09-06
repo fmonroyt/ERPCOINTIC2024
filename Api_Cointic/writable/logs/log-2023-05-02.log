@@ -1,0 +1,20 @@
+CRITICAL - 2023-05-02 10:54:21 --> Call to a member function actualizarInventario() on null
+in APPPATH\Controllers\Inventarios.php on line 127.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->update('3')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 10:54:44 --> Undefined variable: Venta
+in APPPATH\Controllers\Inventarios.php on line 127.
+ 1 APPPATH\Controllers\Inventarios.php(127): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Venta', 'APPPATH\\Controllers\\Inventarios.php', 127, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->update('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 10:55:26 --> Array to string conversion
+in APPPATH\Controllers\Inventarios.php on line 138.
+ 1 APPPATH\Controllers\Inventarios.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Inventarios.php', 138, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->update('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

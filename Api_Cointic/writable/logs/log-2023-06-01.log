@@ -1,0 +1,16 @@
+CRITICAL - 2023-06-01 10:58:04 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Permisos.php(13): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 11:38:49 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Permisos.php(13): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

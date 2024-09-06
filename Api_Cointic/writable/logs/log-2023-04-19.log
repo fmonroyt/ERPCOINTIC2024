@@ -1,0 +1,560 @@
+ERROR - 2023-04-19 03:09:27 --> mysqli_sql_exception: Unknown column '1' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(64): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(41): App\Models\Inventario->selecttotalCompraSuperdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:09:27 --> Unknown column '1' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(64): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.cantidad AS `TotalCantidad` FROM (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = `1` AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`  ORDER BY `t`.`Fechacompra`;')
+ 2 APPPATH\Controllers\Inventarios.php(41): App\Models\Inventario->selecttotalCompraSuperdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:09:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(102): CodeIgniter\Database\BaseConnection->query('\r\n            S...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(56): App\Models\Inventario->selecttotalVentaSuperxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaSuperxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:09:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(102): CodeIgniter\Database\BaseConnection->query('
+            SELECT `t`.`FechaVenta`, `t`.`cantidadSuper`, @runningTotal := @runningTotal + t.cantidadSuper AS `cantidadSuperTotal` 
+            FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadSuper) as cantidadSuper 
+            FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(56): App\Models\Inventario->selecttotalVentaSuperxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 03:09:27 --> Too few arguments to function App\Models\Inventario::selecttotalCompraPremiumxdia(), 1 passed in D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php on line 46 and exactly 3 expected
+in APPPATH\Models\Inventario.php on line 67.
+ 1 APPPATH\Controllers\Inventarios.php(46): App\Models\Inventario->selecttotalCompraPremiumxdia('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraPremiumxmes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 03:09:27 --> Too few arguments to function App\Models\Inventario::selecttotalCompraDieselxdia(), 1 passed in D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php on line 51 and exactly 3 expected
+in APPPATH\Models\Inventario.php on line 81.
+ 1 APPPATH\Controllers\Inventarios.php(51): App\Models\Inventario->selecttotalCompraDieselxdia('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraDieselxmes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:09:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(118): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(61): App\Models\Inventario->selecttotalVentaPremiumxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaPremiumxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:09:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(118): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`FechaVenta`, `t`.`cantidadPremium`, @runningTotal := @runningTotal + t.cantidadPremium AS `cantidadPremiumTotal` 
+            FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadPremium) as cantidadPremium 
+            FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\'
+            GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(61): App\Models\Inventario->selecttotalVentaPremiumxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaPremiumxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:09:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(134): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(66): App\Models\Inventario->selecttotalVentaDieselxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaDieselxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:09:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(134): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`FechaVenta`, `t`.`cantidadDiesel`, @runningTotal := @runningTotal + t.cantidadDiesel AS `cantidadDieselTotal` 
+            FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadDiesel) as cantidadDiesel 
+            FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\'
+            GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(66): App\Models\Inventario->selecttotalVentaDieselxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaDieselxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 03:13:10 --> Too few arguments to function App\Models\Inventario::selecttotalCompraPremiumxdia(), 1 passed in D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php on line 46 and exactly 3 expected
+in APPPATH\Models\Inventario.php on line 67.
+ 1 APPPATH\Controllers\Inventarios.php(46): App\Models\Inventario->selecttotalCompraPremiumxdia('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraPremiumxmes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:15:30 --> mysqli_sql_exception: Unknown column '3' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(85): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(51): App\Models\Inventario->selecttotalCompraDieselxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraDieselxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:15:30 --> Unknown column '3' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(85): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.cantidad AS `TotalCantidad` FROM (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = `3` AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`  ORDER BY `t`.`Fechacompra`;')
+ 2 APPPATH\Controllers\Inventarios.php(51): App\Models\Inventario->selecttotalCompraDieselxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraDieselxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:15:30 --> mysqli_sql_exception: Unknown column '1' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(64): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(41): App\Models\Inventario->selecttotalCompraSuperdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:15:30 --> Unknown column '1' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(64): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.cantidad AS `TotalCantidad` FROM (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = `1` AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`  ORDER BY `t`.`Fechacompra`;')
+ 2 APPPATH\Controllers\Inventarios.php(41): App\Models\Inventario->selecttotalCompraSuperdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:15:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(134): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(66): App\Models\Inventario->selecttotalVentaDieselxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaDieselxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-04-19 03:15:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(102): CodeIgniter\Database\BaseConnection->query('\r\n            S...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(56): App\Models\Inventario->selecttotalVentaSuperxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaSuperxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:15:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(134): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`FechaVenta`, `t`.`cantidadDiesel`, @runningTotal := @runningTotal + t.cantidadDiesel AS `cantidadDieselTotal` 
+            FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadDiesel) as cantidadDiesel 
+            FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\'
+            GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(66): App\Models\Inventario->selecttotalVentaDieselxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaDieselxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 03:15:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(102): CodeIgniter\Database\BaseConnection->query('
+            SELECT `t`.`FechaVenta`, `t`.`cantidadSuper`, @runningTotal := @runningTotal + t.cantidadSuper AS `cantidadSuperTotal` 
+            FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadSuper) as cantidadSuper 
+            FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(56): App\Models\Inventario->selecttotalVentaSuperxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:15:30 --> mysqli_sql_exception: Unknown column '2' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(71): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(46): App\Models\Inventario->selecttotalCompraPremiumxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraPremiumxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:15:30 --> Unknown column '2' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(71): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.cantidad AS `TotalCantidad` FROM (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = `2` AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`  ORDER BY `t`.`Fechacompra`;')
+ 2 APPPATH\Controllers\Inventarios.php(46): App\Models\Inventario->selecttotalCompraPremiumxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraPremiumxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:15:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(118): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(61): App\Models\Inventario->selecttotalVentaPremiumxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaPremiumxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:15:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(118): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`FechaVenta`, `t`.`cantidadPremium`, @runningTotal := @runningTotal + t.cantidadPremium AS `cantidadPremiumTotal` 
+            FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadPremium) as cantidadPremium 
+            FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\'
+            GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(61): App\Models\Inventario->selecttotalVentaPremiumxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaPremiumxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:15:38 --> mysqli_sql_exception: Unknown column '2' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(71): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(46): App\Models\Inventario->selecttotalCompraPremiumxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraPremiumxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:15:38 --> Unknown column '2' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(71): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.cantidad AS `TotalCantidad` FROM (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = `2` AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`  ORDER BY `t`.`Fechacompra`;')
+ 2 APPPATH\Controllers\Inventarios.php(46): App\Models\Inventario->selecttotalCompraPremiumxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraPremiumxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:16:21 --> mysqli_sql_exception: Unknown column '2' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(71): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(46): App\Models\Inventario->selecttotalCompraPremiumxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraPremiumxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:16:21 --> Unknown column '2' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(71): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.cantidad AS `TotalCantidad` FROM (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = `2` AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`  ORDER BY `t`.`Fechacompra`;')
+ 2 APPPATH\Controllers\Inventarios.php(46): App\Models\Inventario->selecttotalCompraPremiumxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraPremiumxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:17:30 --> mysqli_sql_exception: Unknown column '1' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(64): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(41): App\Models\Inventario->selecttotalCompraSuperdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:17:30 --> Unknown column '1' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(64): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fechacompra`, `t`.`cantidad`, @runningTotal := @runningTotal + t.cantidad AS `TotalCantidad` FROM (SELECT `ProdCompras`.`Fechacompra`, Sum(ProdCompras.cantidad) as cantidad FROM `ProdCompras` WHERE `ProdCompras`.`idTipoGasolina` = `1` AND `ProdCompras`.`idGasolinera` = \'1\' GROUP BY `ProdCompras`.`Fechacompra`) `t`  ORDER BY `t`.`Fechacompra`;')
+ 2 APPPATH\Controllers\Inventarios.php(41): App\Models\Inventario->selecttotalCompraSuperdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesCompraSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:20:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(102): CodeIgniter\Database\BaseConnection->query('\r\n            S...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(56): App\Models\Inventario->selecttotalVentaSuperxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaSuperxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-04-19 03:20:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(134): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(66): App\Models\Inventario->selecttotalVentaDieselxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaDieselxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:20:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(102): CodeIgniter\Database\BaseConnection->query('
+            SELECT `t`.`FechaVenta`, `t`.`cantidadSuper`, @runningTotal := @runningTotal + t.cantidadSuper AS `cantidadSuperTotal` 
+            FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadSuper) as cantidadSuper 
+            FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(56): App\Models\Inventario->selecttotalVentaSuperxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 03:20:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(134): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`FechaVenta`, `t`.`cantidadDiesel`, @runningTotal := @runningTotal + t.cantidadDiesel AS `cantidadDieselTotal` 
+            FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadDiesel) as cantidadDiesel 
+            FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\'
+            GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(66): App\Models\Inventario->selecttotalVentaDieselxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaDieselxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:20:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(118): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(61): App\Models\Inventario->selecttotalVentaPremiumxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaPremiumxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:20:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(118): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`FechaVenta`, `t`.`cantidadPremium`, @runningTotal := @runningTotal + t.cantidadPremium AS `cantidadPremiumTotal` 
+            FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadPremium) as cantidadPremium 
+            FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\'
+            GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(61): App\Models\Inventario->selecttotalVentaPremiumxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaPremiumxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:20:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(102): CodeIgniter\Database\BaseConnection->query('\r\n            S...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(56): App\Models\Inventario->selecttotalVentaSuperxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaSuperxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:20:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(102): CodeIgniter\Database\BaseConnection->query('
+            SELECT `t`.`FechaVenta`, `t`.`cantidadSuper`, @runningTotal := @runningTotal + t.cantidadSuper AS `cantidadSuperTotal` 
+            FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadSuper) as cantidadSuper 
+            FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(56): App\Models\Inventario->selecttotalVentaSuperxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:20:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(134): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(66): App\Models\Inventario->selecttotalVentaDieselxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaDieselxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:20:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(134): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`FechaVenta`, `t`.`cantidadDiesel`, @runningTotal := @runningTotal + t.cantidadDiesel AS `cantidadDieselTotal` 
+            FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadDiesel) as cantidadDiesel 
+            FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\'
+            GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(66): App\Models\Inventario->selecttotalVentaDieselxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaDieselxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:20:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(118): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(61): App\Models\Inventario->selecttotalVentaPremiumxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaPremiumxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:20:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1'
+            GROUP BY `ProdVentas`.`FechaVenta`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(118): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`FechaVenta`, `t`.`cantidadPremium`, @runningTotal := @runningTotal + t.cantidadPremium AS `cantidadPremiumTotal` 
+            FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadPremium) as cantidadPremium 
+            FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\'
+            GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(61): App\Models\Inventario->selecttotalVentaPremiumxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaPremiumxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:21:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(102): CodeIgniter\Database\BaseConnection->query('\r\n            S...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(56): App\Models\Inventario->selecttotalVentaSuperxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaSuperxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:21:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(102): CodeIgniter\Database\BaseConnection->query('
+            SELECT `t`.`FechaVenta`, `t`.`cantidadSuper`, @runningTotal := @runningTotal + t.cantidadSuper AS `cantidadSuperTotal` 
+            FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadSuper) as cantidadSuper 
+            FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(56): App\Models\Inventario->selecttotalVentaSuperxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:24:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 1 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(113): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(61): App\Models\Inventario->selecttotalVentaPremiumxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaPremiumxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:24:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(113): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`FechaVenta`, `t`.`cantidadPremium`, @runningTotal := @runningTotal + t.cantidadPremium AS `cantidadPremiumTotal` FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadPremium) as cantidadPremium FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(61): App\Models\Inventario->selecttotalVentaPremiumxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaPremiumxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:24:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 1 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(99): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(56): App\Models\Inventario->selecttotalVentaSuperxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaSuperxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:24:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(99): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`FechaVenta`, `t`.`cantidadSuper`, @runningTotal := @runningTotal + t.cantidadSuper AS `cantidadSuperTotal` FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadSuper) as cantidadSuper FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(56): App\Models\Inventario->selecttotalVentaSuperxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaSuperxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 03:24:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 1 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `t`.`Fec...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`Fec...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`Fec...')
+#3 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(126): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`Fec...')
+#4 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(66): App\Models\Inventario->selecttotalVentaDieselxdia('1')
+#5 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaDieselxmes()
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 03:24:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ProdVentas`.`idGasolinera` = '1' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER ' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Inventario.php(126): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`FechaVenta`, `t`.`cantidadDiesel`, @runningTotal := @runningTotal + t.cantidadDiesel AS `cantidadDieselTotal` FROM (SELECT `ProdVentas`.`FechaVenta`, Sum(ProdVentas.cantidadDiesel) as cantidadDiesel FROM ProdVentas` WHERE `ProdVentas`.`idGasolinera` = \'1\' GROUP BY `ProdVentas`.`FechaVenta`) `t`  ORDER BY `t`.`FechaVenta`;')
+ 2 APPPATH\Controllers\Inventarios.php(66): App\Models\Inventario->selecttotalVentaDieselxdia('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesVentaDieselxmes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 17:08:28 --> Cannot use object of type App\Models\Proyeccion as array
+in APPPATH\Controllers\Compras.php on line 180.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Compras->update('17')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 17:08:39 --> Cannot use object of type App\Models\Proyeccion as array
+in APPPATH\Controllers\Compras.php on line 180.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Compras->update('17')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 17:09:01 --> Cannot use object of type App\Models\Proyeccion as array
+in APPPATH\Controllers\Compras.php on line 180.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Compras->update('17')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-19 17:09:43 --> Cannot use object of type App\Models\Proyeccion as array
+in APPPATH\Controllers\Compras.php on line 180.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Compras->update('17')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

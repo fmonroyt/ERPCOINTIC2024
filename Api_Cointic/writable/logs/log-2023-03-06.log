@@ -1,0 +1,245 @@
+ERROR - 2023-03-06 15:56:36 --> mysqli_sql_exception: Unknown column 'CatGasolineras.idGasolineraCompite' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdHis...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdHis...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdHis...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdHis...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Precio.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Precios.php(16): App\Models\Precio->getPrecios(NULL, NULL, NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Precios->obtenerPrecios()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 15:56:36 --> Unknown column 'CatGasolineras.idGasolineraCompite' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdHistoricoPrecios`.*, `G`.`nombreGasolinera` as `nombreGasolinera`
+FROM `ProdHistoricoPrecios`
+LEFT JOIN `CatGasolineras` `G` ON `G`.`idGasolinera`=`ProdHistoricoPrecios`.`idGasolinera`
+WHERE `CatGasolineras`.`idGasolineraCompite` = :CatGasolineras.idGasolineraCompite:
+ORDER BY `ProdHistoricoPrecios`.`Consecutivo` ASC', [...], false)
+ 2 APPPATH\Models\Precio.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Precios.php(16): App\Models\Precio->getPrecios(null, null, null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->obtenerPrecios()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 22:52:38 --> Class 'App\Controllers\Perfil' not found
+in APPPATH\Controllers\Permisos.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:03:30 --> Class 'App\Controllers\Perfil' not found
+in APPPATH\Controllers\Permisos.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:03:30 --> Class 'App\Controllers\Perfil' not found
+in APPPATH\Controllers\Permisos.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:05:22 --> Class 'App\Controllers\Perfil' not found
+in APPPATH\Controllers\Permisos.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:05:22 --> Class 'App\Controllers\Perfil' not found
+in APPPATH\Controllers\Permisos.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:06:43 --> "kid" empty, unable to lookup correct key
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 439.
+ 1 FCPATH\vendor\firebase\php-jwt\src\JWT.php(129): Firebase\JWT\JWT::getKey('/Sd/w1/s9x/8@@', null)
+ 2 APPPATH\Models\WebToken.php(27): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzgxNDM4MTAsImV4cCI6MTY4MDczNTgxMCwiZGF0YSI6eyJpZFVzdWFyaW8iOiIxIiwiaWRQZXJmaWwiOiIxIiwiaWRHYXNvbGluZXJhIjoiMSJ9fQ.bym4AlsCvDbXlr98tnEBD3kb8o90NkmNWoM6WS27akg', '/Sd/w1/s9x/8@@', [...])
+ 3 APPPATH\Controllers\Permisos.php(13): App\Models\WebToken->decodificarJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzgxNDM4MTAsImV4cCI6MTY4MDczNTgxMCwiZGF0YSI6eyJpZFVzdWFyaW8iOiIxIiwiaWRQZXJmaWwiOiIxIiwiaWRHYXNvbGluZXJhIjoiMSJ9fQ.bym4AlsCvDbXlr98tnEBD3kb8o90NkmNWoM6WS27akg')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:06:43 --> "kid" empty, unable to lookup correct key
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 439.
+ 1 FCPATH\vendor\firebase\php-jwt\src\JWT.php(129): Firebase\JWT\JWT::getKey('/Sd/w1/s9x/8@@', null)
+ 2 APPPATH\Models\WebToken.php(27): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzgxNDM4MTAsImV4cCI6MTY4MDczNTgxMCwiZGF0YSI6eyJpZFVzdWFyaW8iOiIxIiwiaWRQZXJmaWwiOiIxIiwiaWRHYXNvbGluZXJhIjoiMSJ9fQ.bym4AlsCvDbXlr98tnEBD3kb8o90NkmNWoM6WS27akg', '/Sd/w1/s9x/8@@', [...])
+ 3 APPPATH\Controllers\Permisos.php(13): App\Models\WebToken->decodificarJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzgxNDM4MTAsImV4cCI6MTY4MDczNTgxMCwiZGF0YSI6eyJpZFVzdWFyaW8iOiIxIiwiaWRQZXJmaWwiOiIxIiwiaWRHYXNvbGluZXJhIjoiMSJ9fQ.bym4AlsCvDbXlr98tnEBD3kb8o90NkmNWoM6WS27akg')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:07:06 --> "kid" empty, unable to lookup correct key
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 439.
+ 1 FCPATH\vendor\firebase\php-jwt\src\JWT.php(129): Firebase\JWT\JWT::getKey('/Sd/w1/s9x/8@@', null)
+ 2 APPPATH\Models\WebToken.php(27): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzgxNDM4MTAsImV4cCI6MTY4MDczNTgxMCwiZGF0YSI6eyJpZFVzdWFyaW8iOiIxIiwiaWRQZXJmaWwiOiIxIiwiaWRHYXNvbGluZXJhIjoiMSJ9fQ.bym4AlsCvDbXlr98tnEBD3kb8o90NkmNWoM6WS27akg', '/Sd/w1/s9x/8@@', [...])
+ 3 APPPATH\Controllers\Permisos.php(13): App\Models\WebToken->decodificarJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzgxNDM4MTAsImV4cCI6MTY4MDczNTgxMCwiZGF0YSI6eyJpZFVzdWFyaW8iOiIxIiwiaWRQZXJmaWwiOiIxIiwiaWRHYXNvbGluZXJhIjoiMSJ9fQ.bym4AlsCvDbXlr98tnEBD3kb8o90NkmNWoM6WS27akg')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:07:06 --> "kid" empty, unable to lookup correct key
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 439.
+ 1 FCPATH\vendor\firebase\php-jwt\src\JWT.php(129): Firebase\JWT\JWT::getKey('/Sd/w1/s9x/8@@', null)
+ 2 APPPATH\Models\WebToken.php(27): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzgxNDM4MTAsImV4cCI6MTY4MDczNTgxMCwiZGF0YSI6eyJpZFVzdWFyaW8iOiIxIiwiaWRQZXJmaWwiOiIxIiwiaWRHYXNvbGluZXJhIjoiMSJ9fQ.bym4AlsCvDbXlr98tnEBD3kb8o90NkmNWoM6WS27akg', '/Sd/w1/s9x/8@@', [...])
+ 3 APPPATH\Controllers\Permisos.php(13): App\Models\WebToken->decodificarJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzgxNDM4MTAsImV4cCI6MTY4MDczNTgxMCwiZGF0YSI6eyJpZFVzdWFyaW8iOiIxIiwiaWRQZXJmaWwiOiIxIiwiaWRHYXNvbGluZXJhIjoiMSJ9fQ.bym4AlsCvDbXlr98tnEBD3kb8o90NkmNWoM6WS27akg')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:10:19 --> Class 'App\Models\Key' not found
+in APPPATH\Models\WebToken.php on line 27.
+ 1 APPPATH\Controllers\Permisos.php(13): App\Models\WebToken->decodificarJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzgxNDM4MTAsImV4cCI6MTY4MDczNTgxMCwiZGF0YSI6eyJpZFVzdWFyaW8iOiIxIiwiaWRQZXJmaWwiOiIxIiwiaWRHYXNvbGluZXJhIjoiMSJ9fQ.bym4AlsCvDbXlr98tnEBD3kb8o90NkmNWoM6WS27akg')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:10:19 --> Class 'App\Models\Key' not found
+in APPPATH\Models\WebToken.php on line 27.
+ 1 APPPATH\Controllers\Permisos.php(13): App\Models\WebToken->decodificarJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzgxNDM4MTAsImV4cCI6MTY4MDczNTgxMCwiZGF0YSI6eyJpZFVzdWFyaW8iOiIxIiwiaWRQZXJmaWwiOiIxIiwiaWRHYXNvbGluZXJhIjoiMSJ9fQ.bym4AlsCvDbXlr98tnEBD3kb8o90NkmNWoM6WS27akg')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:13:08 --> Argument 2 passed to Firebase\JWT\Key::__construct() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\Key.php on line 21.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\Key->__construct('/Sd/w1/s9x/8@@', [...])
+ 2 APPPATH\Controllers\Permisos.php(13): App\Models\WebToken->decodificarJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzgxNDM4MTAsImV4cCI6MTY4MDczNTgxMCwiZGF0YSI6eyJpZFVzdWFyaW8iOiIxIiwiaWRQZXJmaWwiOiIxIiwiaWRHYXNvbGluZXJhIjoiMSJ9fQ.bym4AlsCvDbXlr98tnEBD3kb8o90NkmNWoM6WS27akg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:13:08 --> Argument 2 passed to Firebase\JWT\Key::__construct() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\Key.php on line 21.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\Key->__construct('/Sd/w1/s9x/8@@', [...])
+ 2 APPPATH\Controllers\Permisos.php(13): App\Models\WebToken->decodificarJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzgxNDM4MTAsImV4cCI6MTY4MDczNTgxMCwiZGF0YSI6eyJpZFVzdWFyaW8iOiIxIiwiaWRQZXJmaWwiOiIxIiwiaWRHYXNvbGluZXJhIjoiMSJ9fQ.bym4AlsCvDbXlr98tnEBD3kb8o90NkmNWoM6WS27akg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:13:21 --> Argument 2 passed to Firebase\JWT\Key::__construct() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\Key.php on line 21.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\Key->__construct('/Sd/w1/s9x/8@@', [...])
+ 2 APPPATH\Controllers\Permisos.php(13): App\Models\WebToken->decodificarJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzgxNDM4MTAsImV4cCI6MTY4MDczNTgxMCwiZGF0YSI6eyJpZFVzdWFyaW8iOiIxIiwiaWRQZXJmaWwiOiIxIiwiaWRHYXNvbGluZXJhIjoiMSJ9fQ.bym4AlsCvDbXlr98tnEBD3kb8o90NkmNWoM6WS27akg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:13:21 --> Argument 2 passed to Firebase\JWT\Key::__construct() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\Key.php on line 21.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\Key->__construct('/Sd/w1/s9x/8@@', [...])
+ 2 APPPATH\Controllers\Permisos.php(13): App\Models\WebToken->decodificarJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzgxNDM4MTAsImV4cCI6MTY4MDczNTgxMCwiZGF0YSI6eyJpZFVzdWFyaW8iOiIxIiwiaWRQZXJmaWwiOiIxIiwiaWRHYXNvbGluZXJhIjoiMSJ9fQ.bym4AlsCvDbXlr98tnEBD3kb8o90NkmNWoM6WS27akg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:14:17 --> Undefined variable: Permiso
+in APPPATH\Controllers\Permisos.php on line 18.
+ 1 APPPATH\Controllers\Permisos.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Permiso', 'APPPATH\\Controllers\\Permisos.php', 18, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:14:17 --> Undefined variable: Permiso
+in APPPATH\Controllers\Permisos.php on line 18.
+ 1 APPPATH\Controllers\Permisos.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Permiso', 'APPPATH\\Controllers\\Permisos.php', 18, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:14:56 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Permiso.php on line 12.
+ 1 APPPATH\Controllers\Permisos.php(18): App\Models\Permiso->getPermisosUsuario('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:14:56 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Permiso.php on line 12.
+ 1 APPPATH\Controllers\Permisos.php(18): App\Models\Permiso->getPermisosUsuario('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:15:55 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Permiso.php on line 12.
+ 1 APPPATH\Controllers\Permisos.php(18): App\Models\Permiso->getPermisosUsuario('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:15:55 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Permiso.php on line 12.
+ 1 APPPATH\Controllers\Permisos.php(18): App\Models\Permiso->getPermisosUsuario('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-06 23:49:12 --> mysqli_sql_exception: Unknown column 'CatDepartamentos.nombreGasolinera' in 'on clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatUsua...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatUsua...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatUsua...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatUsua...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Usuario.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Usuarios.php(266): App\Models\Usuario->getUsuariosNumero(NULL, '0', '5', 'nombreUsuario', '')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 23:49:12 --> Unknown column 'CatDepartamentos.nombreGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatUsuarios`.`idUsuario`, `CatUsuarios`.`nombreUsuario`, `CatUsuarios`.`apellidoPaterno`, `CatUsuarios`.`apellidoMaterno`, `CatUsuarios`.`nickName`, `CatUsuarios`.`correoDestino`, `CatUsuarios`.`idGasolinera`, `CatUsuarios`.`idPerfil`, `CatUsuarios`.`Status`, `CatUsuarios`.`fotoUsuario`, `CatPerfiles`.`nombrePerfil`, `CatGasolineras`.`nombreGasolinera`
+FROM `CatUsuarios`
+JOIN `CatPerfiles` ON `CatUsuarios`.`idPerfil` = `CatPerfiles`.`idPerfil`
+JOIN `CatGasolineras` ON `CatUsuarios`.`idGasolinera` = `CatDepartamentos`.`nombreGasolinera`
+ORDER BY `CatPerfiles`.`nombrePerfil` ASC, `CatUsuarios`.`nombreUsuario` ASC, `CatUsuarios`.`apellidoPaterno` ASC, `CatUsuarios`.`apellidoMaterno` ASC', [], false)
+ 2 APPPATH\Models\Usuario.php(129): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Usuarios.php(266): App\Models\Usuario->getUsuariosNumero(null, '0', '5', 'nombreUsuario', 'D:\\wamp64\\www\\ApiGasolineras')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-06 23:49:19 --> mysqli_sql_exception: Unknown column 'CatDepartamentos.nombreGasolinera' in 'on clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatUsua...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatUsua...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatUsua...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatUsua...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Usuario.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Usuarios.php(266): App\Models\Usuario->getUsuariosNumero(NULL, '0', '5', 'nombreUsuario', '')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 23:49:19 --> Unknown column 'CatDepartamentos.nombreGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatUsuarios`.`idUsuario`, `CatUsuarios`.`nombreUsuario`, `CatUsuarios`.`apellidoPaterno`, `CatUsuarios`.`apellidoMaterno`, `CatUsuarios`.`nickName`, `CatUsuarios`.`correoDestino`, `CatUsuarios`.`idGasolinera`, `CatUsuarios`.`idPerfil`, `CatUsuarios`.`Status`, `CatUsuarios`.`fotoUsuario`, `CatPerfiles`.`nombrePerfil`, `CatGasolineras`.`nombreGasolinera`
+FROM `CatUsuarios`
+JOIN `CatPerfiles` ON `CatUsuarios`.`idPerfil` = `CatPerfiles`.`idPerfil`
+JOIN `CatGasolineras` ON `CatUsuarios`.`idGasolinera` = `CatDepartamentos`.`nombreGasolinera`
+ORDER BY `CatPerfiles`.`nombrePerfil` ASC, `CatUsuarios`.`nombreUsuario` ASC, `CatUsuarios`.`apellidoPaterno` ASC, `CatUsuarios`.`apellidoMaterno` ASC', [], false)
+ 2 APPPATH\Models\Usuario.php(129): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Usuarios.php(266): App\Models\Usuario->getUsuariosNumero(null, '0', '5', 'nombreUsuario', 'D:\\wamp64\\www\\ApiGasolineras')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuariosNumeros()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:59:04 --> Call to a member function decodificarJWT() on null
+in APPPATH\Controllers\Usuarios.php on line 120.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 23:59:34 --> Undefined property: App\Controllers\Usuarios::$WebToken
+in APPPATH\Controllers\Usuarios.php on line 120.
+ 1 APPPATH\Controllers\Usuarios.php(120): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Usuarios::$WebToken', 'APPPATH\\Controllers\\Usuarios.php', 120, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

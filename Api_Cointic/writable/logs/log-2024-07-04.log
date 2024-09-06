@@ -1,0 +1,418 @@
+ERROR - 2024-07-04 09:33:01 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL: Se ha forzado la interrupción de una conexión existente por el host remoto in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #11, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(276): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-04 09:33:01 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-04 09:33:01 --> 
+hello: 
+The following SMTP error was encountered: 
+Unable to send data: STARTTLS
+
+starttls: 
+The following SMTP error was encountered: 
+ERROR - 2024-07-04 10:09:41 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL: Se ha forzado la interrupción de una conexión existente por el host remoto in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #10, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(276): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-04 10:09:41 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-04 10:09:41 --> 
+hello: 
+The following SMTP error was encountered: 
+Unable to send data: STARTTLS
+
+starttls: 
+The following SMTP error was encountered: 
+ERROR - 2024-07-04 11:09:12 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL: Se ha forzado la interrupción de una conexión existente por el host remoto in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #9, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(276): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-04 11:09:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-04 11:09:12 --> 
+hello: 
+The following SMTP error was encountered: 
+Unable to send data: STARTTLS
+
+starttls: 
+The following SMTP error was encountered: 
+ERROR - 2024-07-04 11:24:26 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL: Se ha forzado la interrupción de una conexión existente por el host remoto in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #9, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(276): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-04 11:24:26 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-04 11:24:26 --> 
+hello: 
+The following SMTP error was encountered: 
+Unable to send data: STARTTLS
+
+starttls: 
+The following SMTP error was encountered: 
+ERROR - 2024-07-04 11:59:55 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #10, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(276): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-04 11:59:55 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-04 11:59:55 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-07-04 15:49:04 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #131, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(276): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-04 15:49:04 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-04 15:49:04 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-07-04 15:52:55 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #10, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(277): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-04 15:52:55 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-04 15:52:55 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-07-04 15:54:39 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #131, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(277): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-04 15:54:39 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-04 15:54:39 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-07-04 15:56:16 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #10, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(277): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-04 15:56:16 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-04 15:56:16 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-07-04 16:05:47 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #131, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(277): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-04 16:05:47 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-04 16:05:47 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-07-04 16:09:08 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #9, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(277): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-04 16:09:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-04 16:09:08 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-07-04 16:13:03 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #9, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(277): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-04 16:13:03 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-04 16:13:03 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-07-04 17:03:40 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #9, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(277): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-04 17:03:40 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-04 17:03:40 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-07-04 18:10:17 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #9, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(277): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-04 18:10:17 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-04 18:10:17 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-07-04 18:10:37 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in D:\wamp64\www\ApiGlobalOro\system\Email\Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\wamp64\\www\\A...', 1883)
+#1 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1883): stream_socket_enable_crypto(Resource id #9, true, 57)
+#2 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\wamp64\www\ApiGlobalOro\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(277): CodeIgniter\Email\Email->send(false)
+#6 D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php(172): App\Controllers\Clientes->enviarCorreo('dylanarellano07...', 'Creaci\xC3\xB3n de cu...', '<p>Buen d\xC3\xADa Dy...')
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-07-04 18:10:37 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-04 18:10:37 --> 220 www.dedicadossd.com ESMTP Postfix
+
+hello: 250-www.dedicadossd.com
+250-PIPELINING
+250-SIZE 204800000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+

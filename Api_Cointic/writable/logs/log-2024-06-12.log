@@ -1,0 +1,170 @@
+ERROR - 2024-06-12 09:31:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC
+ LIMIT 5' at line 5 in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `prodtra...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prodtra...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prodtra...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodtra...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(19): App\Models\Venta->getVentas('0', '5', '1')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-12 09:31:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC
+ LIMIT 5' at line 5
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodtransaccion`.`idTransaccion`, `prodtransaccion`.`fecha` as `fechaCompra`, `prodrentacaja`.`fechaInicio` as `inicioRenta`, `prodrentacaja`.`fechaFinal` as `finalRenta`
+FROM `prodtransaccion`
+LEFT JOIN `prodrentacaja` ON `prodrentacaja`.`idTransaccion`=`prodtransaccion`.`idTransaccion`
+WHERE `prodtransaccion`.`idCliente` = :prodtransaccion.idCliente:
+ORDER BY `prodtransaccion`. ASC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Venta.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(19): App\Models\Venta->getVentas('0', '5', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-12 09:31:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC
+ LIMIT 5' at line 5 in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `prodtra...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prodtra...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prodtra...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodtra...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(19): App\Models\Venta->getVentas('0', '5', '1')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-12 09:31:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC
+ LIMIT 5' at line 5
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodtransaccion`.`idTransaccion`, `prodtransaccion`.`fecha` as `fechaCompra`, `prodrentacaja`.`fechaInicio` as `inicioRenta`, `prodrentacaja`.`fechaFinal` as `finalRenta`
+FROM `prodtransaccion`
+LEFT JOIN `prodrentacaja` ON `prodrentacaja`.`idTransaccion`=`prodtransaccion`.`idTransaccion`
+WHERE `prodtransaccion`.`idCliente` = :prodtransaccion.idCliente:
+ORDER BY `prodtransaccion`. ASC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Venta.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(19): App\Models\Venta->getVentas('0', '5', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-12 09:32:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC
+ LIMIT 5' at line 5 in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `prodtra...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prodtra...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prodtra...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodtra...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(19): App\Models\Venta->getVentas('0', '5', '1')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-12 09:32:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC
+ LIMIT 5' at line 5
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodtransaccion`.`idTransaccion`, `prodtransaccion`.`fecha` as `fechaCompra`, `prodrentacaja`.`fechaInicio` as `inicioRenta`, `prodrentacaja`.`fechaFinal` as `finalRenta`
+FROM `prodtransaccion`
+LEFT JOIN `prodrentacaja` ON `prodrentacaja`.`idTransaccion`=`prodtransaccion`.`idTransaccion`
+WHERE `prodtransaccion`.`idCliente` = :prodtransaccion.idCliente:
+ORDER BY `prodtransaccion`. ASC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Venta.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(19): App\Models\Venta->getVentas('0', '5', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-12 09:32:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC
+ LIMIT 5' at line 5 in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `prodtra...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prodtra...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prodtra...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodtra...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(19): App\Models\Venta->getVentas('0', '5', '19')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-12 09:32:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC
+ LIMIT 5' at line 5
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodtransaccion`.`idTransaccion`, `prodtransaccion`.`fecha` as `fechaCompra`, `prodrentacaja`.`fechaInicio` as `inicioRenta`, `prodrentacaja`.`fechaFinal` as `finalRenta`
+FROM `prodtransaccion`
+LEFT JOIN `prodrentacaja` ON `prodrentacaja`.`idTransaccion`=`prodtransaccion`.`idTransaccion`
+WHERE `prodtransaccion`.`idCliente` = :prodtransaccion.idCliente:
+ORDER BY `prodtransaccion`. ASC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Venta.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(19): App\Models\Venta->getVentas('0', '5', '19')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-12 09:46:24 --> mysqli_sql_exception: Unknown column 'prodtransaccion.fechaCompra' in 'order clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `prodtra...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prodtra...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prodtra...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodtra...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(19): App\Models\Venta->getVentas('0', '5', '19')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-12 09:46:24 --> Unknown column 'prodtransaccion.fechaCompra' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodtransaccion`.`idTransaccion`, `prodtransaccion`.`fecha` as `fechaCompra`, `prodrentacaja`.`fechaInicio` as `inicioRenta`, `prodrentacaja`.`fechaFinal` as `finalRenta`
+FROM `prodtransaccion`
+LEFT JOIN `prodrentacaja` ON `prodrentacaja`.`idTransaccion`=`prodtransaccion`.`idTransaccion`
+WHERE `prodtransaccion`.`idCliente` = :prodtransaccion.idCliente:
+ORDER BY `prodtransaccion`.`fechaCompra` ASC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Venta.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(19): App\Models\Venta->getVentas('0', '5', '19')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-12 09:46:39 --> mysqli_sql_exception: Unknown column 'prodtransaccion.fechaCompra' in 'order clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `prodtra...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prodtra...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prodtra...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodtra...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(19): App\Models\Venta->getVentas('0', '5', '19')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-12 09:46:39 --> Unknown column 'prodtransaccion.fechaCompra' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodtransaccion`.`idTransaccion`, `prodtransaccion`.`fecha` as `fechaCompra`, `prodrentacaja`.`fechaInicio` as `inicioRenta`, `prodrentacaja`.`fechaFinal` as `finalRenta`
+FROM `prodtransaccion`
+LEFT JOIN `prodrentacaja` ON `prodrentacaja`.`idTransaccion`=`prodtransaccion`.`idTransaccion`
+WHERE `prodtransaccion`.`idCliente` = :prodtransaccion.idCliente:
+ORDER BY `prodtransaccion`.`fechaCompra` ASC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Venta.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(19): App\Models\Venta->getVentas('0', '5', '19')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

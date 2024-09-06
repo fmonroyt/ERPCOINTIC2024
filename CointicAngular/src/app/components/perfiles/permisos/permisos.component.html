@@ -1,0 +1,50 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header card-header-primary">
+                <h4 class="card-title ">Estos son los permisos de {{Perfiles.nombrePerfil}}</h4>
+                <p class="card-category">Puedes otorgar o revocar permisos dando clic en las casillas</p>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th>Módulo</th>
+                                    <th>Mostrar</th>
+                                    <th>Ver detalles</th>
+                                    <th>Alta</th>
+                                    <th>Edición</th>
+                                    <th>Eliminación</th>
+                                </tr>
+                                </thead>
+                                <tbody *ngIf="permisos && permisosService.canActivate(2, 'mostrar')">
+                                <tr *ngFor="let modulo of Modulos">
+                                    <td>{{modulo.nombreModulo}}</td>
+                                    <td>
+                                        <mat-checkbox [disabled] = "idPerfil == 1 || !permisosService.canActivate(2, 'editar')" color="primary"  (change)="asignarPermiso( 'mostrar', modulo.idModulo, $event.checked)" [checked] = "getPermisosModulo('mostrar', modulo.idModulo)" [value] = "modulo.idModulo"></mat-checkbox>
+                                    </td>
+                                    <td>
+                                        <mat-checkbox [disabled] = "idPerfil == 1 || !permisosService.canActivate(2, 'editar')" color="primary" (change)="asignarPermiso( 'alta', modulo.idModulo, $event.checked)" [checked] = "getPermisosModulo('alta', modulo.idModulo)" [value] = "modulo.idModulo"></mat-checkbox>
+                                    </td>
+                                    <td>
+                                        <mat-checkbox [disabled] = "idPerfil == 1 || !permisosService.canActivate(2, 'editar')" color="primary" (change)="asignarPermiso( 'detalle', modulo.idModulo, $event.checked)" [checked] = "getPermisosModulo('detalle', modulo.idModulo)" [value] = "modulo.idModulo"></mat-checkbox>
+                                    </td>
+                                    <td>
+                                        <mat-checkbox [disabled] = "idPerfil == 1 || !permisosService.canActivate(2, 'editar')" color="primary" (change)="asignarPermiso( 'editar', modulo.idModulo, $event.checked)" [checked] = "getPermisosModulo('editar', modulo.idModulo)" [value] = "modulo.idModulo"></mat-checkbox>
+                                    </td>
+                                    <td>
+                                        <mat-checkbox [disabled] = "idPerfil == 1 || !permisosService.canActivate(2, 'editar')" color="primary" (change)="asignarPermiso( 'eliminar', modulo.idModulo, $event.checked)" [checked] = "getPermisosModulo('eliminar', modulo.idModulo)" [value] = "modulo.idModulo"></mat-checkbox>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

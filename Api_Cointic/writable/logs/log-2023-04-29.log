@@ -1,0 +1,78 @@
+ERROR - 2023-04-29 19:04:30 --> mysqli_sql_exception: Unknown column 'ProdInventario.idGasolineraCompite' in 'on clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdInv...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdInv...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdInv...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdInv...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(24): App\Models\Inventario->getInventarios('0', '5', 'nombreGasoliner...', '', '', '', '')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerInventarios()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-29 19:04:30 --> Unknown column 'ProdInventario.idGasolineraCompite' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdInventario`.*, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdInventario`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdInventario`.`idGasolineraCompite`
+ORDER BY `ProdInventario`.`Fecha`
+ LIMIT 5', [], false)
+ 2 APPPATH\Models\Inventario.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Inventarios.php(24): App\Models\Inventario->getInventarios('0', '5', 'nombreGasolinera', 'D:\\wamp64\\www\\ApiGasolineras', 'D:\\wamp64\\www\\ApiGasolineras', 'D:\\wamp64\\www\\ApiGasolineras', 'D:\\wamp64\\www\\ApiGasolineras')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerInventarios()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-29 19:05:49 --> mysqli_sql_exception: Unknown column 'ProdInventario.idGasolineraCompite' in 'on clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdInv...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdInv...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdInv...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdInv...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(24): App\Models\Inventario->getInventarios('0', '5', 'nombreGasoliner...', '', '', '', '')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerInventarios()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-29 19:05:49 --> Unknown column 'ProdInventario.idGasolineraCompite' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdInventario`.*, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdInventario`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdInventario`.`idGasolineraCompite`
+ORDER BY `ProdInventario`.`Fecha`
+ LIMIT 5', [], false)
+ 2 APPPATH\Models\Inventario.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Inventarios.php(24): App\Models\Inventario->getInventarios('0', '5', 'nombreGasolinera', 'D:\\wamp64\\www\\ApiGasolineras', 'D:\\wamp64\\www\\ApiGasolineras', 'D:\\wamp64\\www\\ApiGasolineras', 'D:\\wamp64\\www\\ApiGasolineras')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerInventarios()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-29 19:40:25 --> mysqli_sql_exception: Unknown column 'ProdInventario.idGasolineraCompite' in 'on clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdInv...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdInv...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdInv...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdInv...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(24): App\Models\Inventario->getInventarios('0', '5', 'nombreGasoliner...', '', '', '', '')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerInventarios()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-29 19:40:25 --> Unknown column 'ProdInventario.idGasolineraCompite' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdInventario`.*, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdInventario`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdInventario`.`idGasolineraCompite`
+ORDER BY `ProdInventario`.`Fecha`
+ LIMIT 5', [], false)
+ 2 APPPATH\Models\Inventario.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Inventarios.php(24): App\Models\Inventario->getInventarios('0', '5', 'nombreGasolinera', 'D:\\wamp64\\www\\ApiGasolineras', 'D:\\wamp64\\www\\ApiGasolineras', 'D:\\wamp64\\www\\ApiGasolineras', 'D:\\wamp64\\www\\ApiGasolineras')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerInventarios()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

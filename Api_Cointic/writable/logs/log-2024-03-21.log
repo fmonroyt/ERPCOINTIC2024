@@ -1,0 +1,107 @@
+CRITICAL - 2024-03-21 12:08:23 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Ventas.php(150): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 12:08:37 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Ventas.php(150): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 12:17:17 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::´post()
+in APPPATH\Controllers\Ventas.php on line 153.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 12:19:18 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::´post()
+in APPPATH\Controllers\Ventas.php on line 153.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 16:03:12 --> syntax error, unexpected '$products' (T_VARIABLE)
+in APPPATH\Controllers\Ventas.php on line 166.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Ventas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ventas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ventas')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Ventas')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Ventas', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 16:03:42 --> syntax error, unexpected '$products' (T_VARIABLE)
+in APPPATH\Controllers\Ventas.php on line 166.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Ventas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ventas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ventas')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Ventas')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Ventas', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 16:04:26 --> syntax error, unexpected '$products' (T_VARIABLE)
+in APPPATH\Controllers\Ventas.php on line 166.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Ventas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ventas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ventas')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Ventas')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Ventas', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 16:07:03 --> Class 'App\Controllers\MercadoPago\SDK' not found
+in APPPATH\Controllers\Ventas.php on line 147.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 16:12:30 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(148): MercadoPago\SDK::setAccessToken('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 16:20:39 --> Class 'MercadoPago\Preferece' not found
+in APPPATH\Controllers\Ventas.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 16:21:25 --> Call to undefined function App\Controllers\baseURL()
+in APPPATH\Controllers\Ventas.php on line 150.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 16:27:18 --> Call to undefined function App\Controllers\baseURL()
+in APPPATH\Controllers\Ventas.php on line 150.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 16:58:07 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Ventas.php on line 172.
+ 1 APPPATH\Controllers\Ventas.php(172): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Ventas.php', 172, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 17:07:08 --> Cannot use object of type MercadoPago\Preference as array
+in APPPATH\Controllers\Ventas.php on line 171.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

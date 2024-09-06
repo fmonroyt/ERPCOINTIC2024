@@ -1,0 +1,406 @@
+ERROR - 2023-03-16 12:52:23 --> mysqli_sql_exception: Unknown column 'ProdProyecciones.Fecha' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(60): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(43): App\Models\Proyeccion->getNumeroProyecciones('0', '5', 'nombreVenta', '', '1', ''2023-03-20'', ''2023-03-30'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerNumeroProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-16 12:52:23 --> mysqli_sql_exception: Unknown column 'ProdProyecciones.Fecha' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(26): App\Models\Proyeccion->getProyecciones('0', '5', 'nombreVenta', '', '1', ''2023-03-20'', ''2023-03-30'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-16 12:52:23 --> Unknown column 'ProdProyecciones.Fecha' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.`consecutivo`, `ProdProyecciones`.`idGasolinera`, MIN(ProdProyecciones.fechaProyeccion) as FechaMinima, max(ProdProyecciones.fechaProyeccion)as FechaMaxima, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+WHERE `ProdProyecciones`.`idGasolinera` = :ProdProyecciones.idGasolinera:
+AND `ProdProyecciones`.`Fecha` >= \'2023-03-20\'
+AND `ProdProyecciones`.`Fecha` <= \'2023-03-30\'
+GROUP BY `ProdProyecciones`.`consecutivo`', [...], false)
+ 2 APPPATH\Models\Proyeccion.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(43): App\Models\Proyeccion->getNumeroProyecciones('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-20\'', '\'2023-03-30\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerNumeroProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 12:52:23 --> Unknown column 'ProdProyecciones.Fecha' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.`consecutivo`, `ProdProyecciones`.`idGasolinera`, MIN(ProdProyecciones.fechaProyeccion) as FechaMinima, max(ProdProyecciones.fechaProyeccion)as FechaMaxima, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+WHERE `ProdProyecciones`.`idGasolinera` = :ProdProyecciones.idGasolinera:
+AND `ProdProyecciones`.`Fecha` >= \'2023-03-20\'
+AND `ProdProyecciones`.`Fecha` <= \'2023-03-30\'
+GROUP BY `ProdProyecciones`.`consecutivo`
+ORDER BY `ProdProyecciones`.`consecutivo` DESC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Proyeccion.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(26): App\Models\Proyeccion->getProyecciones('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-20\'', '\'2023-03-30\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-16 12:54:03 --> mysqli_sql_exception: Unknown column 'FechaMinima' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(26): App\Models\Proyeccion->getProyecciones('0', '5', 'nombreVenta', '', '1', ''2023-03-20'', ''2023-03-30'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-16 12:54:03 --> Unknown column 'FechaMinima' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.`consecutivo`, `ProdProyecciones`.`idGasolinera`, MIN(ProdProyecciones.fechaProyeccion) as FechaMinima, max(ProdProyecciones.fechaProyeccion)as FechaMaxima, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+WHERE `ProdProyecciones`.`idGasolinera` = :ProdProyecciones.idGasolinera:
+AND `FechaMinima` >= \'2023-03-20\'
+AND `FechaMinima` <= \'2023-03-30\'
+GROUP BY `ProdProyecciones`.`consecutivo`
+ORDER BY `ProdProyecciones`.`consecutivo` DESC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Proyeccion.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(26): App\Models\Proyeccion->getProyecciones('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-20\'', '\'2023-03-30\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-16 12:54:03 --> mysqli_sql_exception: Unknown column 'FechaMinima' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(60): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(43): App\Models\Proyeccion->getNumeroProyecciones('0', '5', 'nombreVenta', '', '1', ''2023-03-20'', ''2023-03-30'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerNumeroProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-16 12:54:03 --> Unknown column 'FechaMinima' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.`consecutivo`, `ProdProyecciones`.`idGasolinera`, MIN(ProdProyecciones.fechaProyeccion) as FechaMinima, max(ProdProyecciones.fechaProyeccion)as FechaMaxima, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+WHERE `ProdProyecciones`.`idGasolinera` = :ProdProyecciones.idGasolinera:
+AND `FechaMinima` >= \'2023-03-20\'
+AND `FechaMinima` <= \'2023-03-30\'
+GROUP BY `ProdProyecciones`.`consecutivo`', [...], false)
+ 2 APPPATH\Models\Proyeccion.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(43): App\Models\Proyeccion->getNumeroProyecciones('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-20\'', '\'2023-03-30\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerNumeroProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-16 12:54:05 --> mysqli_sql_exception: Unknown column 'FechaMinima' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(60): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(43): App\Models\Proyeccion->getNumeroProyecciones('0', '5', 'nombreVenta', '', '1', ''2023-03-20'', ''2023-03-30'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerNumeroProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-16 12:54:05 --> mysqli_sql_exception: Unknown column 'FechaMinima' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(26): App\Models\Proyeccion->getProyecciones('0', '5', 'nombreVenta', '', '1', ''2023-03-20'', ''2023-03-30'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-16 12:54:05 --> Unknown column 'FechaMinima' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.`consecutivo`, `ProdProyecciones`.`idGasolinera`, MIN(ProdProyecciones.fechaProyeccion) as FechaMinima, max(ProdProyecciones.fechaProyeccion)as FechaMaxima, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+WHERE `ProdProyecciones`.`idGasolinera` = :ProdProyecciones.idGasolinera:
+AND `FechaMinima` >= \'2023-03-20\'
+AND `FechaMinima` <= \'2023-03-30\'
+GROUP BY `ProdProyecciones`.`consecutivo`
+ORDER BY `ProdProyecciones`.`consecutivo` DESC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Proyeccion.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(26): App\Models\Proyeccion->getProyecciones('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-20\'', '\'2023-03-30\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 12:54:05 --> Unknown column 'FechaMinima' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.`consecutivo`, `ProdProyecciones`.`idGasolinera`, MIN(ProdProyecciones.fechaProyeccion) as FechaMinima, max(ProdProyecciones.fechaProyeccion)as FechaMaxima, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+WHERE `ProdProyecciones`.`idGasolinera` = :ProdProyecciones.idGasolinera:
+AND `FechaMinima` >= \'2023-03-20\'
+AND `FechaMinima` <= \'2023-03-30\'
+GROUP BY `ProdProyecciones`.`consecutivo`', [...], false)
+ 2 APPPATH\Models\Proyeccion.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(43): App\Models\Proyeccion->getNumeroProyecciones('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-20\'', '\'2023-03-30\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerNumeroProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-16 12:54:05 --> mysqli_sql_exception: Unknown column 'FechaMinima' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(60): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(43): App\Models\Proyeccion->getNumeroProyecciones('0', '5', 'nombreVenta', '', '1', ''2023-03-20'', ''2023-03-30'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerNumeroProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-16 12:54:05 --> Unknown column 'FechaMinima' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.`consecutivo`, `ProdProyecciones`.`idGasolinera`, MIN(ProdProyecciones.fechaProyeccion) as FechaMinima, max(ProdProyecciones.fechaProyeccion)as FechaMaxima, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+WHERE `ProdProyecciones`.`idGasolinera` = :ProdProyecciones.idGasolinera:
+AND `FechaMinima` >= \'2023-03-20\'
+AND `FechaMinima` <= \'2023-03-30\'
+GROUP BY `ProdProyecciones`.`consecutivo`', [...], false)
+ 2 APPPATH\Models\Proyeccion.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(43): App\Models\Proyeccion->getNumeroProyecciones('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-20\'', '\'2023-03-30\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerNumeroProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-16 12:54:05 --> mysqli_sql_exception: Unknown column 'FechaMinima' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(26): App\Models\Proyeccion->getProyecciones('0', '5', 'nombreVenta', '', '1', ''2023-03-20'', ''2023-03-30'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-16 12:54:05 --> Unknown column 'FechaMinima' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.`consecutivo`, `ProdProyecciones`.`idGasolinera`, MIN(ProdProyecciones.fechaProyeccion) as FechaMinima, max(ProdProyecciones.fechaProyeccion)as FechaMaxima, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+WHERE `ProdProyecciones`.`idGasolinera` = :ProdProyecciones.idGasolinera:
+AND `FechaMinima` >= \'2023-03-20\'
+AND `FechaMinima` <= \'2023-03-30\'
+GROUP BY `ProdProyecciones`.`consecutivo`
+ORDER BY `ProdProyecciones`.`consecutivo` DESC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Proyeccion.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(26): App\Models\Proyeccion->getProyecciones('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-20\'', '\'2023-03-30\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-16 12:54:05 --> mysqli_sql_exception: Unknown column 'FechaMinima' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(26): App\Models\Proyeccion->getProyecciones('0', '5', 'nombreVenta', '', '1', ''2023-03-20'', ''2023-03-30'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-16 12:54:05 --> mysqli_sql_exception: Unknown column 'FechaMinima' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(60): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(43): App\Models\Proyeccion->getNumeroProyecciones('0', '5', 'nombreVenta', '', '1', ''2023-03-20'', ''2023-03-30'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerNumeroProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-16 12:54:05 --> Unknown column 'FechaMinima' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.`consecutivo`, `ProdProyecciones`.`idGasolinera`, MIN(ProdProyecciones.fechaProyeccion) as FechaMinima, max(ProdProyecciones.fechaProyeccion)as FechaMaxima, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+WHERE `ProdProyecciones`.`idGasolinera` = :ProdProyecciones.idGasolinera:
+AND `FechaMinima` >= \'2023-03-20\'
+AND `FechaMinima` <= \'2023-03-30\'
+GROUP BY `ProdProyecciones`.`consecutivo`
+ORDER BY `ProdProyecciones`.`consecutivo` DESC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Proyeccion.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(26): App\Models\Proyeccion->getProyecciones('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-20\'', '\'2023-03-30\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 12:54:05 --> Unknown column 'FechaMinima' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.`consecutivo`, `ProdProyecciones`.`idGasolinera`, MIN(ProdProyecciones.fechaProyeccion) as FechaMinima, max(ProdProyecciones.fechaProyeccion)as FechaMaxima, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+WHERE `ProdProyecciones`.`idGasolinera` = :ProdProyecciones.idGasolinera:
+AND `FechaMinima` >= \'2023-03-20\'
+AND `FechaMinima` <= \'2023-03-30\'
+GROUP BY `ProdProyecciones`.`consecutivo`', [...], false)
+ 2 APPPATH\Models\Proyeccion.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(43): App\Models\Proyeccion->getNumeroProyecciones('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-20\'', '\'2023-03-30\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerNumeroProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-16 12:54:36 --> mysqli_sql_exception: Unknown column 'FechaMinima' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(60): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(43): App\Models\Proyeccion->getNumeroProyecciones('0', '5', 'nombreVenta', '', '1', ''2023-03-20'', ''2023-03-30'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerNumeroProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-16 12:54:36 --> mysqli_sql_exception: Unknown column 'FechaMinima' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(26): App\Models\Proyeccion->getProyecciones('0', '5', 'nombreVenta', '', '1', ''2023-03-20'', ''2023-03-30'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-16 12:54:36 --> Unknown column 'FechaMinima' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.`consecutivo`, `ProdProyecciones`.`idGasolinera`, MIN(ProdProyecciones.fechaProyeccion) as FechaMinima, max(ProdProyecciones.fechaProyeccion)as FechaMaxima, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+WHERE `ProdProyecciones`.`idGasolinera` = :ProdProyecciones.idGasolinera:
+AND `FechaMinima` >= \'2023-03-20\'
+AND `FechaMinima` <= \'2023-03-30\'
+GROUP BY `ProdProyecciones`.`consecutivo`', [...], false)
+ 2 APPPATH\Models\Proyeccion.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(43): App\Models\Proyeccion->getNumeroProyecciones('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-20\'', '\'2023-03-30\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerNumeroProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 12:54:36 --> Unknown column 'FechaMinima' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.`consecutivo`, `ProdProyecciones`.`idGasolinera`, MIN(ProdProyecciones.fechaProyeccion) as FechaMinima, max(ProdProyecciones.fechaProyeccion)as FechaMaxima, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+WHERE `ProdProyecciones`.`idGasolinera` = :ProdProyecciones.idGasolinera:
+AND `FechaMinima` >= \'2023-03-20\'
+AND `FechaMinima` <= \'2023-03-30\'
+GROUP BY `ProdProyecciones`.`consecutivo`
+ORDER BY `ProdProyecciones`.`consecutivo` DESC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Proyeccion.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(26): App\Models\Proyeccion->getProyecciones('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-20\'', '\'2023-03-30\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-16 12:55:45 --> mysqli_sql_exception: Unknown column 'ProdProyecciones.Fecha' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(60): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(43): App\Models\Proyeccion->getNumeroProyecciones('0', '5', 'nombreVenta', '', '1', ''2023-03-20'', ''2023-03-30'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerNumeroProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-16 12:55:45 --> mysqli_sql_exception: Unknown column 'ProdProyecciones.Fecha' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Proyecciones.php(26): App\Models\Proyeccion->getProyecciones('0', '5', 'nombreVenta', '', '1', ''2023-03-20'', ''2023-03-30'')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-16 12:55:45 --> Unknown column 'ProdProyecciones.Fecha' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.`consecutivo`, `ProdProyecciones`.`idGasolinera`, MIN(ProdProyecciones.fechaProyeccion) as FechaMinima, max(ProdProyecciones.fechaProyeccion)as FechaMaxima, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+WHERE `ProdProyecciones`.`idGasolinera` = :ProdProyecciones.idGasolinera:
+AND `ProdProyecciones`.`Fecha` >= \'2023-03-20\'
+AND `ProdProyecciones`.`Fecha` <= \'2023-03-30\'
+GROUP BY `ProdProyecciones`.`consecutivo`', [...], false)
+ 2 APPPATH\Models\Proyeccion.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(43): App\Models\Proyeccion->getNumeroProyecciones('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-20\'', '\'2023-03-30\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerNumeroProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 12:55:45 --> Unknown column 'ProdProyecciones.Fecha' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.`consecutivo`, `ProdProyecciones`.`idGasolinera`, MIN(ProdProyecciones.fechaProyeccion) as FechaMinima, max(ProdProyecciones.fechaProyeccion)as FechaMaxima, `CatGasolineras`.`nombreGasolinera`
+FROM `ProdProyecciones`
+LEFT JOIN `CatGasolineras` ON `CatGasolineras`.`idGasolinera`=`ProdProyecciones`.`idGasolinera`
+WHERE `ProdProyecciones`.`idGasolinera` = :ProdProyecciones.idGasolinera:
+AND `ProdProyecciones`.`Fecha` >= \'2023-03-20\'
+AND `ProdProyecciones`.`Fecha` <= \'2023-03-30\'
+GROUP BY `ProdProyecciones`.`consecutivo`
+ORDER BY `ProdProyecciones`.`consecutivo` DESC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Proyeccion.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Proyecciones.php(26): App\Models\Proyeccion->getProyecciones('0', '5', 'nombreVenta', 'D:\\wamp64\\www\\ApiGasolineras', '1', '\'2023-03-20\'', '\'2023-03-30\'')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->obtenerProyecciones()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

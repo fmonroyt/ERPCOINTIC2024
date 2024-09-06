@@ -1,0 +1,28 @@
+CRITICAL - 2023-03-22 13:51:48 --> Return value of App\Models\Proyeccion::actualizarProyeccion() must be of the type bool, none returned
+in APPPATH\Models\Proyeccion.php on line 77.
+ 1 APPPATH\Controllers\Proyecciones.php(166): App\Models\Proyeccion->actualizarProyeccion('50', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->update('50')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 13:52:02 --> Undefined variable: proyeccionInventarioDiesel
+in APPPATH\Controllers\Proyecciones.php on line 160.
+ 1 APPPATH\Controllers\Proyecciones.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: proyeccionInventarioDiesel', 'APPPATH\\Controllers\\Proyecciones.php', 160, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->update('50')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 13:56:18 --> Return value of App\Models\Proyeccion::actualizarProyeccion() must be of the type bool, none returned
+in APPPATH\Models\Proyeccion.php on line 77.
+ 1 APPPATH\Controllers\Proyecciones.php(166): App\Models\Proyeccion->actualizarProyeccion('57', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->update('57')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 13:56:35 --> Return value of App\Models\Proyeccion::actualizarProyeccion() must be of the type bool, none returned
+in APPPATH\Models\Proyeccion.php on line 77.
+ 1 APPPATH\Controllers\Proyecciones.php(166): App\Models\Proyeccion->actualizarProyeccion('57', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecciones->update('57')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

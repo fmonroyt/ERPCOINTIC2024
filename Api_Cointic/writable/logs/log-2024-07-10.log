@@ -1,0 +1,129 @@
+ERROR - 2024-07-10 09:19:32 --> mysqli_sql_exception: MySQL server has gone away in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `prodtra...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prodtra...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prodtra...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodtra...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(198): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(373): App\Models\Venta->selecttransaccionxidCliente('50')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->tieneComprasAnteriores()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-10 09:19:32 --> MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `prodtransaccion`.*
+FROM `prodtransaccion`
+WHERE `prodtransaccion`.`idCliente` = :prodtransaccion.idCliente:
+AND `prodtransaccion`.`estatusCompra` NOT IN :prodtransaccion.estatusCompra:', [...], false)
+ 2 APPPATH\Models\Venta.php(198): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(373): App\Models\Venta->selecttransaccionxidCliente('50')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->tieneComprasAnteriores()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-10 15:21:08 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(170): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-10 15:21:50 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(170): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-10 15:23:02 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(170): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-10 15:23:18 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(170): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-10 15:25:01 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(170): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-10 15:26:19 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(170): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-10 15:26:35 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(170): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-10 15:27:35 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(170): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-10 15:29:08 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(170): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-10 15:31:06 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(170): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-10 15:31:25 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(170): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-10 15:32:33 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(170): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-10 15:33:54 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\wamp64\www\ApiGlobalOro\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Clientes.php(170): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->crearcliente()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

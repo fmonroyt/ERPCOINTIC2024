@@ -1,0 +1,365 @@
+ERROR - 2023-04-20 02:05:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 02:05:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.*
+FROM `ProdProyecciones`
+WHERE `ProdProyecciones`.`idProyeccion` > IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`.`idProyeccion` ASC', [], false)
+ 2 APPPATH\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 02:05:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 02:05:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.*
+FROM `ProdProyecciones`
+WHERE `ProdProyecciones`.`idProyeccion` > IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`.`idProyeccion` ASC', [], false)
+ 2 APPPATH\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 02:06:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 02:06:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.*
+FROM `ProdProyecciones`
+WHERE `ProdProyecciones`.`idProyeccion` > IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`.`idProyeccion` ASC', [], false)
+ 2 APPPATH\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 02:07:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 02:07:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.*
+FROM `ProdProyecciones`
+WHERE `ProdProyecciones`.`idProyeccion` > IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`.`idProyeccion` ASC', [], false)
+ 2 APPPATH\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 02:11:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 02:11:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.*
+FROM `ProdProyecciones`
+WHERE `ProdProyecciones`.`idProyeccion` > IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`.`idProyeccion` ASC', [], false)
+ 2 APPPATH\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 02:11:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 02:11:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.*
+FROM `ProdProyecciones`
+WHERE `ProdProyecciones`.`idProyeccion` > IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`.`idProyeccion` ASC', [], false)
+ 2 APPPATH\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 02:11:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 02:11:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.*
+FROM `ProdProyecciones`
+WHERE `ProdProyecciones`.`idProyeccion` > IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`.`idProyeccion` ASC', [], false)
+ 2 APPPATH\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 02:11:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 02:11:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.*
+FROM `ProdProyecciones`
+WHERE `ProdProyecciones`.`idProyeccion` > IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`.`idProyeccion` ASC', [], false)
+ 2 APPPATH\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 02:13:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 75.
+ 1 APPPATH\Controllers\Ventas.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 75, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 02:17:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 02:17:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.*
+FROM `ProdProyecciones`
+WHERE `ProdProyecciones`.`idProyeccion` > IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`.`idProyeccion` ASC', [], false)
+ 2 APPPATH\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(80): App\Models\Proyeccion->getProyeccionessiguientes(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 02:17:19 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 75.
+ 1 APPPATH\Controllers\Ventas.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 75, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 02:20:06 --> Array to string conversion
+in APPPATH\Controllers\Ventas.php on line 79.
+ 1 APPPATH\Controllers\Ventas.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Ventas.php', 79, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 02:24:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Compras.php(76): App\Models\Proyeccion->getProyeccionessiguientes(NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Compras->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 02:24:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.*
+FROM `ProdProyecciones`
+WHERE `ProdProyecciones`.`idProyeccion` > IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`.`idProyeccion` ASC', [], false)
+ 2 APPPATH\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Compras.php(76): App\Models\Proyeccion->getProyeccionessiguientes(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Compras->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 02:31:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3 in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdPro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdPro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdPro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdPro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Compras.php(163): App\Models\Proyeccion->getProyeccionessiguientes(NULL, NULL)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Compras->update('19')
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 02:31:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdProyecciones`.*
+FROM `ProdProyecciones`
+WHERE `ProdProyecciones`.`idProyeccion` > IS NULL
+AND `ProdProyecciones`.`consecutivo` IS NULL
+ORDER BY `ProdProyecciones`.`idProyeccion` ASC', [], false)
+ 2 APPPATH\Models\Proyeccion.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Compras.php(163): App\Models\Proyeccion->getProyeccionessiguientes(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Compras->update('19')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 02:31:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Compras.php on line 160.
+ 1 APPPATH\Controllers\Compras.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Compras.php', 160, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Compras->update('19')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 02:32:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Compras.php on line 179.
+ 1 APPPATH\Controllers\Compras.php(179): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Compras.php', 179, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Compras->update('16')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,56 @@
+CRITICAL - 2023-03-13 16:55:26 --> Return value of App\Models\Precio::actualizarPrecio() must be of the type bool, none returned
+in APPPATH\Models\Precio.php on line 69.
+ 1 APPPATH\Controllers\Precios.php(91): App\Models\Precio->actualizarPrecio(null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 16:55:34 --> Return value of App\Models\Precio::actualizarPrecio() must be of the type bool, none returned
+in APPPATH\Models\Precio.php on line 69.
+ 1 APPPATH\Controllers\Precios.php(91): App\Models\Precio->actualizarPrecio(null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 16:56:33 --> Return value of App\Models\Precio::actualizarPrecio() must be of the type bool, none returned
+in APPPATH\Models\Precio.php on line 69.
+ 1 APPPATH\Controllers\Precios.php(91): App\Models\Precio->actualizarPrecio(null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 16:57:50 --> Undefined index: idHistoricoPrecios
+in APPPATH\Controllers\Precios.php on line 80.
+ 1 APPPATH\Controllers\Precios.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: idHistoricoPrecios', 'APPPATH\\Controllers\\Precios.php', 80, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 16:59:44 --> Return value of App\Models\Precio::actualizarPrecio() must be of the type bool, none returned
+in APPPATH\Models\Precio.php on line 69.
+ 1 APPPATH\Controllers\Precios.php(91): App\Models\Precio->actualizarPrecio('1', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 16:59:57 --> Undefined index: PrecioPremium
+in APPPATH\Controllers\Precios.php on line 83.
+ 1 APPPATH\Controllers\Precios.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: PrecioPremium', 'APPPATH\\Controllers\\Precios.php', 83, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 17:00:34 --> Return value of App\Models\Precio::actualizarPrecio() must be of the type bool, none returned
+in APPPATH\Models\Precio.php on line 69.
+ 1 APPPATH\Controllers\Precios.php(91): App\Models\Precio->actualizarPrecio('1', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 17:00:45 --> Return value of App\Models\Precio::actualizarPrecio() must be of the type bool, none returned
+in APPPATH\Models\Precio.php on line 69.
+ 1 APPPATH\Controllers\Precios.php(91): App\Models\Precio->actualizarPrecio('1', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

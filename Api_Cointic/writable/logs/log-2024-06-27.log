@@ -1,0 +1,115 @@
+CRITICAL - 2024-06-27 13:42:46 --> Undefined variable $transt
+in APPPATH\Controllers\Ventas.php on line 83.
+ 1 APPPATH\Controllers\Ventas.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transt', 'APPPATH\\Controllers\\Ventas.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 13:42:49 --> Undefined variable $existeCliente
+in APPPATH\Controllers\Ventas.php on line 353.
+ 1 APPPATH\Controllers\Ventas.php(353): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $existeCliente', 'APPPATH\\Controllers\\Ventas.php', 353)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->tieneComprasAnteriores()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 13:42:49 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 273.
+ 1 APPPATH\Controllers\Ventas.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 273)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventaTransferencia()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 15:09:45 --> Undefined variable $transt
+in APPPATH\Controllers\Ventas.php on line 83.
+ 1 APPPATH\Controllers\Ventas.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transt', 'APPPATH\\Controllers\\Ventas.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 15:09:48 --> Undefined variable $existeCliente
+in APPPATH\Controllers\Ventas.php on line 353.
+ 1 APPPATH\Controllers\Ventas.php(353): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $existeCliente', 'APPPATH\\Controllers\\Ventas.php', 353)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->tieneComprasAnteriores()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 15:09:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 273.
+ 1 APPPATH\Controllers\Ventas.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 273)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventaTransferencia()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 15:09:54 --> Undefined variable $existeCliente
+in APPPATH\Controllers\Ventas.php on line 353.
+ 1 APPPATH\Controllers\Ventas.php(353): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $existeCliente', 'APPPATH\\Controllers\\Ventas.php', 353)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->tieneComprasAnteriores()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 15:09:54 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 273.
+ 1 APPPATH\Controllers\Ventas.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 273)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventaTransferencia()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 15:10:05 --> Undefined variable $transt
+in APPPATH\Controllers\Ventas.php on line 83.
+ 1 APPPATH\Controllers\Ventas.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transt', 'APPPATH\\Controllers\\Ventas.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 15:21:59 --> Undefined variable $transt
+in APPPATH\Controllers\Ventas.php on line 83.
+ 1 APPPATH\Controllers\Ventas.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transt', 'APPPATH\\Controllers\\Ventas.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 15:26:18 --> Undefined variable $existeCliente
+in APPPATH\Controllers\Ventas.php on line 353.
+ 1 APPPATH\Controllers\Ventas.php(353): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $existeCliente', 'APPPATH\\Controllers\\Ventas.php', 353)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->tieneComprasAnteriores()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 15:36:58 --> Undefined variable $existeCliente
+in APPPATH\Controllers\Ventas.php on line 353.
+ 1 APPPATH\Controllers\Ventas.php(353): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $existeCliente', 'APPPATH\\Controllers\\Ventas.php', 353)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->tieneComprasAnteriores()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 16:36:15 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('APP_USR-968923362167994-032112-2230b36cb9bd36944525d68d8edb89c7-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'APP_USR-968923362167994-032112-2230b36cb9bd36944525d68d8edb89c7-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(76): MercadoPago\SDK::setAccessToken('APP_USR-968923362167994-032112-2230b36cb9bd36944525d68d8edb89c7-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 16:36:25 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 273.
+ 1 APPPATH\Controllers\Ventas.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 273)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventaTransferencia()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 16:37:56 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('APP_USR-968923362167994-032112-2230b36cb9bd36944525d68d8edb89c7-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'APP_USR-968923362167994-032112-2230b36cb9bd36944525d68d8edb89c7-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(76): MercadoPago\SDK::setAccessToken('APP_USR-968923362167994-032112-2230b36cb9bd36944525d68d8edb89c7-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

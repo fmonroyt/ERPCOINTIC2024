@@ -1,0 +1,123 @@
+CRITICAL - 2024-06-18 12:43:24 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('APP_USR-968923362167994-032112-2230b36cb9bd36944525d68d8edb89c7-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'APP_USR-968923362167994-032112-2230b36cb9bd36944525d68d8edb89c7-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(76): MercadoPago\SDK::setAccessToken('APP_USR-968923362167994-032112-2230b36cb9bd36944525d68d8edb89c7-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 12:45:43 --> Undefined variable $Venta
+in APPPATH\Controllers\Ventas.php on line 263.
+ 1 APPPATH\Controllers\Ventas.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Venta', 'APPPATH\\Controllers\\Ventas.php', 263)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventaTransferencia()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 12:46:03 --> Undefined variable $Venta
+in APPPATH\Controllers\Ventas.php on line 263.
+ 1 APPPATH\Controllers\Ventas.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Venta', 'APPPATH\\Controllers\\Ventas.php', 263)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventaTransferencia()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 12:48:49 --> Undefined variable $preferenceid
+in APPPATH\Controllers\Ventas.php on line 264.
+ 1 APPPATH\Controllers\Ventas.php(264): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $preferenceid', 'APPPATH\\Controllers\\Ventas.php', 264)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventaTransferencia()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 12:49:05 --> Undefined variable $preferenceid
+in APPPATH\Controllers\Ventas.php on line 264.
+ 1 APPPATH\Controllers\Ventas.php(264): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $preferenceid', 'APPPATH\\Controllers\\Ventas.php', 264)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventaTransferencia()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 12:49:41 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 269.
+ 1 APPPATH\Controllers\Ventas.php(269): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 269)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventaTransferencia()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 13:07:09 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('APP_USR-968923362167994-032112-2230b36cb9bd36944525d68d8edb89c7-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'APP_USR-968923362167994-032112-2230b36cb9bd36944525d68d8edb89c7-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(76): MercadoPago\SDK::setAccessToken('APP_USR-968923362167994-032112-2230b36cb9bd36944525d68d8edb89c7-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 15:46:21 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Ventas.php(17): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 15:46:21 --> Wrong number of segments
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Ventas.php(27): App\Models\WebToken->decodificarJWT('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 16:08:40 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('APP_USR-968923362167994-032112-2230b36cb9bd36944525d68d8edb89c7-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'APP_USR-968923362167994-032112-2230b36cb9bd36944525d68d8edb89c7-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(76): MercadoPago\SDK::setAccessToken('APP_USR-968923362167994-032112-2230b36cb9bd36944525d68d8edb89c7-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 16:08:47 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 269.
+ 1 APPPATH\Controllers\Ventas.php(269): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 269)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventaTransferencia()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-18 17:43:17 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cointic_initoro`.`temprodtransaccion`, CONSTRAINT `temprodtransaccion_idCliente_foreign` FOREIGN KEY (`idCliente`) REFERENCES `clientes` (`id_cliente`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `te...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `te...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `te...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(136): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(112): App\Models\Venta->crearTempTransacciones(Array)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-18 17:43:18 --> Cannot add or update a child row: a foreign key constraint fails (`cointic_initoro`.`temprodtransaccion`, CONSTRAINT `temprodtransaccion_idCliente_foreign` FOREIGN KEY (`idCliente`) REFERENCES `clientes` (`id_cliente`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `temprodtransaccion` (`idCliente`, `idPreferencia`, `fecha`) VALUES (:idCliente:, :idPreferencia:, :fecha:)', [...], false)
+ 2 APPPATH\Models\Venta.php(136): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Ventas.php(112): App\Models\Venta->crearTempTransacciones([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 17:43:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas.php on line 266.
+ 1 APPPATH\Controllers\Ventas.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Ventas.php', 266)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventaTransferencia()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

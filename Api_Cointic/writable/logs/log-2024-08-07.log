@@ -1,0 +1,59 @@
+CRITICAL - 2024-08-07 15:53:49 --> Undefined variable $Venta
+in APPPATH\Controllers\Clientes.php on line 140.
+ 1 APPPATH\Controllers\Clientes.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Venta', 'APPPATH\\Controllers\\Clientes.php', 140)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->aceptarFlujo()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-07 15:55:22 --> Undefined variable $Venta
+in APPPATH\Controllers\Clientes.php on line 140.
+ 1 APPPATH\Controllers\Clientes.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Venta', 'APPPATH\\Controllers\\Clientes.php', 140)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->aceptarFlujo()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-07 16:01:34 --> Undefined variable $transt
+in APPPATH\Controllers\Clientes.php on line 343.
+ 1 APPPATH\Controllers\Clientes.php(343): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transt', 'APPPATH\\Controllers\\Clientes.php', 343)
+ 2 APPPATH\Controllers\Clientes.php(149): App\Controllers\Clientes->enviarCorreoAdmn('El cliente acepto el flujo', '<p>Buen día </p>
+		<p>La compra del cliente Dylan Arellano Cruz , con fecha del 2024-08-07 acaba de ser procesada y el cliente ha aceptado el flujo, favor de verificar el estatus de su validación en la plataforma de legalario y poner su oro bajo resguardo</p>')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->aceptarFlujo()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-07 16:03:24 --> Undefined variable $transt
+in APPPATH\Controllers\Clientes.php on line 343.
+ 1 APPPATH\Controllers\Clientes.php(343): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transt', 'APPPATH\\Controllers\\Clientes.php', 343)
+ 2 APPPATH\Controllers\Clientes.php(149): App\Controllers\Clientes->enviarCorreoAdmn('El cliente acepto el flujo', '<p>Buen día </p>
+		<p>La compra del cliente Dylan Arellano Cruz , con fecha del 2024-08-07 acaba de ser procesada y el cliente ha aceptado el flujo, favor de verificar el estatus de su validación en la plataforma de legalario y poner su oro bajo resguardo</p>')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->aceptarFlujo()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-07 16:08:13 --> Undefined variable $transt
+in APPPATH\Controllers\Clientes.php on line 343.
+ 1 APPPATH\Controllers\Clientes.php(343): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transt', 'APPPATH\\Controllers\\Clientes.php', 343)
+ 2 APPPATH\Controllers\Clientes.php(149): App\Controllers\Clientes->enviarCorreoAdmn('El cliente acepto el flujo', '<p>Buen día </p>
+		<p>La compra del cliente Dylan Arellano Cruz , con fecha del 2024-08-07 acaba de ser procesada y el cliente ha aceptado el flujo, favor de verificar el estatus de su validación en la plataforma de legalario y poner su oro bajo resguardo</p>')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->aceptarFlujo()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-07 16:13:20 --> Too few arguments to function App\Models\Venta::obtenerUsuariosAdmin(), 0 passed in D:\wamp64\www\ApiGlobalOro\app\Controllers\Clientes.php on line 343 and exactly 1 expected
+in APPPATH\Models\Venta.php on line 289.
+ 1 APPPATH\Controllers\Clientes.php(343): App\Models\Venta->obtenerUsuariosAdmin()
+ 2 APPPATH\Controllers\Clientes.php(149): App\Controllers\Clientes->enviarCorreoAdmn('El cliente acepto el flujo', '<p>Buen día </p>
+		<p>La compra del cliente Dylan Arellano Cruz , con fecha del 2024-08-07 acaba de ser procesada y el cliente ha aceptado el flujo, favor de verificar el estatus de su validación en la plataforma de legalario y poner su oro bajo resguardo</p>')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->aceptarFlujo()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-07 16:16:56 --> Undefined variable $numerocorreó
+in APPPATH\Controllers\Clientes.php on line 346.
+ 1 APPPATH\Controllers\Clientes.php(346): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $numerocorreó', 'APPPATH\\Controllers\\Clientes.php', 346)
+ 2 APPPATH\Controllers\Clientes.php(149): App\Controllers\Clientes->enviarCorreoAdmn('El cliente acepto el flujo', '<p>Buen día </p>
+		<p>La compra del cliente Dylan Arellano Cruz , con fecha del 2024-08-07 acaba de ser procesada y el cliente ha aceptado el flujo, favor de verificar el estatus de su validación en la plataforma de legalario y poner su oro bajo resguardo</p>')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->aceptarFlujo()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

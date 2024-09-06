@@ -1,0 +1,66 @@
+ERROR - 2023-04-24 11:38:36 --> mysqli_sql_exception: Column 'idGasolinera' cannot be null in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Pr...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Venta.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(68): App\Models\Venta->insert(Array)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-24 11:38:36 --> Column 'idGasolinera' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ProdVentas` (`FechaVenta`, `idGasolinera`, `cantidadSuper`, `cantidadPremium`, `cantidadDiesel`) VALUES (:FechaVenta:, :idGasolinera:, :cantidadSuper:, :cantidadPremium:, :cantidadDiesel:)', [...], false)
+ 2 APPPATH\Models\Venta.php(64): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Ventas.php(68): App\Models\Venta->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-24 11:38:46 --> mysqli_sql_exception: Column 'idGasolinera' cannot be null in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Pr...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Venta.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(68): App\Models\Venta->insert(Array)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-24 11:38:46 --> Column 'idGasolinera' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ProdVentas` (`FechaVenta`, `idGasolinera`, `cantidadSuper`, `cantidadPremium`, `cantidadDiesel`) VALUES (:FechaVenta:, :idGasolinera:, :cantidadSuper:, :cantidadPremium:, :cantidadDiesel:)', [...], false)
+ 2 APPPATH\Models\Venta.php(64): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Ventas.php(68): App\Models\Venta->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-24 11:39:26 --> mysqli_sql_exception: Column 'idGasolinera' cannot be null in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Pr...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Venta.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Ventas.php(68): App\Models\Venta->insert(Array)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Ventas->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-24 11:39:26 --> Column 'idGasolinera' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ProdVentas` (`FechaVenta`, `idGasolinera`, `cantidadSuper`, `cantidadPremium`, `cantidadDiesel`) VALUES (:FechaVenta:, :idGasolinera:, :cantidadSuper:, :cantidadPremium:, :cantidadDiesel:)', [...], false)
+ 2 APPPATH\Models\Venta.php(64): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Ventas.php(68): App\Models\Venta->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,150 @@
+CRITICAL - 2024-09-02 12:27:15 --> require_once(C:/wamp64/www/ApiGlobalOro/PHPMailer/src/Exception.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Usuarios.php on line 3.
+ 1 APPPATH\Controllers\Usuarios.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:/wamp64/www/ApiGlobalOro/PHPMailer/src/Exception.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Usuarios.php', 3)
+ 2 APPPATH\Controllers\Usuarios.php(3): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('APPPATH\\Controllers\\Usuarios.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 7 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Usuarios', true)
+ 8 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-02 12:27:36 --> require_once(C:/wamp64/www/ApiGlobalOro/PHPMailer/src/Exception.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Usuarios.php on line 3.
+ 1 APPPATH\Controllers\Usuarios.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:/wamp64/www/ApiGlobalOro/PHPMailer/src/Exception.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Usuarios.php', 3)
+ 2 APPPATH\Controllers\Usuarios.php(3): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('APPPATH\\Controllers\\Usuarios.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 7 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Usuarios', true)
+ 8 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-02 12:40:07 --> require_once(C:/wamp64/www/ApiGlobalOro/PHPMailer/src/Exception.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Usuarios.php on line 3.
+ 1 APPPATH\Controllers\Usuarios.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:/wamp64/www/ApiGlobalOro/PHPMailer/src/Exception.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Usuarios.php', 3)
+ 2 APPPATH\Controllers\Usuarios.php(3): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('APPPATH\\Controllers\\Usuarios.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 7 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Usuarios', true)
+ 8 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-02 12:40:25 --> require_once(C:/wamp64/www/ApiGlobalOro/PHPMailer/src/Exception.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Usuarios.php on line 3.
+ 1 APPPATH\Controllers\Usuarios.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:/wamp64/www/ApiGlobalOro/PHPMailer/src/Exception.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Usuarios.php', 3)
+ 2 APPPATH\Controllers\Usuarios.php(3): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('APPPATH\\Controllers\\Usuarios.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 7 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Usuarios', true)
+ 8 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-02 12:44:32 --> mysqli_sql_exception: Unknown column 'CatUsuarios.id_cliente' in 'where clause' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(79): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(29): App\Models\Usuario->getUsuario('1')
+#6 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(32): App\Models\Usuario->auth('Cointic', '12345678', NULL)
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->Autenticar()
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-02 12:44:32 --> Unknown column 'CatUsuarios.id_cliente' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatUsuarios`.*
+FROM `CatUsuarios`
+WHERE `CatUsuarios`.`id_cliente` = :CatUsuarios.id_cliente:', [...], false)
+ 2 APPPATH\Models\Usuario.php(79): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\Usuario.php(29): App\Models\Usuario->getUsuario('1')
+ 4 APPPATH\Controllers\Usuarios.php(32): App\Models\Usuario->auth('Cointic', '12345678', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->Autenticar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-02 12:45:04 --> mysqli_sql_exception: Unknown column 'CatUsuarios.id_cliente' in 'where clause' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatUsua...')
+#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatUsua...')
+#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(79): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(29): App\Models\Usuario->getUsuario('1')
+#6 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(32): App\Models\Usuario->auth('Cointic', '12345678', NULL)
+#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->Autenticar()
+#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-02 12:45:04 --> Unknown column 'CatUsuarios.id_cliente' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatUsuarios`.*
+FROM `CatUsuarios`
+WHERE `CatUsuarios`.`id_cliente` = :CatUsuarios.id_cliente:', [...], false)
+ 2 APPPATH\Models\Usuario.php(79): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\Usuario.php(29): App\Models\Usuario->getUsuario('1')
+ 4 APPPATH\Controllers\Usuarios.php(32): App\Models\Usuario->auth('Cointic', '12345678', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->Autenticar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-02 12:45:52 --> Undefined array key "status"
+in APPPATH\Controllers\Usuarios.php on line 40.
+ 1 APPPATH\Controllers\Usuarios.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Controllers\\Usuarios.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->Autenticar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-02 12:46:03 --> Undefined array key "status"
+in APPPATH\Controllers\Usuarios.php on line 40.
+ 1 APPPATH\Controllers\Usuarios.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Controllers\\Usuarios.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->Autenticar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-02 13:06:52 --> Class "App\Models\Perfil" not found
+in APPPATH\Controllers\Perfiles.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerPerfiles()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-02 13:06:52 --> Class "App\Models\Perfil" not found
+in APPPATH\Controllers\Perfiles.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerNumeroPerfiles()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-02 13:06:54 --> Class "App\Models\Perfil" not found
+in APPPATH\Controllers\Perfiles.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerNumeroPerfiles()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-02 13:06:54 --> Class "App\Models\Perfil" not found
+in APPPATH\Controllers\Perfiles.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerPerfiles()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-02 13:06:59 --> Class "App\Models\Perfil" not found
+in APPPATH\Controllers\Perfiles.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerPerfiles()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-02 13:06:59 --> Class "App\Models\Perfil" not found
+in APPPATH\Controllers\Perfiles.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerNumeroPerfiles()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

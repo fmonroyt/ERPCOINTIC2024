@@ -1,0 +1,496 @@
+ERROR - 2023-03-07 00:01:37 --> mysqli_sql_exception: Column 'fotoUsuario' cannot be null in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Usuarios.php(154): App\Models\Usuario->insert(Array)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Usuarios->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-07 00:01:37 --> Column 'fotoUsuario' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatUsuarios` (`nombreUsuario`, `apellidoPaterno`, `apellidoMaterno`, `nickName`, `passwordUsuario`, `correoDestino`, `idGasolinera`, `idPerfil`, `Status`, `fotoUsuario`) VALUES (:nombreUsuario:, :apellidoPaterno:, :apellidoMaterno:, :nickName:, :passwordUsuario:, :correoDestino:, :idGasolinera:, :idPerfil:, :Status:, :fotoUsuario:)', [...], false)
+ 2 APPPATH\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Usuarios.php(154): App\Models\Usuario->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 16:05:57 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Usuarios.php(167): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->update('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 16:10:57 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Usuarios.php(167): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->update('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 16:11:15 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Usuarios.php(167): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->update('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 16:12:24 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Usuarios.php(167): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->update('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 16:13:03 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Usuarios.php(167): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->update('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 16:26:07 --> Undefined variable: request
+in APPPATH\Controllers\Usuarios.php on line 166.
+ 1 APPPATH\Controllers\Usuarios.php(166): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: request', 'APPPATH\\Controllers\\Usuarios.php', 166, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->update('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 17:22:43 --> Undefined index: jwt
+in APPPATH\Controllers\Usuarios.php on line 167.
+ 1 APPPATH\Controllers\Usuarios.php(167): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: jwt', 'APPPATH\\Controllers\\Usuarios.php', 167, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->update('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 17:35:22 --> Undefined variable: jwt
+in APPPATH\Controllers\Precios.php on line 12.
+ 1 APPPATH\Controllers\Precios.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jwt', 'APPPATH\\Controllers\\Precios.php', 12, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->obtenerPrecios()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 17:46:48 --> Undefined variable: jwt
+in APPPATH\Controllers\Usuarios.php on line 169.
+ 1 APPPATH\Controllers\Usuarios.php(169): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jwt', 'APPPATH\\Controllers\\Usuarios.php', 169, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->update('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 17:46:57 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Usuarios.php(169): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->update('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 17:48:14 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Usuarios.php(169): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->update('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 17:54:39 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Usuarios.php(169): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->update('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 17:56:52 --> Return value of App\Models\Usuario::update() must be of the type bool, none returned
+in APPPATH\Models\Usuario.php on line 54.
+ 1 APPPATH\Controllers\Usuarios.php(195): App\Models\Usuario->update('2', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->update('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 18:07:32 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, null given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Usuarios.php(215): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ActualizarFotoPerfil()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 18:11:36 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, null given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Usuarios.php(215): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ActualizarFotoPerfil()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 18:12:11 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, null given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Usuarios.php(215): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ActualizarFotoPerfil()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:07:45 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Perfiles.php(38): CodeIgniter\Model->__call('inserPerfil', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:08:29 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Perfiles.php(38): CodeIgniter\Model->__call('inserPerfil', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:10:02 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Perfiles.php(38): CodeIgniter\Model->__call('inserPerfil', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:10:14 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Perfiles.php(38): CodeIgniter\Model->__call('inserPerfil', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:14:48 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Perfiles.php(66): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->delete('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:15:16 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Perfiles.php(66): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->delete('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:15:33 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Perfiles.php(66): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->delete('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:17:08 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, null given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Perfiles.php(66): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->delete('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:18:27 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Perfiles.php(67): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->delete('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:31:55 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Perfil.php on line 55.
+ 1 APPPATH\Controllers\Perfiles.php(77): App\Models\Perfil->selectPerfilxid('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerPerfilxId()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:37:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Perfil.php on line 55.
+ 1 APPPATH\Controllers\Perfiles.php(77): App\Models\Perfil->selectPerfilxid('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerPerfilxId()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:37:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Perfil.php on line 55.
+ 1 APPPATH\Controllers\Perfiles.php(77): App\Models\Perfil->selectPerfilxid('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerPerfilxId()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:38:40 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Perfil.php on line 55.
+ 1 APPPATH\Controllers\Perfiles.php(77): App\Models\Perfil->selectPerfilxid('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerPerfilxId()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:39:23 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Perfil.php on line 55.
+ 1 APPPATH\Controllers\Perfiles.php(77): App\Models\Perfil->selectPerfilxid('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerPerfilxId()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:40:08 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Perfiles.php(48): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->update('3')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:40:22 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Perfiles.php(48): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->update('3')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:41:19 --> Object of class CodeIgniter\Database\MySQLi\Builder could not be converted to string
+in APPPATH\Models\Perfil.php on line 37.
+ 1 APPPATH\Controllers\Perfiles.php(56): App\Models\Perfil->actualizarPerfil('3', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->update('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:42:12 --> Object of class CodeIgniter\Database\MySQLi\Builder could not be converted to string
+in APPPATH\Models\Perfil.php on line 37.
+ 1 APPPATH\Controllers\Perfiles.php(56): App\Models\Perfil->actualizarPerfil('3', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->update('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:42:19 --> Object of class CodeIgniter\Database\MySQLi\Builder could not be converted to string
+in APPPATH\Models\Perfil.php on line 37.
+ 1 APPPATH\Controllers\Perfiles.php(56): App\Models\Perfil->actualizarPerfil('3', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->update('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 20:02:43 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Permiso.php on line 29.
+ 1 APPPATH\Controllers\Permisos.php(45): App\Models\Permiso->validacionExistencia('3', '1')
+ 2 APPPATH\Controllers\Permisos.php(34): App\Controllers\Permisos->validarExistencia('3', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->asignarPermiso()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 20:04:11 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Permiso.php on line 29.
+ 1 APPPATH\Controllers\Permisos.php(45): App\Models\Permiso->validacionExistencia('3', '1')
+ 2 APPPATH\Controllers\Permisos.php(34): App\Controllers\Permisos->validarExistencia('3', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->asignarPermiso()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 20:07:06 --> Call to a member function actualizarPermiso() on null
+in APPPATH\Controllers\Permisos.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->asignarPermiso()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 20:07:17 --> Undefined property: App\Controllers\Permisos::$Permiso
+in APPPATH\Controllers\Permisos.php on line 35.
+ 1 APPPATH\Controllers\Permisos.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Permisos::$Permiso', 'APPPATH\\Controllers\\Permisos.php', 35, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->asignarPermiso()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-07 20:08:35 --> mysqli_sql_exception: Unknown column 'RelPermisos' in 'field list' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `RelPerm...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `RelPerm...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `RelPerm...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `RelPerm...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Permiso.php(20): CodeIgniter\Database\BaseBuilder->update('RelPermisos', Array)
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Permisos.php(35): App\Models\Permiso->actualizarPermiso('3', '1', Array)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Permisos->asignarPermiso()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-07 20:08:35 --> Unknown column 'RelPermisos' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `RelPermisos` SET `RelPermisos` = :RelPermisos:
+WHERE `idPerfil` = :idPerfil:
+AND `idModulo` = :idModulo:
+AND `alta` = :alta:', [...], false)
+ 2 APPPATH\Models\Permiso.php(20): CodeIgniter\Database\BaseBuilder->update('RelPermisos', [...])
+ 3 APPPATH\Controllers\Permisos.php(35): App\Models\Permiso->actualizarPermiso('3', '1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->asignarPermiso()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 21:32:24 --> Allowed fields must be specified for model: "App\Models\Usuario"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Usuario')
+ 2 SYSTEMPATH\BaseModel.php(919): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Usuarios.php(239): CodeIgniter\Model->update('1', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->CambiarStatusUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-07 22:09:56 --> mysqli_sql_exception: Column 'pertenencia' cannot be null in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Gasolinera.php(29): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Gasolineras.php(42): App\Models\Gasolinera->insert(Array)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Gasolineras->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gasolineras))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-07 22:09:56 --> Column 'pertenencia' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatGasolineras` (`nombreGasolinera`, `pertenencia`, `idGasolineraCompite`) VALUES (:nombreGasolinera:, :pertenencia:, :idGasolineraCompite:)', [...], false)
+ 2 APPPATH\Models\Gasolinera.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Gasolineras.php(42): App\Models\Gasolinera->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gasolineras->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gasolineras))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-07 22:10:53 --> mysqli_sql_exception: Column 'pertenencia' cannot be null in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Gasolinera.php(29): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Gasolineras.php(42): App\Models\Gasolinera->insert(Array)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Gasolineras->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gasolineras))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-07 22:10:53 --> Column 'pertenencia' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatGasolineras` (`nombreGasolinera`, `pertenencia`, `idGasolineraCompite`) VALUES (:nombreGasolinera:, :pertenencia:, :idGasolineraCompite:)', [...], false)
+ 2 APPPATH\Models\Gasolinera.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Gasolineras.php(42): App\Models\Gasolinera->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gasolineras->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gasolineras))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-07 22:12:25 --> mysqli_sql_exception: Column 'idGasolineraCompite' cannot be null in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Gasolinera.php(29): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Gasolineras.php(42): App\Models\Gasolinera->insert(Array)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Gasolineras->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gasolineras))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-07 22:12:25 --> Column 'idGasolineraCompite' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatGasolineras` (`nombreGasolinera`, `pertenencia`, `idGasolineraCompite`) VALUES (:nombreGasolinera:, :pertenencia:, :idGasolineraCompite:)', [...], false)
+ 2 APPPATH\Models\Gasolinera.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Gasolineras.php(42): App\Models\Gasolinera->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gasolineras->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gasolineras))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-07 22:13:46 --> mysqli_sql_exception: Column 'idGasolineraCompite' cannot be null in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Gasolinera.php(29): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Gasolineras.php(42): App\Models\Gasolinera->insert(Array)
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Gasolineras->create()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gasolineras))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-07 22:13:46 --> Column 'idGasolineraCompite' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatGasolineras` (`nombreGasolinera`, `pertenencia`, `idGasolineraCompite`) VALUES (:nombreGasolinera:, :pertenencia:, :idGasolineraCompite:)', [...], false)
+ 2 APPPATH\Models\Gasolinera.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Gasolineras.php(42): App\Models\Gasolinera->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gasolineras->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gasolineras))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 22:29:34 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Gasolinera.php on line 55.
+ 1 APPPATH\Controllers\Gasolineras.php(86): App\Models\Gasolinera->selectGasolineraxid('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gasolineras->obtenerGasolineraxId()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gasolineras))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 22:29:47 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Gasolinera.php on line 55.
+ 1 APPPATH\Controllers\Gasolineras.php(86): App\Models\Gasolinera->selectGasolineraxid('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gasolineras->obtenerGasolineraxId()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gasolineras))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 22:30:19 --> Object of class CodeIgniter\Database\MySQLi\Builder could not be converted to string
+in APPPATH\Models\Gasolinera.php on line 55.
+ 1 APPPATH\Controllers\Gasolineras.php(86): App\Models\Gasolinera->selectGasolineraxid('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gasolineras->obtenerGasolineraxId()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gasolineras))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 22:34:28 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Gasolineras.php(51): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gasolineras->update('3')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gasolineras))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 22:34:50 --> Argument 1 passed to Firebase\JWT\JWT::decode() must be of the type string, array given, called in D:\wamp64\www\ApiGasolineras\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode([...], Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Gasolineras.php(51): App\Models\WebToken->decodificarJWT([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gasolineras->update('3')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gasolineras))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 22:35:53 --> Object of class CodeIgniter\Database\MySQLi\Builder could not be converted to string
+in APPPATH\Models\Gasolinera.php on line 37.
+ 1 APPPATH\Controllers\Gasolineras.php(62): App\Models\Gasolinera->actualizarGasolinera('3', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gasolineras->update('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gasolineras))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 22:36:54 --> Return value of App\Models\Gasolinera::actualizarGasolinera() must be of the type bool, none returned
+in APPPATH\Models\Gasolinera.php on line 39.
+ 1 APPPATH\Controllers\Gasolineras.php(62): App\Models\Gasolinera->actualizarGasolinera('3', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gasolineras->update('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gasolineras))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

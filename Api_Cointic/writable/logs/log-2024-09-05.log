@@ -1,0 +1,572 @@
+CRITICAL - 2024-09-05 09:53:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getDepartamentos()
+in APPPATH\Models\Departamento.php on line 14.
+ 1 APPPATH\Controllers\Departamentos.php(16): App\Models\Departamento->getDepartamentos('0', '5', 'nombreDepartamento', 'C:\\wamp64\\www\\Api_Cointic)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->obtenerDepartamentos()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 09:54:57 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getDepartamentos()
+in APPPATH\Models\Departamento.php on line 14.
+ 1 APPPATH\Controllers\Departamentos.php(16): App\Models\Departamento->getDepartamentos('0', '5', 'nombreDepartamento', 'C:\\wamp64\\www\\Api_Cointic)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->obtenerDepartamentos()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 10:03:03 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:03:03 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:03:09 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:03:09 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:04:24 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:17:33 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:17:33 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:17:42 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:17:42 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:18:16 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:18:16 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:18:21 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:18:21 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:22:39 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:22:40 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:22:55 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:22:56 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:29:49 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:29:50 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:29:53 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:29:53 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:31:00 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:31:00 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:32:57 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:32:57 --> Declaration of App\Controllers\Usuarios::update() must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH\Controllers\Usuarios.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-05 10:38:13 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getDepartamentos()
+in APPPATH\Models\Departamento.php on line 14.
+ 1 APPPATH\Controllers\Departamentos.php(16): App\Models\Departamento->getDepartamentos('0', '5', 'nombreDepartamento', 'C:\\wamp64\\www\\Api_Cointic)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->obtenerDepartamentos()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 10:44:37 --> Too few arguments to function App\Models\Usuario::getDepartamentos(), 0 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 331 and exactly 4 expected
+in APPPATH\Models\Usuario.php on line 142.
+ 1 APPPATH\Controllers\Usuarios.php(331): App\Models\Usuario->getDepartamentos()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->getDepartamentos()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 10:45:17 --> Too few arguments to function App\Models\Usuario::getDepartamentos(), 0 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 331 and exactly 4 expected
+in APPPATH\Models\Usuario.php on line 142.
+ 1 APPPATH\Controllers\Usuarios.php(331): App\Models\Usuario->getDepartamentos()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->getDepartamentos()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 10:49:49 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Usuarios.php(331): CodeIgniter\Model->__call('getDepartamentos', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->getDepartamentos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 10:50:28 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Usuarios.php(331): CodeIgniter\Model->__call('getDepartamentos', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->getDepartamentos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 10:50:52 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Usuarios.php(331): CodeIgniter\Model->__call('getDepartamentos', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->getDepartamentos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 10:59:13 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Usuarios.php(331): CodeIgniter\Model->__call('getDepartamentos', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->getDepartamentos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 11:00:14 --> Too few arguments to function App\Models\Usuario::getDepartamentos(), 0 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 331 and exactly 4 expected
+in APPPATH\Models\Usuario.php on line 142.
+ 1 APPPATH\Controllers\Usuarios.php(331): App\Models\Usuario->getDepartamentos()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->getDepartamentos()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 11:04:16 --> Too few arguments to function App\Models\Usuario::getDepartamentos(), 0 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 331 and exactly 4 expected
+in APPPATH\Models\Usuario.php on line 142.
+ 1 APPPATH\Controllers\Usuarios.php(331): App\Models\Usuario->getDepartamentos()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->getDepartamentos()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 11:09:28 --> Too few arguments to function App\Models\Usuario::getDepartamentos(), 0 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 331 and exactly 4 expected
+in APPPATH\Models\Usuario.php on line 142.
+ 1 APPPATH\Controllers\Usuarios.php(331): App\Models\Usuario->getDepartamentos()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->getDepartamentos()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 11:15:13 --> Too few arguments to function App\Models\Usuario::getDepartamentos(), 0 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 331 and exactly 4 expected
+in APPPATH\Models\Usuario.php on line 142.
+ 1 APPPATH\Controllers\Usuarios.php(331): App\Models\Usuario->getDepartamentos()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->getDepartamentos()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 11:22:37 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getDepartamentos()
+in APPPATH\Models\Departamento.php on line 15.
+ 1 APPPATH\Controllers\Departamentos.php(16): App\Models\Departamento->getDepartamentos('0', '5', 'nombreDepartamento', 'C:\\wamp64\\www\\Api_Cointic)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->obtenerDepartamentos()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-05 11:43:19 --> mysqli_sql_exception: Unknown column 'idGasolinera' in 'field list' in C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Cointicsystem\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Cointicapp\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php(154): App\Models\Usuario->insert(Array)
+#6 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+#7 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointicindex.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-05 11:43:19 --> Unknown column 'idGasolinera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatUsuarios` (`nombreUsuario`, `apellidoPaterno`, `apellidoMaterno`, `nickName`, `passwordUsuario`, `correoDestino`, `idGasolinera`, `idPerfil`, `Status`, `fotoUsuario`) VALUES (:nombreUsuario:, :apellidoPaterno:, :apellidoMaterno:, :nickName:, :passwordUsuario:, :correoDestino:, :idGasolinera:, :idPerfil:, :Status:, :fotoUsuario:)', [...], false)
+ 2 APPPATH\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Usuarios.php(154): App\Models\Usuario->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-05 11:46:13 --> mysqli_sql_exception: Unknown column 'idGasolinera' in 'field list' in C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Cointicsystem\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Cointicapp\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php(154): App\Models\Usuario->insert(Array)
+#6 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+#7 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointicindex.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-05 11:46:13 --> Unknown column 'idGasolinera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatUsuarios` (`nombreUsuario`, `apellidoPaterno`, `apellidoMaterno`, `nickName`, `passwordUsuario`, `correoDestino`, `idGasolinera`, `idPerfil`, `Status`, `fotoUsuario`) VALUES (:nombreUsuario:, :apellidoPaterno:, :apellidoMaterno:, :nickName:, :passwordUsuario:, :correoDestino:, :idGasolinera:, :idPerfil:, :Status:, :fotoUsuario:)', [...], false)
+ 2 APPPATH\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Usuarios.php(154): App\Models\Usuario->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 11:51:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getPost()
+in APPPATH\Models\Perfil.php on line 15.
+ 1 APPPATH\Controllers\Perfiles.php(16): App\Models\Perfil->getPerfiles('0', '5', 'nombrePerfil', 'C:\\wamp64\\www\\Api_Cointic)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerPerfiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 11:51:24 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getPost()
+in APPPATH\Models\Perfil.php on line 15.
+ 1 APPPATH\Controllers\Perfiles.php(16): App\Models\Perfil->getPerfiles('0', '5', 'nombrePerfil', 'C:\\wamp64\\www\\Api_Cointic)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerPerfiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 11:51:35 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getPost()
+in APPPATH\Models\Perfil.php on line 15.
+ 1 APPPATH\Controllers\Perfiles.php(16): App\Models\Perfil->getPerfiles('0', '5', 'nombrePerfil', 'C:\\wamp64\\www\\Api_Cointic)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerPerfiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 11:51:49 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getPost()
+in APPPATH\Models\Perfil.php on line 15.
+ 1 APPPATH\Controllers\Perfiles.php(16): App\Models\Perfil->getPerfiles('0', '5', 'nombrePerfil', 'C:\\wamp64\\www\\Api_Cointic)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerPerfiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 11:53:04 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getPost()
+in APPPATH\Models\Perfil.php on line 15.
+ 1 APPPATH\Controllers\Perfiles.php(16): App\Models\Perfil->getPerfiles('0', '5', 'nombrePerfil', 'C:\\wamp64\\www\\Api_Cointic)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Perfiles->obtenerPerfiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:05:14 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(803): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Departamentos.php(77): CodeIgniter\Model->__get('selectDepartamentosxid')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->obtenerDepartamentoxId()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:06:42 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(803): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Departamentos.php(77): CodeIgniter\Model->__get('selectDepartamentosxid')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->obtenerDepartamentoxId()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:06:51 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Cointicapp\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Departamentos.php(47): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->ActualizarDepartamento()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:06:55 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Cointicapp\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Departamentos.php(47): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->ActualizarDepartamento()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:06:55 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Cointicapp\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Departamentos.php(47): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->ActualizarDepartamento()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:06:56 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Cointicapp\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Departamentos.php(47): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->ActualizarDepartamento()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:06:56 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Cointicapp\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Departamentos.php(47): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->ActualizarDepartamento()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:06:56 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Cointicapp\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Departamentos.php(47): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->ActualizarDepartamento()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:06:56 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Cointicapp\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Departamentos.php(47): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->ActualizarDepartamento()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:10:20 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Cointicapp\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Departamentos.php(47): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->ActualizarDepartamento()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:12:08 --> Undefined property: App\Controllers\Departamentos::$input
+in APPPATH\Controllers\Departamentos.php on line 50.
+ 1 APPPATH\Controllers\Departamentos.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Departamentos::$input', 'APPPATH\\Controllers\\Departamentos.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->ActualizarDepartamento()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:24:09 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::group_by()
+in APPPATH\Models\Usuario.php on line 89.
+ 1 APPPATH\Controllers\Usuarios.php(306): App\Models\Usuario->getUsuarios('0', '5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:26:48 --> Too few arguments to function App\Models\Usuario::getUsuarios(), 2 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 306 and exactly 4 expected
+in APPPATH\Models\Usuario.php on line 82.
+ 1 APPPATH\Controllers\Usuarios.php(306): App\Models\Usuario->getUsuarios('0', '5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:28:32 --> Too few arguments to function App\Models\Usuario::getUsuarios(), 2 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 306 and exactly 4 expected
+in APPPATH\Models\Usuario.php on line 82.
+ 1 APPPATH\Controllers\Usuarios.php(306): App\Models\Usuario->getUsuarios('0', '5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:29:03 --> Too few arguments to function App\Models\Usuario::getUsuarios(), 2 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 306 and exactly 4 expected
+in APPPATH\Models\Usuario.php on line 82.
+ 1 APPPATH\Controllers\Usuarios.php(306): App\Models\Usuario->getUsuarios('0', '5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:32:01 --> Too few arguments to function App\Models\Usuario::getUsuarios(), 2 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 306 and exactly 4 expected
+in APPPATH\Models\Usuario.php on line 82.
+ 1 APPPATH\Controllers\Usuarios.php(306): App\Models\Usuario->getUsuarios('0', '5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:32:50 --> Too few arguments to function App\Models\Usuario::getUsuarios(), 2 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 306 and exactly 3 expected
+in APPPATH\Models\Usuario.php on line 82.
+ 1 APPPATH\Controllers\Usuarios.php(306): App\Models\Usuario->getUsuarios('0', '5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:33:15 --> Too few arguments to function App\Models\Usuario::getUsuarios(), 2 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 306 and exactly 3 expected
+in APPPATH\Models\Usuario.php on line 82.
+ 1 APPPATH\Controllers\Usuarios.php(306): App\Models\Usuario->getUsuarios('0', '5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:33:17 --> Too few arguments to function App\Models\Usuario::getDepartamentos(), 0 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 331 and exactly 3 expected
+in APPPATH\Models\Usuario.php on line 143.
+ 1 APPPATH\Controllers\Usuarios.php(331): App\Models\Usuario->getDepartamentos()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->getDepartamentos()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:33:38 --> Too few arguments to function App\Models\Usuario::getUsuarios(), 2 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 306 and exactly 3 expected
+in APPPATH\Models\Usuario.php on line 82.
+ 1 APPPATH\Controllers\Usuarios.php(306): App\Models\Usuario->getUsuarios('0', '5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:36:55 --> Too few arguments to function App\Models\Usuario::getUsuarios(), 2 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 306 and exactly 3 expected
+in APPPATH\Models\Usuario.php on line 82.
+ 1 APPPATH\Controllers\Usuarios.php(306): App\Models\Usuario->getUsuarios('0', '5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:38:18 --> Too few arguments to function App\Models\Usuario::getUsuarios(), 2 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 306 and exactly 3 expected
+in APPPATH\Models\Usuario.php on line 82.
+ 1 APPPATH\Controllers\Usuarios.php(306): App\Models\Usuario->getUsuarios('0', '5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->ObtenerUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:47:29 --> Too few arguments to function App\Models\Usuario::getDepartamentos(), 0 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 331 and exactly 4 expected
+in APPPATH\Models\Usuario.php on line 142.
+ 1 APPPATH\Controllers\Usuarios.php(331): App\Models\Usuario->getDepartamentos()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->getDepartamentos()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:48:50 --> Too few arguments to function App\Models\Usuario::getDepartamentos(), 0 passed in C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php on line 331 and exactly 4 expected
+in APPPATH\Models\Usuario.php on line 142.
+ 1 APPPATH\Controllers\Usuarios.php(331): App\Models\Usuario->getDepartamentos()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->getDepartamentos()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-05 12:50:35 --> mysqli_sql_exception: Unknown column 'idGasolinera' in 'field list' in C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Cointicsystem\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Cointicapp\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php(154): App\Models\Usuario->insert(Array)
+#6 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+#7 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointicindex.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-05 12:50:35 --> Unknown column 'idGasolinera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatUsuarios` (`nombreUsuario`, `apellidoPaterno`, `apellidoMaterno`, `nickName`, `passwordUsuario`, `correoDestino`, `idGasolinera`, `idPerfil`, `Status`, `fotoUsuario`) VALUES (:nombreUsuario:, :apellidoPaterno:, :apellidoMaterno:, :nickName:, :passwordUsuario:, :correoDestino:, :idGasolinera:, :idPerfil:, :Status:, :fotoUsuario:)', [...], false)
+ 2 APPPATH\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Usuarios.php(154): App\Models\Usuario->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-05 12:57:32 --> mysqli_sql_exception: Unknown column 'idGasolinera' in 'field list' in C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Cointicsystem\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Cointicapp\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php(154): App\Models\Usuario->insert(Array)
+#6 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+#7 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointicindex.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-05 12:57:32 --> Unknown column 'idGasolinera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatUsuarios` (`nombreUsuario`, `apellidoPaterno`, `apellidoMaterno`, `nickName`, `passwordUsuario`, `correoDestino`, `idGasolinera`, `idPerfil`, `Status`, `fotoUsuario`) VALUES (:nombreUsuario:, :apellidoPaterno:, :apellidoMaterno:, :nickName:, :passwordUsuario:, :correoDestino:, :idGasolinera:, :idPerfil:, :Status:, :fotoUsuario:)', [...], false)
+ 2 APPPATH\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Usuarios.php(154): App\Models\Usuario->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-05 13:01:33 --> mysqli_sql_exception: Unknown column 'idGasolinera' in 'field list' in C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Cointicsystem\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Cointicapp\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php(154): App\Models\Usuario->insert(Array)
+#6 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+#7 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointicindex.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-05 13:01:33 --> Unknown column 'idGasolinera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatUsuarios` (`nombreUsuario`, `apellidoPaterno`, `apellidoMaterno`, `nickName`, `passwordUsuario`, `correoDestino`, `idGasolinera`, `idPerfil`, `Status`, `fotoUsuario`) VALUES (:nombreUsuario:, :apellidoPaterno:, :apellidoMaterno:, :nickName:, :passwordUsuario:, :correoDestino:, :idGasolinera:, :idPerfil:, :Status:, :fotoUsuario:)', [...], false)
+ 2 APPPATH\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Usuarios.php(154): App\Models\Usuario->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-05 13:02:21 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catusuarios`, CONSTRAINT `catusuarios_ibfk_1` FOREIGN KEY (`idDepartamento`) REFERENCES `catdepartamentos` (`idDepartamento`) ON UPDATE CASCADE) in C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Cointicsystem\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Cointicapp\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php(153): App\Models\Usuario->insert(Array)
+#6 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+#7 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointicindex.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-05 13:02:21 --> Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catusuarios`, CONSTRAINT `catusuarios_ibfk_1` FOREIGN KEY (`idDepartamento`) REFERENCES `catdepartamentos` (`idDepartamento`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatUsuarios` (`nombreUsuario`, `apellidoPaterno`, `apellidoMaterno`, `nickName`, `passwordUsuario`, `correoDestino`, `idPerfil`, `Status`, `fotoUsuario`) VALUES (:nombreUsuario:, :apellidoPaterno:, :apellidoMaterno:, :nickName:, :passwordUsuario:, :correoDestino:, :idPerfil:, :Status:, :fotoUsuario:)', [...], false)
+ 2 APPPATH\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Usuarios.php(153): App\Models\Usuario->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-05 13:03:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catusuarios`, CONSTRAINT `catusuarios_ibfk_1` FOREIGN KEY (`idDepartamento`) REFERENCES `catdepartamentos` (`idDepartamento`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Cointicsystem\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Cointicapp\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php(153): App\Models\Usuario->insert(Array)
+#6 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+#7 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointicindex.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-05 13:03:38 --> Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catusuarios`, CONSTRAINT `catusuarios_ibfk_1` FOREIGN KEY (`idDepartamento`) REFERENCES `catdepartamentos` (`idDepartamento`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatUsuarios` (`nombreUsuario`, `apellidoPaterno`, `apellidoMaterno`, `nickName`, `passwordUsuario`, `correoDestino`, `idPerfil`, `Status`, `fotoUsuario`) VALUES (:nombreUsuario:, :apellidoPaterno:, :apellidoMaterno:, :nickName:, :passwordUsuario:, :correoDestino:, :idPerfil:, :Status:, :fotoUsuario:)', [...], false)
+ 2 APPPATH\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Usuarios.php(153): App\Models\Usuario->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-05 13:06:42 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catusuarios`, CONSTRAINT `catusuarios_ibfk_1` FOREIGN KEY (`idDepartamento`) REFERENCES `catdepartamentos` (`idDepartamento`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Cointicsystem\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Cointicsystem\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Cointicsystem\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Cointicapp\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Cointicapp\Controllers\Usuarios.php(153): App\Models\Usuario->insert(Array)
+#6 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+#7 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\wamp64\www\Api_Cointicsystem\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Cointicindex.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-05 13:06:42 --> Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catusuarios`, CONSTRAINT `catusuarios_ibfk_1` FOREIGN KEY (`idDepartamento`) REFERENCES `catdepartamentos` (`idDepartamento`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatUsuarios` (`nombreUsuario`, `apellidoPaterno`, `apellidoMaterno`, `nickName`, `passwordUsuario`, `correoDestino`, `idPerfil`, `Status`, `fotoUsuario`) VALUES (:nombreUsuario:, :apellidoPaterno:, :apellidoMaterno:, :nickName:, :passwordUsuario:, :correoDestino:, :idPerfil:, :Status:, :fotoUsuario:)', [...], false)
+ 2 APPPATH\Models\Usuario.php(44): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Usuarios.php(153): App\Models\Usuario->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,96 @@
+CRITICAL - 2024-06-11 16:00:52 --> SSL certificate problem: unable to get local issuer certificate
+in FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php on line 196.
+ 1 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\RestClient.php(222): MercadoPago\RestClient->exec([...])
+ 2 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(146): MercadoPago\RestClient->get('/users/me')
+ 3 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config.php(112): MercadoPago\Config->getUserId('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 4 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\Config\AbstractConfig.php(96): MercadoPago\Config->set('ACCESS_TOKEN', 'TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 5 FCPATH\vendor\mercadopago\dx-php\src\MercadoPago\SDK.php(45): MercadoPago\Config\AbstractConfig->configure([...])
+ 6 APPPATH\Controllers\Ventas.php(60): MercadoPago\SDK::setAccessToken('TEST-968923362167994-032112-25361a106bcae45bce94d43293ebf2d3-1738428552')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerlinkpago()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 16:00:58 --> Undefined variable $sort
+in APPPATH\Controllers\Clientes.php on line 18.
+ 1 APPPATH\Controllers\Clientes.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sort', 'APPPATH\\Controllers\\Clientes.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 16:00:58 --> Undefined variable $sort
+in APPPATH\Controllers\Clientes.php on line 29.
+ 1 APPPATH\Controllers\Clientes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sort', 'APPPATH\\Controllers\\Clientes.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerNumeroClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 16:01:27 --> Undefined variable $sort
+in APPPATH\Controllers\Clientes.php on line 29.
+ 1 APPPATH\Controllers\Clientes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sort', 'APPPATH\\Controllers\\Clientes.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerNumeroClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 16:01:27 --> Undefined variable $sort
+in APPPATH\Controllers\Clientes.php on line 18.
+ 1 APPPATH\Controllers\Clientes.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sort', 'APPPATH\\Controllers\\Clientes.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 16:02:32 --> Undefined variable $sort
+in APPPATH\Controllers\Clientes.php on line 29.
+ 1 APPPATH\Controllers\Clientes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sort', 'APPPATH\\Controllers\\Clientes.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerNumeroClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 16:02:32 --> Undefined variable $sort
+in APPPATH\Controllers\Clientes.php on line 18.
+ 1 APPPATH\Controllers\Clientes.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sort', 'APPPATH\\Controllers\\Clientes.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->obtenerClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 17:53:07 --> Undefined variable $idVenta
+in APPPATH\Controllers\Ventas.php on line 29.
+ 1 APPPATH\Controllers\Ventas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idVenta', 'APPPATH\\Controllers\\Ventas.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 17:53:07 --> Undefined variable $idVenta
+in APPPATH\Controllers\Ventas.php on line 19.
+ 1 APPPATH\Controllers\Ventas.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idVenta', 'APPPATH\\Controllers\\Ventas.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 18:12:12 --> Undefined variable $idVenta
+in APPPATH\Controllers\Ventas.php on line 29.
+ 1 APPPATH\Controllers\Ventas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idVenta', 'APPPATH\\Controllers\\Ventas.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 18:12:12 --> Undefined variable $idVenta
+in APPPATH\Controllers\Ventas.php on line 19.
+ 1 APPPATH\Controllers\Ventas.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idVenta', 'APPPATH\\Controllers\\Ventas.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 18:21:19 --> Undefined variable $idVenta
+in APPPATH\Controllers\Ventas.php on line 29.
+ 1 APPPATH\Controllers\Ventas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idVenta', 'APPPATH\\Controllers\\Ventas.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerNumeroVentas()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 18:21:19 --> Undefined variable $idVenta
+in APPPATH\Controllers\Ventas.php on line 19.
+ 1 APPPATH\Controllers\Ventas.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idVenta', 'APPPATH\\Controllers\\Ventas.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->obtenerVentas()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,76 @@
+ERROR - 2023-03-23 17:59:25 --> mysqli_sql_exception: Unknown column 'ProdCompras.Fechacompra' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ProdVen...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ProdVen...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ProdVen...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdVen...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(125): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(43): App\Models\Inventario->selectVentaxFecha('2023-03-09', '1')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerVentaxfecha()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-23 17:59:25 --> mysqli_sql_exception: Unknown column 'ProdCompras.Fechacompra' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(`Pro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`Pro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`Pro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`Pro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(96): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(32): App\Models\Inventario->selecttotalVentaSuperxfecha('1', '2023-03-09')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesxfecha()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-23 17:59:25 --> Unknown column 'ProdCompras.Fechacompra' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ProdVentas`.*, `G`.`nombreGasolinera` as `nombreGasolinera`
+FROM `ProdVentas`
+LEFT JOIN `CatGasolineras` `G` ON `G`.`idGasolinera`=`ProdVentas`.`idGasolinera`
+WHERE `ProdVentas`.`idGasolinera` = :ProdVentas.idGasolinera:
+AND DATE(ProdCompras.Fechacompra) = :DATE(ProdCompras.Fechacompra):', [...], false)
+ 2 APPPATH\Models\Inventario.php(125): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Inventarios.php(43): App\Models\Inventario->selectVentaxFecha('2023-03-09', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerVentaxfecha()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 17:59:25 --> Unknown column 'ProdCompras.Fechacompra' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`ProdVentas`.`cantidadSuper`) AS `cantidadSuper`
+FROM `ProdVentas`
+WHERE `ProdVentas`.`idGasolinera` = :ProdVentas.idGasolinera:
+AND DATE(ProdCompras.Fechacompra) <= :DATE(ProdCompras.Fechacompra):', [...], false)
+ 2 APPPATH\Models\Inventario.php(96): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Inventarios.php(32): App\Models\Inventario->selecttotalVentaSuperxfecha('1', '2023-03-09')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesxfecha()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-23 18:00:17 --> mysqli_sql_exception: Unknown column 'ProdCompras.Fechacompra' in 'where clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(`Pro...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`Pro...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`Pro...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`Pro...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Inventario.php(96): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Inventarios.php(32): App\Models\Inventario->selecttotalVentaSuperxfecha('1', '2023-03-14')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesxfecha()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-23 18:00:17 --> Unknown column 'ProdCompras.Fechacompra' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`ProdVentas`.`cantidadSuper`) AS `cantidadSuper`
+FROM `ProdVentas`
+WHERE `ProdVentas`.`idGasolinera` = :ProdVentas.idGasolinera:
+AND DATE(ProdCompras.Fechacompra) <= :DATE(ProdCompras.Fechacompra):', [...], false)
+ 2 APPPATH\Models\Inventario.php(96): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Inventarios.php(32): App\Models\Inventario->selecttotalVentaSuperxfecha('1', '2023-03-14')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventarios->obtenerTotalesxfecha()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

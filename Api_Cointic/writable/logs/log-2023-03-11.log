@@ -1,0 +1,43 @@
+CRITICAL - 2023-03-11 19:59:49 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Precios.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-11 20:02:00 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Precios.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-11 20:05:58 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Precios.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-11 20:06:14 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Precios.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-11 20:08:47 --> Undefined index: idGasolinera
+in APPPATH\Controllers\Precios.php on line 53.
+ 1 APPPATH\Controllers\Precios.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: idGasolinera', 'APPPATH\\Controllers\\Precios.php', 53, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-11 20:18:40 --> Call to a member function insert() on array
+in APPPATH\Controllers\Precios.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-11 20:19:03 --> Call to a member function insert() on array
+in APPPATH\Controllers\Precios.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

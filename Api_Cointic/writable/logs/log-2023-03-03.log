@@ -1,0 +1,52 @@
+ERROR - 2023-03-03 23:17:36 --> mysqli_sql_exception: Unknown column 'ProdCompras.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Distinct...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Distinct...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Distinct...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT Distinct...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Precio.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Precios.php(16): App\Models\Precio->getPrecios('0', '3', 'nombreGasoliner...', 'asc')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Precios->obtenerPrecios()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-03 23:17:36 --> Unknown column 'ProdCompras.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT Distinct(ProdHistoricoPrecios.Consecutivo) as Consecutivo, `ProdHistoricoPrecios`.*, `G`.`nombreGasolinera` as `nombreGasolinera`
+FROM `ProdHistoricoPrecios`
+LEFT JOIN `CatGasolineras` `G` ON `G`.`idGasolinera`=`ProdCompras`.`idGasolinera`
+ORDER BY `ProdHistoricoPrecios`.`Fechacompra` ASC
+ LIMIT 3', [], false)
+ 2 APPPATH\Models\Precio.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Precios.php(16): App\Models\Precio->getPrecios('0', '3', 'nombreGasolinera', 'asc')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->obtenerPrecios()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-03 23:18:43 --> mysqli_sql_exception: Unknown column 'ProdHistoricoPrecios.Fechacompra' in 'order clause' in D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGasolineras\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Distinct...', 0)
+#1 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Distinct...')
+#2 D:\wamp64\www\ApiGasolineras\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Distinct...')
+#3 D:\wamp64\www\ApiGasolineras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT Distinct...', Array, false)
+#4 D:\wamp64\www\ApiGasolineras\app\Models\Precio.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGasolineras\app\Controllers\Precios.php(16): App\Models\Precio->getPrecios('0', '3', 'nombreGasoliner...', 'asc')
+#6 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(934): App\Controllers\Precios->obtenerPrecios()
+#7 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+#8 D:\wamp64\www\ApiGasolineras\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGasolineras\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-03 23:18:43 --> Unknown column 'ProdHistoricoPrecios.Fechacompra' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT Distinct(ProdHistoricoPrecios.Consecutivo) as Consecutivo, `ProdHistoricoPrecios`.*, `G`.`nombreGasolinera` as `nombreGasolinera`
+FROM `ProdHistoricoPrecios`
+LEFT JOIN `CatGasolineras` `G` ON `G`.`idGasolinera`=`ProdHistoricoPrecios`.`idGasolinera`
+ORDER BY `ProdHistoricoPrecios`.`Fechacompra` ASC
+ LIMIT 3', [], false)
+ 2 APPPATH\Models\Precio.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Precios.php(16): App\Models\Precio->getPrecios('0', '3', 'nombreGasolinera', 'asc')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Precios->obtenerPrecios()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Precios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

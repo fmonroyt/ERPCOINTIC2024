@@ -1,0 +1,653 @@
+ERROR - 2024-03-27 09:34:17 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(127): App\Models\Venta->selectCompraTemporal(NULL)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 09:34:17 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` IS NULL', [], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(127): App\Models\Venta->selectCompraTemporal(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 09:34:18 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(127): App\Models\Venta->selectCompraTemporal(NULL)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 09:34:18 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` IS NULL', [], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(127): App\Models\Venta->selectCompraTemporal(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 09:34:19 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(127): App\Models\Venta->selectCompraTemporal(NULL)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 09:34:19 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` IS NULL', [], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(127): App\Models\Venta->selectCompraTemporal(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 09:35:19 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(127): App\Models\Venta->selectCompraTemporal(NULL)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 09:35:19 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` IS NULL', [], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(127): App\Models\Venta->selectCompraTemporal(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 09:35:20 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(127): App\Models\Venta->selectCompraTemporal(NULL)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 09:35:20 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` IS NULL', [], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(127): App\Models\Venta->selectCompraTemporal(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 09:45:22 --> Trying to get property 'preference_id' of non-object
+in APPPATH\Controllers\Ventas.php on line 125.
+ 1 APPPATH\Controllers\Ventas.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'preference_id\' of non-object', 'APPPATH\\Controllers\\Ventas.php', 125, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 09:45:23 --> Trying to get property 'preference_id' of non-object
+in APPPATH\Controllers\Ventas.php on line 125.
+ 1 APPPATH\Controllers\Ventas.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'preference_id\' of non-object', 'APPPATH\\Controllers\\Ventas.php', 125, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 09:45:25 --> Trying to get property 'preference_id' of non-object
+in APPPATH\Controllers\Ventas.php on line 125.
+ 1 APPPATH\Controllers\Ventas.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'preference_id\' of non-object', 'APPPATH\\Controllers\\Ventas.php', 125, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 09:46:23 --> Trying to get property 'preference_id' of non-object
+in APPPATH\Controllers\Ventas.php on line 125.
+ 1 APPPATH\Controllers\Ventas.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'preference_id\' of non-object', 'APPPATH\\Controllers\\Ventas.php', 125, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 09:46:24 --> Trying to get property 'preference_id' of non-object
+in APPPATH\Controllers\Ventas.php on line 125.
+ 1 APPPATH\Controllers\Ventas.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'preference_id\' of non-object', 'APPPATH\\Controllers\\Ventas.php', 125, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 11:09:37 --> Undefined index: type
+in APPPATH\Controllers\Ventas.php on line 108.
+ 1 APPPATH\Controllers\Ventas.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: type', 'APPPATH\\Controllers\\Ventas.php', 108, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:27:54 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(131): App\Models\Venta->selectCompraTemporal(NULL)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:27:54 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` IS NULL', [], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(131): App\Models\Venta->selectCompraTemporal(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:27:55 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(131): App\Models\Venta->selectCompraTemporal(NULL)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:27:55 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` IS NULL', [], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(131): App\Models\Venta->selectCompraTemporal(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:27:55 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(131): App\Models\Venta->selectCompraTemporal(NULL)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:27:55 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` IS NULL', [], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(131): App\Models\Venta->selectCompraTemporal(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:27:55 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(131): App\Models\Venta->selectCompraTemporal(NULL)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:27:55 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` IS NULL', [], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(131): App\Models\Venta->selectCompraTemporal(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:27:56 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(131): App\Models\Venta->selectCompraTemporal(NULL)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:27:56 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` IS NULL', [], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(131): App\Models\Venta->selectCompraTemporal(null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:34:19 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c...')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:34:19 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` = :temprodtransaccion.idPreferencia:', [...], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c4c8f-d5d3-4e2e-a63d-afb86de170e6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:34:20 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c...')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:34:20 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` = :temprodtransaccion.idPreferencia:', [...], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c4c8f-d5d3-4e2e-a63d-afb86de170e6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:34:21 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c...')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:34:21 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` = :temprodtransaccion.idPreferencia:', [...], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c4c8f-d5d3-4e2e-a63d-afb86de170e6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:34:22 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c...')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:34:22 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` = :temprodtransaccion.idPreferencia:', [...], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c4c8f-d5d3-4e2e-a63d-afb86de170e6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:34:22 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c...')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:34:22 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` = :temprodtransaccion.idPreferencia:', [...], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c4c8f-d5d3-4e2e-a63d-afb86de170e6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:36:01 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c...')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:36:01 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` = :temprodtransaccion.idPreferencia:', [...], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c4c8f-d5d3-4e2e-a63d-afb86de170e6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:36:02 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c...')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:36:02 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` = :temprodtransaccion.idPreferencia:', [...], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c4c8f-d5d3-4e2e-a63d-afb86de170e6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:36:03 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c...')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:36:03 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` = :temprodtransaccion.idPreferencia:', [...], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c4c8f-d5d3-4e2e-a63d-afb86de170e6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:36:55 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c...')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:36:55 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` = :temprodtransaccion.idPreferencia:', [...], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c4c8f-d5d3-4e2e-a63d-afb86de170e6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:37:03 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c...')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:37:03 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` = :temprodtransaccion.idPreferencia:', [...], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c4c8f-d5d3-4e2e-a63d-afb86de170e6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:37:04 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c...')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:37:04 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` = :temprodtransaccion.idPreferencia:', [...], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c4c8f-d5d3-4e2e-a63d-afb86de170e6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:37:18 --> mysqli_sql_exception: Unknown column 'temprodtransaccion.idGasolinera' in 'on clause' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c...')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:37:18 --> Unknown column 'temprodtransaccion.idGasolinera' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodcompra` ON `temprodcompra`.`idTransaccion`=`temprodtransaccion`.`idGasolinera`
+WHERE `temprodtransaccion`.`idPreferencia` = :temprodtransaccion.idPreferencia:', [...], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c4c8f-d5d3-4e2e-a63d-afb86de170e6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 11:38:03 --> Undefined index: idProducto
+in APPPATH\Controllers\Ventas.php on line 141.
+ 1 APPPATH\Controllers\Ventas.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: idProducto', 'APPPATH\\Controllers\\Ventas.php', 141, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:40:25 --> mysqli_sql_exception: Not unique table/alias: 'temprodtransaccion' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `temprod...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `temprod...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `temprod...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprod...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c...')
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:40:25 --> Not unique table/alias: 'temprodtransaccion'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `temprodcompra`.*
+FROM `temprodtransaccion`
+LEFT JOIN `temprodtransaccion` ON `temprodtransaccion`.`idTransaccion`=`temprodcompra`.`idTransaccion`
+WHERE `temprodtransaccion`.`idPreferencia` = :temprodtransaccion.idPreferencia:', [...], false)
+ 2 APPPATH\Models\Venta.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Ventas.php(132): App\Models\Venta->selectCompraTemporal('1738428552-745c4c8f-d5d3-4e2e-a63d-afb86de170e6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 11:40:56 --> Undefined index: idProducto
+in APPPATH\Controllers\Ventas.php on line 141.
+ 1 APPPATH\Controllers\Ventas.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: idProducto', 'APPPATH\\Controllers\\Ventas.php', 141, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 11:42:05 --> mysqli_sql_exception: Unknown column 'fechaInicio' in 'field list' in D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\ApiGlobalOro\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\wamp64\www\ApiGlobalOro\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\wamp64\www\ApiGlobalOro\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 D:\wamp64\www\ApiGlobalOro\app\Models\Venta.php(111): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp64\www\ApiGlobalOro\app\Controllers\Ventas.php(153): App\Models\Venta->crearRentaCompra(Array)
+#6 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+#7 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 D:\wamp64\www\ApiGlobalOro\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\ApiGlobalOro\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 11:42:05 --> Unknown column 'fechaInicio' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `prodcompras` (`fechaInicio`, `fechaFinal`, `idCliente`) VALUES (:fechaInicio:, :fechaFinal:, :idCliente:)', [...], false)
+ 2 APPPATH\Models\Venta.php(111): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Ventas.php(153): App\Models\Venta->crearRentaCompra([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventa()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

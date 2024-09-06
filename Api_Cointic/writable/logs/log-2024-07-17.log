@@ -1,0 +1,56 @@
+CRITICAL - 2024-07-17 12:53:37 --> Undefined variable $Cliente
+in APPPATH\Controllers\Ventas.php on line 481.
+ 1 APPPATH\Controllers\Ventas.php(481): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Cliente', 'APPPATH\\Controllers\\Ventas.php', 481)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->cambiarEstatusCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-17 12:53:47 --> Undefined variable $Cliente
+in APPPATH\Controllers\Ventas.php on line 481.
+ 1 APPPATH\Controllers\Ventas.php(481): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Cliente', 'APPPATH\\Controllers\\Ventas.php', 481)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->cambiarEstatusCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-17 12:54:09 --> Undefined variable $Cliente
+in APPPATH\Controllers\Ventas.php on line 481.
+ 1 APPPATH\Controllers\Ventas.php(481): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Cliente', 'APPPATH\\Controllers\\Ventas.php', 481)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->cambiarEstatusCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-17 13:00:28 --> Undefined variable $fecha
+in APPPATH\Controllers\Ventas.php on line 515.
+ 1 APPPATH\Controllers\Ventas.php(515): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fecha', 'APPPATH\\Controllers\\Ventas.php', 515)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->cambiarEstatusCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-17 13:00:50 --> Undefined variable $fecha
+in APPPATH\Controllers\Ventas.php on line 515.
+ 1 APPPATH\Controllers\Ventas.php(515): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fecha', 'APPPATH\\Controllers\\Ventas.php', 515)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->cambiarEstatusCompra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-17 15:30:21 --> Undefined variable $comprat
+in APPPATH\Controllers\Ventas.php on line 383.
+ 1 APPPATH\Controllers\Ventas.php(383): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comprat', 'APPPATH\\Controllers\\Ventas.php', 383)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventaTransferencia()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-17 16:04:44 --> Undefined variable $comprat
+in APPPATH\Controllers\Ventas.php on line 383.
+ 1 APPPATH\Controllers\Ventas.php(383): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comprat', 'APPPATH\\Controllers\\Ventas.php', 383)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventaTransferencia()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-17 16:05:12 --> Undefined variable $comprat
+in APPPATH\Controllers\Ventas.php on line 383.
+ 1 APPPATH\Controllers\Ventas.php(383): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comprat', 'APPPATH\\Controllers\\Ventas.php', 383)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->crearventaTransferencia()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

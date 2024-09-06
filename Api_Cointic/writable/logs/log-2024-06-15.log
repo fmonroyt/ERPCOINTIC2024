@@ -1,0 +1,13 @@
+CRITICAL - 2024-06-15 12:04:52 --> {"message":"Credenciales de usuario no v\u00e1lidas"}
+in APPPATH\Controllers\Usuarios.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->Autenticar()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 12:11:44 --> Undefined property: App\Controllers\Usuarios::$output
+in APPPATH\Controllers\Usuarios.php on line 44.
+ 1 APPPATH\Controllers\Usuarios.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Usuarios::$output', 'APPPATH\\Controllers\\Usuarios.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->Autenticar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card-header card-header-primary">
+        <h4 class="card-title pull-center">Alta de perfil</h4>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="Perfil"  (ngSubmit)="(Perfil.valid) ? enviar(Perfil.value): null">
+            <div class="row">
+                <div class="col-12">
+                <mat-form-field>
+                    <input  matInput  [formControl]="Perfil.controls['nombrePerfil']" placeholder="Nombre del Perfil">
+                    <mat-error *ngIf="Perfil.controls['nombrePerfil'].hasError('required')">
+                        El nombre del perfil es obligatorio
+                      </mat-error>
+                </mat-form-field>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-primary">Enviar</button>
+                  </div>
+            </div>
+        </form>
+    </div>
+</div>
