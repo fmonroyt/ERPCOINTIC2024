@@ -1,4 +1,4 @@
-CRITICAL - 2024-09-04 09:39:20 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Cointic\app\Models\WebToken.php on line 28
+CRITICAL - 2024-09-04 09:39:20 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\WebToken.php on line 28
 in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
  1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
  2 APPPATH\Controllers\Perfiles.php(48): App\Models\WebToken->decodificarJWT(null)
@@ -6,7 +6,7 @@ in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
  4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
  5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2024-09-04 09:39:29 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Cointic\app\Models\WebToken.php on line 28
+CRITICAL - 2024-09-04 09:39:29 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\WebToken.php on line 28
 in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
  1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
  2 APPPATH\Controllers\Perfiles.php(48): App\Models\WebToken->decodificarJWT(null)
@@ -14,7 +14,7 @@ in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
  4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
  5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2024-09-04 09:39:36 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Cointic\app\Models\WebToken.php on line 28
+CRITICAL - 2024-09-04 09:39:36 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\WebToken.php on line 28
 in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
  1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
  2 APPPATH\Controllers\Perfiles.php(48): App\Models\WebToken->decodificarJWT(null)
@@ -22,7 +22,7 @@ in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
  4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
  5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2024-09-04 09:41:19 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Cointic\app\Models\WebToken.php on line 28
+CRITICAL - 2024-09-04 09:41:19 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\WebToken.php on line 28
 in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
  1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
  2 APPPATH\Controllers\Perfiles.php(48): App\Models\WebToken->decodificarJWT(null)
@@ -30,7 +30,7 @@ in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
  4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfiles))
  5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2024-09-04 09:41:22 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Cointic\app\Models\WebToken.php on line 28
+CRITICAL - 2024-09-04 09:41:22 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\WebToken.php on line 28
 in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
  1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
  2 APPPATH\Controllers\Perfiles.php(48): App\Models\WebToken->decodificarJWT(null)
@@ -40,21 +40,21 @@ in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
  6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
 CRITICAL - 2024-09-04 10:54:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getDepartamentos()
 in APPPATH\Models\Departamento.php on line 14.
- 1 APPPATH\Controllers\Departamentos.php(16): App\Models\Departamento->getDepartamentos('0', '5', 'nombreDepartamento', 'C:\\wamp64\\www\\Api_Cointic')
+ 1 APPPATH\Controllers\Departamentos.php(16): App\Models\Departamento->getDepartamentos('0', '5', 'nombreDepartamento', 'C:\\wamp64\\www\\Api_Template')
  2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->obtenerDepartamentos()
  3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
 CRITICAL - 2024-09-04 10:54:32 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getDepartamentos()
 in APPPATH\Models\Departamento.php on line 14.
- 1 APPPATH\Controllers\Departamentos.php(16): App\Models\Departamento->getDepartamentos('0', '5', 'nombreDepartamento', 'C:\\wamp64\\www\\Api_Cointic')
+ 1 APPPATH\Controllers\Departamentos.php(16): App\Models\Departamento->getDepartamentos('0', '5', 'nombreDepartamento', 'C:\\wamp64\\www\\Api_Template')
  2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->obtenerDepartamentos()
  3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
 CRITICAL - 2024-09-04 10:54:47 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getDepartamentos()
 in APPPATH\Models\Departamento.php on line 14.
- 1 APPPATH\Controllers\Departamentos.php(16): App\Models\Departamento->getDepartamentos('0', '5', 'nombreDepartamento', 'C:\\wamp64\\www\\Api_Cointic')
+ 1 APPPATH\Controllers\Departamentos.php(16): App\Models\Departamento->getDepartamentos('0', '5', 'nombreDepartamento', 'C:\\wamp64\\www\\Api_Template')
  2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->obtenerDepartamentos()
  3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)

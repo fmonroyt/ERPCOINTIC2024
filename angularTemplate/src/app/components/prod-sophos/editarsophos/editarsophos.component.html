@@ -1,0 +1,58 @@
+<div class="card">
+    <div class="card-header card-header-primary">
+        <h4 class="card-title pull-center">Edición de productos Sophos</h4>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="Sopho" (ngSubmit)="(Sopho.valid) ? enviar(Sopho.value): null">
+            <div class="row">
+                
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Sopho.controls['SKU']" placeholder="SKU">
+                        <mat-error *ngIf="Sopho.controls['SKU'].hasError('required')">
+                            SKU
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Sopho.controls['Description']" placeholder="Description">
+                        <mat-error *ngIf="Sopho.controls['Description'].hasError('required')">
+                            Description
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Sopho.controls['Precio']" placeholder="Precio">
+                        <mat-error >
+                            Precio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <mat-form-field>
+                        <mat-label>seleccione la marca y solucion</mat-label>
+                        <mat-select  [formControl]="Sopho.controls['idrel']" >
+                            <mat-option *ngFor="let Relmarca of Relmarcas"
+                                [value]="Relmarca.idrel">{{Relmarca.nombreSolucion}}</mat-option>
+                        </mat-select>
+                        <mat-error *ngIf="Sopho.controls['idrel'].hasError('required')">
+                            La marca y solucion es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>  
+</div>

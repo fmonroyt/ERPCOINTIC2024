@@ -1,0 +1,210 @@
+ERROR - 2024-10-03 09:26:57 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`cointic_template`.`relmarcasolucion`, CONSTRAINT `relmarcasolucion_solucion` FOREIGN KEY (`idsoluciones`) REFERENCES `catsoluciones` (`idsoluciones`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `Ca...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `Ca...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `Ca...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Solucion.php(47): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Soluciones.php(68): App\Models\Solucion->deleteSoluciones('12')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Soluciones->EliminarSolucion()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-10-03 09:26:57 --> Cannot delete or update a parent row: a foreign key constraint fails (`cointic_template`.`relmarcasolucion`, CONSTRAINT `relmarcasolucion_solucion` FOREIGN KEY (`idsoluciones`) REFERENCES `catsoluciones` (`idsoluciones`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `CatSoluciones`
+WHERE `idsoluciones` = :idsoluciones:', [...], false)
+ 2 APPPATH\Models\Solucion.php(47): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH\Controllers\Soluciones.php(68): App\Models\Solucion->deleteSoluciones('12')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->EliminarSolucion()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-03 09:27:01 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`cointic_template`.`relmarcasolucion`, CONSTRAINT `relmarcasolucion_solucion` FOREIGN KEY (`idsoluciones`) REFERENCES `catsoluciones` (`idsoluciones`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `Ca...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `Ca...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `Ca...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Solucion.php(47): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Soluciones.php(68): App\Models\Solucion->deleteSoluciones('12')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Soluciones->EliminarSolucion()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-10-03 09:27:01 --> Cannot delete or update a parent row: a foreign key constraint fails (`cointic_template`.`relmarcasolucion`, CONSTRAINT `relmarcasolucion_solucion` FOREIGN KEY (`idsoluciones`) REFERENCES `catsoluciones` (`idsoluciones`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `CatSoluciones`
+WHERE `idsoluciones` = :idsoluciones:', [...], false)
+ 2 APPPATH\Models\Solucion.php(47): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH\Controllers\Soluciones.php(68): App\Models\Solucion->deleteSoluciones('12')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->EliminarSolucion()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:36 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:39 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:40 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:40 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:41 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:41 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:41 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:42 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:42 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:42 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:42 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:42 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:43 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:43 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:44 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:44 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:44 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:50 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:50 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:51 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:51 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:51 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:28:51 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:51:22 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:55:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Usuarios.php on line 162.
+ 1 APPPATH\Controllers\Usuarios.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Usuarios.php', 162)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:57:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Usuarios.php on line 162.
+ 1 APPPATH\Controllers\Usuarios.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Usuarios.php', 162)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-03 09:58:20 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Usuarios.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->crearusuario()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

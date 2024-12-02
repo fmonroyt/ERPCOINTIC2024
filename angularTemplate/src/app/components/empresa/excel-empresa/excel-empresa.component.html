@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-header card-header-primary">
+        <h4 class="card-title pull-center">Agregar Excel</h4>
+    </div>
+    <div class="card-body">
+        <!-- <form [formGroup]="Producto" (ngSubmit)="(Producto.valid) ? enviar(Producto.value): null"> -->
+                    
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <ngx-dropzone (change)="seleccionarArchivo($event)">
+                        <ngx-dropzone-label>Agrega un archivo (Opcional de hasta 256MB)
+                        </ngx-dropzone-label>
+                        <ngx-dropzone-preview *ngFor="let archivo of archivos" [removable]="true"
+                            (removed)="removerArchivo(archivo)" class="col-12">
+                            <ngx-dropzone-label>{{ archivo.name }}</ngx-dropzone-label>
+                        </ngx-dropzone-preview>
+                    </ngx-dropzone>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-primary" (click)="enviar()">Enviar</button>
+                  </div>
+            </div>
+        <!-- </form> -->
+    </div>
+</div>
+
+

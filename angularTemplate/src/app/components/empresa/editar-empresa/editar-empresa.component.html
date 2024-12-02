@@ -1,0 +1,72 @@
+<div class="card">
+    <div class="card-header card-header-primary">
+        <h4 class="card-title text-center">Edición de la Empresa</h4>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="Empresa" (ngSubmit)="Empresa.valid ? enviar(Empresa.value) : null">
+            <div class="row">
+                <!-- Nombre -->
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput formControlName="nombre" placeholder="Nombre" aria-label="Nombre de la empresa">
+                        <mat-error *ngIf="Empresa.controls['nombre'].hasError('required')">
+                            El nombre es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <!-- Teléfono -->
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput formControlName="telefono" placeholder="Teléfono" aria-label="Número de teléfono">
+                        <mat-error *ngIf="Empresa.controls['telefono'].hasError('required')">
+                            El teléfono es obligatorio
+                        </mat-error>
+                        <mat-error *ngIf="Empresa.controls['telefono'].hasError('pattern')">
+                            El teléfono solo puede contener números
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <!-- Ciudad -->
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput formControlName="ciudad" placeholder="Ciudad" aria-label="Ciudad de la empresa">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- País -->
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput formControlName="pais" placeholder="País" aria-label="País de la empresa">
+                        <mat-error *ngIf="Empresa.controls['pais'].hasError('required')">
+                            El país es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Selección de Usuario -->
+                <div class="col-md-6">
+                    <mat-form-field>
+                        <mat-label>Seleccione el usuario</mat-label>
+                        <mat-select  [formControl]="Empresa.controls['idusuario']" >
+                            <mat-option *ngFor="let Usuario of Usuarios"
+                                [value]="Usuario.idUsuario">{{Usuario.nombreUsuario}}</mat-option>
+                        </mat-select>
+                        <mat-error *ngIf="Empresa.controls['idusuario'].hasError('required')">
+                            El usuario es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-primary" type="submit" [disabled]="!Empresa.valid">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

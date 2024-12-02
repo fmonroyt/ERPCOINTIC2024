@@ -1,0 +1,162 @@
+ERROR - 2024-11-01 11:09:00 --> mysqli_sql_exception: Unknown column 'Category' in 'order clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatProd...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatProd...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatProd...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProd...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', '', '')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-01 11:09:01 --> Unknown column 'Category' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProduct_Watchguard`.*
+FROM `CatProduct_Watchguard`
+WHERE `SKU` LIKE :SKU: ESCAPE \'!\'
+OR  `Description` LIKE :Description: ESCAPE \'!\'
+ORDER BY `CatProduct_Watchguard`.`idproduct_Watchguard`, `SKU`, `Description`, `Precio`, `Category`, `idrel`
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', 'C:\\wamp64\\www\\Api_Template', 'C:\\wamp64\\www\\Api_Template')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-01 11:09:19 --> mysqli_sql_exception: Unknown column 'Category' in 'order clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatProd...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatProd...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatProd...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProd...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', '', '')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-01 11:09:19 --> Unknown column 'Category' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProduct_Watchguard`.*
+FROM `CatProduct_Watchguard`
+WHERE `SKU` LIKE :SKU: ESCAPE \'!\'
+OR  `Description` LIKE :Description: ESCAPE \'!\'
+ORDER BY `CatProduct_Watchguard`.`idproduct_Watchguard`, `SKU`, `Description`, `Precio`, `Category`, `idrel`
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', 'C:\\wamp64\\www\\Api_Template', 'C:\\wamp64\\www\\Api_Template')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-01 11:12:40 --> mysqli_sql_exception: Unknown column 'Category' in 'order clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatProd...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatProd...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatProd...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProd...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', '', '')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-01 11:12:40 --> Unknown column 'Category' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProduct_Watchguard`.*
+FROM `CatProduct_Watchguard`
+WHERE `SKU` LIKE :SKU: ESCAPE \'!\'
+OR  `Description` LIKE :Description: ESCAPE \'!\'
+ORDER BY `CatProduct_Watchguard`.`idproduct_Watchguard`, `SKU`, `Description`, `Precio`, `Category`, `idrel`
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', 'C:\\wamp64\\www\\Api_Template', 'C:\\wamp64\\www\\Api_Template')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-01 11:14:30 --> mysqli_sql_exception: Unknown column 'Category' in 'order clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatProd...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatProd...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatProd...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProd...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', '', '')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-01 11:14:30 --> Unknown column 'Category' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProduct_Watchguard`.*
+FROM `CatProduct_Watchguard`
+WHERE `SKU` LIKE :SKU: ESCAPE \'!\'
+OR  `Description` LIKE :Description: ESCAPE \'!\'
+ORDER BY `CatProduct_Watchguard`.`idproduct_Watchguard`, `SKU`, `Description`, `Precio`, `Category`, `idrel`
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', 'C:\\wamp64\\www\\Api_Template', 'C:\\wamp64\\www\\Api_Template')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-01 11:18:57 --> mysqli_sql_exception: Unknown column 'Category' in 'order clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatProd...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatProd...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatProd...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProd...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', '', '')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-01 11:18:57 --> Unknown column 'Category' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProduct_Watchguard`.*
+FROM `CatProduct_Watchguard`
+WHERE `SKU` LIKE :SKU: ESCAPE \'!\'
+OR  `Description` LIKE :Description: ESCAPE \'!\'
+ORDER BY `CatProduct_Watchguard`.`idproduct_Watchguard`, `SKU`, `Description`, `Precio`, `Category`, `idrel`
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', 'C:\\wamp64\\www\\Api_Template', 'C:\\wamp64\\www\\Api_Template')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-01 11:28:50 --> mysqli_sql_exception: Unknown column 'Category' in 'order clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatProd...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatProd...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatProd...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProd...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', '', '')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-01 11:28:50 --> Unknown column 'Category' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProduct_Watchguard`.*
+FROM `CatProduct_Watchguard`
+WHERE `SKU` LIKE :SKU: ESCAPE \'!\'
+OR  `Description` LIKE :Description: ESCAPE \'!\'
+ORDER BY `CatProduct_Watchguard`.`idproduct_Watchguard`, `SKU`, `Description`, `Precio`, `Category`, `idrel`
+ LIMIT 5', [...], false)
+ 2 APPPATH\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', 'C:\\wamp64\\www\\Api_Template', 'C:\\wamp64\\www\\Api_Template')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,18 @@
+CRITICAL - 2024-09-17 11:41:49 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-17 12:12:57 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-17 12:48:47 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

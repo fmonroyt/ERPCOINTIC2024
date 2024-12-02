@@ -1,0 +1,100 @@
+<div class="card">
+    <div class="card-header card-header-primary">
+        <h4 class="card-title pull-center">Edición de usuario</h4>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="Usuario" (ngSubmit)="(Usuario.valid) ? enviar(Usuario.value): null">
+            <div class="row">
+                <div class="col-4">
+                <mat-form-field>
+                    <input  matInput  [formControl]="Usuario.controls['nombreUsuario']" placeholder="Nombre del usuario">
+                    <mat-error *ngIf="Usuario.controls['nombreUsuario'].hasError('required')">
+                        El nombre del usuario es obligatorio
+                      </mat-error>
+                </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input  matInput  [formControl]="Usuario.controls['apellidoPaterno']" placeholder="Apellido paterno del usuario">
+                        <mat-error *ngIf="Usuario.controls['apellidoPaterno'].hasError('required')">
+                            El apellido paterno del usuario es obligatorio
+                          </mat-error>
+                    </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                        <mat-form-field>
+                            <input  matInput  [formControl]="Usuario.controls['apellidoMaterno']" placeholder="Apellido materno del usuario">
+                            <mat-error *ngIf="Usuario.controls['apellidoMaterno'].hasError('required')">
+                                El apellido materno del usuario es obligatorio
+                              </mat-error>
+                        </mat-form-field>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <mat-form-field>
+                        <input  matInput  [formControl]="Usuario.controls['nickName']" placeholder="Nickname del usuario">
+                        <mat-error *ngIf="Usuario.controls['nickName'].hasError('required')">
+                            El nickname del usuario es obligatorio
+                          </mat-error>
+                    </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                        <mat-form-field>
+                            <input  matInput  [formControl]="Usuario.controls['password']" placeholder="Contraseña">
+                            <mat-error *ngIf="Usuario.controls['password'].hasError('required')">
+                                La contraseña del usuario es obligatorio
+                              </mat-error>
+                        </mat-form-field>
+                        </div>
+                        <div class="col-4">
+                            <mat-form-field>
+                                <input  matInput  [formControl]="Usuario.controls['correoDestino']" placeholder="Correo electronico">
+                                <mat-error *ngIf="Usuario.controls['correoDestino'].hasError('required')">
+                                    El correo electronico del usuario es obligatorio
+                                  </mat-error>
+                            </mat-form-field>
+                            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <mat-form-field>
+                        <mat-label>seleccione el departamento</mat-label>
+                        <mat-select [formControl]="Usuario.controls['idDepartamento']">
+                            <mat-option *ngFor="let departamento of Departamentos" [value]="departamento.idDepartamento">{{departamento.nombreDepartamento}}</mat-option>
+                        </mat-select>
+                        <mat-error *ngIf="Usuario.controls['idDepartamento'].hasError('required')"> El departamento es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                    <mat-form-field>
+                        <mat-label>seleccione el perfil</mat-label>
+                        <mat-select [formControl]="Usuario.controls['idPerfil']">
+                            <mat-option *ngFor="let Perfil of Perfiles" [value]="Perfil.idPerfil">{{Perfil.nombrePerfil}}</mat-option>
+                        </mat-select>
+                        <mat-error *ngIf="Usuario.controls['idPerfil'].hasError('required')"> El perfil es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <ngx-dropzone (change)="seleccionarArchivo($event)">
+                        <ngx-dropzone-label>Agrega un archivo (Opcional de hasta 256MB)
+                        </ngx-dropzone-label>
+                        <ngx-dropzone-preview *ngFor="let archivo of archivos" [removable]="true"
+                            (removed)="removerArchivo(archivo)" class="col-12">
+                            <ngx-dropzone-label>{{ archivo.name }}</ngx-dropzone-label>
+                        </ngx-dropzone-preview>
+                    </ngx-dropzone>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-primary">Enviar</button>
+                  </div>
+            </div>
+        </form>
+    </div>
+</div>

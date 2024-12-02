@@ -1,0 +1,221 @@
+CRITICAL - 2024-09-23 09:08:40 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 10:06:41 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 10:07:17 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 10:09:22 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 10:09:32 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 10:09:41 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 10:09:49 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 10:10:11 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 10:10:22 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 10:13:08 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 10:13:19 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 10:14:10 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 10:14:44 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 10:14:53 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 10:17:02 --> Class "App\Controllers\Departamento" not found
+in APPPATH\Controllers\Marcas.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerNumeroMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 11:12:45 --> Undefined variable $idMarca
+in APPPATH\Controllers\Marcas.php on line 68.
+ 1 APPPATH\Controllers\Marcas.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idMarca', 'APPPATH\\Controllers\\Marcas.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->EliminarMarca()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 11:14:35 --> Undefined variable $idMarca
+in APPPATH\Controllers\Marcas.php on line 68.
+ 1 APPPATH\Controllers\Marcas.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idMarca', 'APPPATH\\Controllers\\Marcas.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->EliminarMarca()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 11:22:31 --> Undefined variable $idMarca
+in APPPATH\Controllers\Marcas.php on line 68.
+ 1 APPPATH\Controllers\Marcas.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idMarca', 'APPPATH\\Controllers\\Marcas.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->EliminarMarca()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 11:26:17 --> Undefined variable $idMarca
+in APPPATH\Controllers\Marcas.php on line 68.
+ 1 APPPATH\Controllers\Marcas.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idMarca', 'APPPATH\\Controllers\\Marcas.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->EliminarMarca()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-23 12:36:29 --> mysqli_sql_exception: Unknown column 'idMarca' in 'where clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatMarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatMarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatMarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatMarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Marca.php(56): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Marcas.php(77): App\Models\Marca->selectMarcasxid('6')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Marcas->obtenerMarcaxId()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-23 12:36:29 --> Unknown column 'idMarca' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatMarcas`.*
+FROM `CatMarcas`
+WHERE `idMarca` = :idMarca:', [...], false)
+ 2 APPPATH\Models\Marca.php(56): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Marcas.php(77): App\Models\Marca->selectMarcasxid('6')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerMarcaxId()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-23 12:37:51 --> mysqli_sql_exception: Unknown column 'idMarca' in 'where clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatMarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatMarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatMarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatMarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Marca.php(56): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Marcas.php(77): App\Models\Marca->selectMarcasxid('1')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Marcas->obtenerMarcaxId()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-23 12:37:51 --> Unknown column 'idMarca' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatMarcas`.*
+FROM `CatMarcas`
+WHERE `idMarca` = :idMarca:', [...], false)
+ 2 APPPATH\Models\Marca.php(56): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Marcas.php(77): App\Models\Marca->selectMarcasxid('1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerMarcaxId()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-23 12:42:15 --> mysqli_sql_exception: Unknown column 'idMarca' in 'where clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatMarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatMarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatMarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatMarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Marca.php(56): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Marcas.php(77): App\Models\Marca->selectMarcasxid('1')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Marcas->obtenerMarcaxId()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-23 12:42:15 --> Unknown column 'idMarca' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatMarcas`.*
+FROM `CatMarcas`
+WHERE `idMarca` = :idMarca:', [...], false)
+ 2 APPPATH\Models\Marca.php(56): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Marcas.php(77): App\Models\Marca->selectMarcasxid('1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerMarcaxId()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-23 12:43:09 --> Undefined variable $idMarca
+in APPPATH\Controllers\Marcas.php on line 77.
+ 1 APPPATH\Controllers\Marcas.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idMarca', 'APPPATH\\Controllers\\Marcas.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerMarcaxId()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-23 12:43:43 --> mysqli_sql_exception: Unknown column 'idMarca' in 'where clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatMarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatMarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatMarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatMarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Marca.php(56): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Marcas.php(77): App\Models\Marca->selectMarcasxid('7')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Marcas->obtenerMarcaxId()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-23 12:43:43 --> Unknown column 'idMarca' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatMarcas`.*
+FROM `CatMarcas`
+WHERE `idMarca` = :idMarca:', [...], false)
+ 2 APPPATH\Models\Marca.php(56): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Marcas.php(77): App\Models\Marca->selectMarcasxid('7')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Marcas->obtenerMarcaxId()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

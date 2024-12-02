@@ -1,0 +1,75 @@
+<div class="card">
+    <div class="card-header card-header-primary">
+        <h4 class="card-title pull-center">Empresa</h4>
+        <div class="row">
+            <!-- Búsqueda -->
+            <div class="col-md-3 offset-md-9 white-text">
+                <mat-form-field class="search-field">
+                    <mat-label>Buscar Empresa</mat-label>
+                    <input matInput (keyup)="buscarEmpresas($event.target.value)" placeholder="Nombre de la empresa">
+                </mat-form-field>
+            </div>
+        </div>
+        <p class="card-category pull-center nuevoempresa">De <span> <a [swal]="nuevoEmpresas"  class="animacionOpacidad">clic aquí</a> para agregar una nueva Empresa</span>  </p>
+        <!-- [swal]="nuevoWacthguards" -->
+        <br>
+        <p class="card-category pull-right excel">De <span> <a  [swal]="agregarExcelEmpresas" class="animacionOpacidad">clic aquí</a> para agregar Excel</span></p>
+        <!-- [swal]="agregarExcelWacthguards" -->
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="table-responsive">
+                <table mat-table #tablaEmpresas [dataSource]="empresas" class="table table-hover" #sort1 matSort matSortActive="SKU" matSortDisableClear matSortDirection1="desc">
+                    <!-- Columna Nombre del departamento -->
+                    <ng-container matColumnDef="nombre">
+                        <th mat-header-cell *matHeaderCellDef>Nombre de la empresa</th>
+                        <td mat-cell *matCellDef="let row">{{row.nombre}}</td>
+                    </ng-container>
+                    
+                    
+                    <ng-container matColumnDef="telefono">
+                        <th mat-header-cell *matHeaderCellDef class="telefono-column">Telefono</th>
+                        <td mat-cell *matCellDef="let row" class="telefono-column">{{ row.telefono }}</td>
+                    </ng-container>
+                    
+                    <!-- Columna edición -->
+                    <ng-container matColumnDef="Editar">
+                        <th mat-header-cell *matHeaderCellDef>Editar</th>
+                        <td mat-cell *matCellDef="let row"><button  mat-icon-button class="btn btn-primary" (click)="establecerIdProducto_Empresas(row.idEmpresaExt)" [swal]="editarEmpresas">
+                            <mat-icon>create</mat-icon>
+                          </button> </td>
+                    </ng-container>
+                    <!-- Columna Eliminar -->
+                    <ng-container matColumnDef="Quitar">
+                        <th mat-header-cell *matHeaderCellDef>Quitar</th>
+                        <td mat-cell *matCellDef="let row">
+                            <button *ngIf="row.idEmpresaExt!=empresaUsuario" mat-icon-button class="btn btn-primary"  [swal]="{title: 'Precaución', text: '¿Desea eliminar esta empresa?', icon: 'warning', showCancelButton: true, cancelButtonText: 'Cancelar'}" (confirm)="eliminarEmpresa(row.idEmpresaExt)" >
+                                <mat-icon>delete</mat-icon>
+                              </button></td>
+                    </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="columnasTablaProductoEmpresa"></tr>
+                    <tr mat-row *matRowDef="let row; columns: columnasTablaProductoEmpresa;"></tr>
+                </table>
+            </div>
+            <mat-paginator #paginator1 [length]="resultsLength1" [pageSize]="pageSize1"></mat-paginator>
+        </div>
+    </div>
+</div>
+
+<swal #nuevoEmpresas [showCloseButton]="false" [showConfirmButton]="false" [showCancelButton]="false" [width]="'60%'"> 
+    <app-nuevo-empresa *swalPortal (nuEmpresa)="nuevoEmpresas.dismiss();buscarEmpresas('');">
+
+    </app-nuevo-empresa>
+</swal>
+ <swal #agregarExcelEmpresas [showCloseButton]="false" [showConfirmButton]="false" [showCancelButton]="false" [width]="'60%'"> 
+     <app-excel-empresa *swalPortal (nuEmpresa)="agregarExcelEmpresas.dismiss();seleccionarArchivo('');">
+     </app-excel-empresa>
+</swal>
+
+
+<swal #editarEmpresas [showCloseButton]="false" [showConfirmButton]="false" [showCancelButton]="false" [width]="'60%'"> 
+    <app-editar-empresa *swalPortal  (nuEmpresa)="editarEmpresas.dismiss();buscarEmpresas('');">
+
+    </app-editar-empresa>
+</swal> 
+

@@ -1,8 +1,8 @@
 <?php
 namespace App\Controllers;
-require_once($_SERVER['DOCUMENT_ROOT']. '/Api_Cointic/PHPMailer/src/Exception.php');
-require_once($_SERVER['DOCUMENT_ROOT']. '/Api_Cointic/PHPMailer/src/PHPMailer.php');
-require_once($_SERVER['DOCUMENT_ROOT']. '/Api_Cointic/PHPMailer/src/SMTP.php');
+require_once($_SERVER['DOCUMENT_ROOT']. '/Api_Template/PHPMailer/src/Exception.php');
+require_once($_SERVER['DOCUMENT_ROOT']. '/Api_Template/PHPMailer/src/PHPMailer.php');
+require_once($_SERVER['DOCUMENT_ROOT']. '/Api_Template/PHPMailer/src/SMTP.php');
 use CodeIgniter\RESTful\ResourceController;
 use CodeIgniter\API\ResponseTrait;
 use App\Models\Usuario;
@@ -106,11 +106,62 @@ class Usuarios extends ResourceController
 	function getUsuarioxid()
 	{
 		$Usuario=new Usuario();
-		$idUsuario = $this->request->getPost('idCliente');
+		$idUsuario = $this->request->getPost('idUsuario');
 
 		echo json_encode($Usuario->getUsuario($idUsuario));		
 	}
-
+	function crearusuario() {
+		$Usuario = new Usuario();
+		$WebToken = new WebToken();
+		$Archivo = new Archivo();
+		
+		$jwt = $this->request->getPost("jwt");
+		$jwt = $WebToken->decodificarJWT($jwt);
+		$idUsuario = $jwt->idUsuario;
+		$nombreUsuario = $this->request->getPost('nombreUsuario');
+		$apellidoPaterno = $this->request->getPost('apellidoPaterno');
+		$apellidoMaterno = $this->request->getPost('apellidoMaterno');
+		$nickName = $this->request->getPost('nickName');
+		$pass = $this->request->getPost('password');
+		$hashed_password = password_hash($pass, PASSWORD_DEFAULT);
+		$correoDestino = $this->request->getPost('correoDestino');
+		$idDepartamento = $this->request->getPost('idDepartamento');
+		$idPerfil = $this->request->getPost('idPerfil');
+		
+		// Obtener el archivo
+		$archivo = $this->request->getFile('archivo');
+	
+		// Verificación del archivo, solo si no es null
+		if ($archivo !== null && $archivo->isValid()) {
+			$archivo = $Archivo->subirArchivoimagenperfil($archivo);  // Pasa el archivo como objeto, no como string
+		} else {
+			// Si el archivo no se sube correctamente
+			$archivo = array(
+				'directorio' => null,
+				'tipo' => null,
+				'extension' => null,
+				'nombreOriginal' => null
+			);
+		}
+		$data = [
+			'nombreUsuario' => $nombreUsuario,
+			'apellidoPaterno' => $apellidoPaterno,
+			'apellidoMaterno' => $apellidoMaterno,
+			'nickName' => $nickName,
+			'passwordUsuario' => $hashed_password,
+			'correoDestino' => $correoDestino,
+			'idPerfil' => $idPerfil,
+			'idDepartamento' => $idDepartamento,
+			'Status' => 0,
+			'fotoUsuario' => $archivo['directorio'], // Guardar la ruta del archivo
+		];
+	
+		$Usuario->insert($data);
+		$data = array('message' => "El usuario ha sido creado correctamente");
+		return $this->response->setJSON($data);
+	}
+	
+/*
 	function crearusuario(){
 		$Usuario=new Usuario();
 		$WebToken=new WebToken();
@@ -155,6 +206,7 @@ class Usuarios extends ResourceController
 		$this->response->setStatusCode(200, json_encode(array('message' => "El usuario ha sido creado correctamente")));
 		return $this->response->setJSON($data);
 	}
+	*/
 	
 	function editarusuario(){
 		$Usuario=new Usuario();

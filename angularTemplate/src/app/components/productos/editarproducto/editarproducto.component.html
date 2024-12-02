@@ -1,0 +1,120 @@
+<div class="card">
+    <div class="card-header card-header-primary">
+        <h4 class="card-title pull-center">Edición de productos</h4>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="Producto" (ngSubmit)="(Producto.valid) ? enviar(Producto.value): null">
+            <div class="row">
+                <div class="col-12">
+                    <mat-form-field>
+                        <input matInput [formControl]="Producto.controls['Unit']" placeholder="Unit">
+                        <mat-error *ngIf="Producto.controls['Unit'].hasError('required')">
+                            El nombre del producto es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Producto.controls['SKU']" placeholder="SKU">
+                        <mat-error *ngIf="Producto.controls['SKU'].hasError('required')">
+                            SKU
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Producto.controls['Description']" placeholder="Description">
+                        <mat-error *ngIf="Producto.controls['Description'].hasError('required')">
+                            Description
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Producto.controls['Price']" placeholder="Price">
+                        <mat-error >
+                            Price
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Producto.controls['Contract_1Yr']" placeholder="Contract_1Yr">
+                        <mat-error >
+                            Contract_1Yr
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Producto.controls['Contract_2Yr']" placeholder="Contract_2Yr">
+                        <mat-error >
+                            Contract_2Yr
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Producto.controls['Contract_3Yr']" placeholder="Contract_3Yr">
+                        <mat-error >
+                            Contract_3Yr
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Producto.controls['Contract_4Yr']" placeholder="Contract_4Yr">
+                        <mat-error >
+                            Contract_4Yr
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Producto.controls['Contract_5Yr']" placeholder="Contract_5Yr">
+                        <mat-error >
+                            Contract_5Yr
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Producto.controls['Comments']" placeholder="Comments">
+                        <mat-error *ngIf="Producto.controls['Comments'].hasError('required')">
+                            Comments
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Producto.controls['Category']" placeholder="Category">
+                        <mat-error >
+                            Category
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <mat-form-field>
+                        <mat-label>seleccione la marca y solucion</mat-label>
+                        <mat-select  [formControl]="Producto.controls['idrel']" >
+                            <mat-option *ngFor="let Relmarca of Relmarcas"
+                                [value]="Relmarca.idrel">{{Relmarca.nombreSolucion}}</mat-option>
+                        </mat-select>
+                        <mat-error *ngIf="Producto.controls['idrel'].hasError('required')">
+                            La marca y solucion es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>  
+</div>

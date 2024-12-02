@@ -1,0 +1,42 @@
+.white-text {
+    color: white;
+
+    input {
+        color: white; /* Cambia el color del texto dentro del input */
+    }
+
+    mat-label {
+        color: white; /* Cambia el color de la etiqueta */
+    }
+
+    .mat-form-field-underline {
+        background-color: white; /* Cambia el color de la línea inferior */
+    }
+
+    .mat-form-field-ripple {
+        background-color: white; /* Cambia el color del efecto ripple al hacer clic */
+    }
+
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.6); /* Cambia el color del placeholder */
+    }
+}
+.description-column {
+    width: 750px; /* Ajusta este valor según tus necesidades */
+    max-width: 750px;
+    white-space: nowrap; /* Para evitar que el texto se divida en varias líneas */
+    overflow: hidden; /* Para ocultar el texto si es más largo que la columna */
+    text-overflow: ellipsis; /* Mostrar "..." si el texto es demasiado largo */
+  }
+  .nuevoempresa {
+    position: relative;
+    top: -50px;
+}
+.excel {
+    position: relative;
+    top: -50px;
+}
+.card-header{
+    height: 150px;
+}
+  

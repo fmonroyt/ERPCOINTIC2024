@@ -1,0 +1,65 @@
+<div class="card">
+    <div class="card-header card-header-primary">
+        <h4 class="card-title text-center">Creación de Empresa</h4>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="Empresa" (ngSubmit)="Empresa.valid ? enviar(Empresa.value) : null">
+            <div class="row">
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Empresa.controls['nombre']" placeholder="Nombre">
+                        <mat-error *ngIf="Empresa.controls['nombre'].hasError('required')">
+                            El nombre es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Empresa.controls['telefono']" placeholder="Teléfono">
+                        <mat-error *ngIf="Empresa.controls['telefono'].hasError('required')">
+                            El teléfono es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Empresa.controls['ciudad']" placeholder="Ciudad">
+                        <mat-error *ngIf="Empresa.controls['ciudad'].hasError('required')">
+                            La ciudad es obligatoria
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Empresa.controls['pais']" placeholder="País">
+                        <mat-error *ngIf="Empresa.controls['pais'].hasError('required')">
+                            El país es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <mat-form-field>
+                        <mat-label>Seleccione el usuario</mat-label>
+                        <mat-select [formControl]="Empresa.controls['idusuario']">
+                            <mat-option *ngFor="let Usuario of Usuarios" [value]="Usuario.idUsuario">
+                                {{Usuario.nombreUsuario}}
+                            </mat-option>
+                        </mat-select>
+                        <mat-error *ngIf="Empresa.controls['idusuario'].hasError('required')">
+                            El usuario es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>  
+</div>

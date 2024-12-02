@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="card-header card-header-primary">
+        <h4 class="card-title pull-center">Selección de marcas</h4>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="Marca" (ngSubmit)="(Marca.valid) ? AsignarMarcas(): null">
+            <div class="row">
+                <div class="col-12">
+                    <mat-form-field>
+                        <mat-label>Marcas</mat-label>
+                        <mat-select  multiple [formControl] = "Marca.controls['marcas']">
+                            <mat-option *ngFor="let Marca of Marcas" [value]="Marca.idMarcas">{{Marca.Nombre}}</mat-option>
+                        </mat-select>
+                        <mat-error *ngIf="Marca.controls['marcas'].hasError('required')">
+                          Por favor, seleccione una o mas marcas.
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-primary">Enviar</button>
+                  </div>
+            </div>
+        </form>
+    </div>
+</div>

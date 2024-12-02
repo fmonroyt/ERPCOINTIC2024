@@ -6,7 +6,7 @@ class Archivo extends Model
 {
 	// sube el archivo al servidor y devuelve un arreglo con la ruta del archivo. Retorna false en caso de error.
 	// La variable nombreArchivo es el nombre del parametro dentro del arreglo $_FILES.
-	function subirArchivo($nombreArchivo, $ruta = "../assets_globaloro/archivosRecibos") { 
+	function subirArchivo($nombreArchivo, $ruta = "../assets_Template/archivos") { 
 		// por seguridad, la ruta tiene .. al principio para que nadie pueda acceder a ella
 		// esto es para que la carpeta de archivos este afuera del htdocs o www
 		$ruta.="/"; // agrega una diagonal en caso de que no haya sido proporcionada al final
@@ -58,6 +58,111 @@ class Archivo extends Model
 
 	}
 
+		// La variable nombreArchivo es el nombre del parametro dentro del arreglo $_FILES.
+		function subirArchivoimagenperfil($nombreArchivo, $ruta = "../../assets_Template/FotoPerfil") { 
+			// por seguridad, la ruta tiene .. al principio para que nadie pueda acceder a ella
+			// esto es para que la carpeta de archivos este afuera del htdocs o www
+			$ruta.="/"; // agrega una diagonal en caso de que no haya sido proporcionada al final
+			if(!file_exists($nombreArchivo) && !is_dir($ruta)){
+				mkdir($ruta,0777,true);
+			}
+			if(!empty($_FILES[$nombreArchivo])) {
+				$archivo = $_FILES[$nombreArchivo];
+				$nombreOriginal = $archivo['name'];
+				$tipoArchivo = $archivo['type'];
+				$extension = explode('.', basename($nombreOriginal));
+				$extension = array_pop($extension);
+				if($this->verificarArchivo($extension, $archivo['size'])) {
+					$nuevoNombre = DIRECTORY_SEPARATOR . md5(uniqid()) . "." . $extension;
+					$directorio = $ruta.$nuevoNombre;
+					if(move_uploaded_file($archivo['tmp_name'], $directorio)) {
+						return array(
+							'directorio' => $directorio,
+							'tipo' => $tipoArchivo,
+							'extension' => $extension,
+							'nombreOriginal'  => $nombreOriginal
+						);
+					}
+					else  {
+						http_response_code(500);
+						echo json_encode(array(
+							'message' => 'Error al subir el archivo. Intenta de nuevo.'
+						));
+						exit();
+					}
+				}
+				else {
+					http_response_code(500);
+					echo json_encode(array(
+						'message' => 'La extensión o peso del archivo no son válidos.'
+					));
+					exit();
+				}
+	
+	
+			}
+			else {
+				http_response_code(500);
+				echo json_encode(array(
+					'message' => 'No has proporcionado ningún archivo'
+				));
+				exit();
+			}
+	
+		}
+
+				// La variable nombreArchivo es el nombre del parametro dentro del arreglo $_FILES.
+				function subirArchivoExcel($nombreArchivo, $ruta = "../../assets_Template/excel") { 
+					// por seguridad, la ruta tiene .. al principio para que nadie pueda acceder a ella
+					// esto es para que la carpeta de archivos este afuera del htdocs o www
+					$ruta.="/"; // agrega una diagonal en caso de que no haya sido proporcionada al final
+					if(!file_exists($nombreArchivo) && !is_dir($ruta)){
+						mkdir($ruta,0777,true);
+					}
+					if(!empty($_FILES[$nombreArchivo])) {
+						$archivo = $_FILES[$nombreArchivo];
+						$nombreOriginal = $archivo['name'];
+						$tipoArchivo = $archivo['type'];
+						$extension = explode('.', basename($nombreOriginal));
+						$extension = array_pop($extension);
+						if($this->verificarArchivoExcel($extension, $archivo['size'])) {
+							$nuevoNombre = DIRECTORY_SEPARATOR . md5(uniqid()) . "." . $extension;
+							$directorio = $ruta.$nuevoNombre;
+							if(move_uploaded_file($archivo['tmp_name'], $directorio)) {
+								return array(
+									'directorio' => $directorio,
+									'tipo' => $tipoArchivo,
+									'extension' => $extension,
+									'nombreOriginal'  => $nombreOriginal
+								);
+							}
+							else  {
+								http_response_code(500);
+								echo json_encode(array(
+									'message' => 'Error al subir el archivo. Intenta de nuevo.'
+								));
+								exit();
+							}
+						}
+						else {
+							http_response_code(500);
+							echo json_encode(array(
+								'message' => 'La extensión o peso del archivo no son válidos.'
+							));
+							exit();
+						}
+			
+			
+					}
+					else {
+						http_response_code(500);
+						echo json_encode(array(
+							'message' => 'No has proporcionado ningún archivo'
+						));
+						exit();
+					}
+			
+				}
 	function borrarArchivo($ruta) {
 		if(file_exists($ruta)) {	
 			unlink($ruta);

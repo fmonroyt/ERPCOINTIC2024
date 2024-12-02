@@ -1,0 +1,236 @@
+CRITICAL - 2024-11-27 10:46:55 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\Contacto.php on line 11
+in SYSTEMPATH\Database\BaseBuilder.php on line 984.
+ 1 APPPATH\Models\Contacto.php(11): CodeIgniter\Database\BaseBuilder->like('nombre', null, 'both')
+ 2 APPPATH\Controllers\Contactos.php(81): App\Models\Contacto->getContactos(null, null, null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->obtenerContacto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 11:03:32 --> Class "App\Controllers\EmpresaExt" not found
+in APPPATH\Controllers\Contactos.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->LeerExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 11:05:50 --> Class "App\Controllers\EmpresaExt" not found
+in APPPATH\Controllers\Contactos.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->LeerExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 11:06:23 --> Class "App\Controllers\EmpresaExt" not found
+in APPPATH\Controllers\Contactos.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->LeerExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 11:08:25 --> Undefined variable $EmpresaExt
+in APPPATH\Controllers\Contactos.php on line 56.
+ 1 APPPATH\Controllers\Contactos.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $EmpresaExt', 'APPPATH\\Controllers\\Contactos.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->LeerExcel()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 11:13:36 --> Undefined property: stdClass::$EmpresaExt
+in APPPATH\Controllers\Contactos.php on line 19.
+ 1 APPPATH\Controllers\Contactos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$EmpresaExt', 'APPPATH\\Controllers\\Contactos.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->LeerExcel()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 11:33:34 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\Contacto.php on line 11
+in SYSTEMPATH\Database\BaseBuilder.php on line 984.
+ 1 APPPATH\Models\Contacto.php(11): CodeIgniter\Database\BaseBuilder->like('nombre', null, 'both')
+ 2 APPPATH\Controllers\Contactos.php(81): App\Models\Contacto->getContactos(null, null, null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->obtenerContacto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 11:38:06 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Contactos.php(58): CodeIgniter\Model->__call('ActualizarContactos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->LeerExcel()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 11:38:58 --> Undefined variable $idEmpresaExt
+in APPPATH\Models\Contacto.php on line 63.
+ 1 APPPATH\Models\Contacto.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idEmpresaExt', 'APPPATH\\Models\\Contacto.php', 63)
+ 2 APPPATH\Controllers\Contactos.php(168): App\Models\Contacto->selectContactoxid('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->obtenerContactos()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 11:40:16 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Contactos.php(58): CodeIgniter\Model->__call('ActualizarContactos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->LeerExcel()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 11:40:50 --> Undefined variable $idEmpresaExt
+in APPPATH\Models\Contacto.php on line 63.
+ 1 APPPATH\Models\Contacto.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idEmpresaExt', 'APPPATH\\Models\\Contacto.php', 63)
+ 2 APPPATH\Controllers\Contactos.php(168): App\Models\Contacto->selectContactoxid('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->obtenerContactos()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 11:41:40 --> Undefined property: stdClass::$idempresaext
+in APPPATH\Controllers\Contactos.php on line 155.
+ 1 APPPATH\Controllers\Contactos.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idempresaext', 'APPPATH\\Controllers\\Contactos.php', 155)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->EliminarContacto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 11:57:10 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Contactos.php(58): CodeIgniter\Model->__call('ActualizarContactos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->LeerExcel()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 11:58:01 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Contactos.php(58): CodeIgniter\Model->__call('ActualizarContactos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->LeerExcel()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 11:58:14 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Contactos.php(58): CodeIgniter\Model->__call('ActualizarContactos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->LeerExcel()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 12:00:51 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Contactos.php(58): CodeIgniter\Model->__call('ActualizarContactos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->LeerExcel()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 12:01:45 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\Contacto.php on line 11
+in SYSTEMPATH\Database\BaseBuilder.php on line 984.
+ 1 APPPATH\Models\Contacto.php(11): CodeIgniter\Database\BaseBuilder->like('nombre', null, 'both')
+ 2 APPPATH\Controllers\Contactos.php(81): App\Models\Contacto->getContactos(null, null, null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->obtenerContacto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 12:02:58 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\Contacto.php on line 11
+in SYSTEMPATH\Database\BaseBuilder.php on line 984.
+ 1 APPPATH\Models\Contacto.php(11): CodeIgniter\Database\BaseBuilder->like('nombre', null, 'both')
+ 2 APPPATH\Controllers\Contactos.php(81): App\Models\Contacto->getContactos(null, null, null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->obtenerContacto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 12:25:53 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\Contacto.php on line 11
+in SYSTEMPATH\Database\BaseBuilder.php on line 984.
+ 1 APPPATH\Models\Contacto.php(11): CodeIgniter\Database\BaseBuilder->like('nombre', null, 'both')
+ 2 APPPATH\Controllers\Contactos.php(81): App\Models\Contacto->getContactos(null, null, null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->obtenerContacto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 12:26:23 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\Contacto.php on line 11
+in SYSTEMPATH\Database\BaseBuilder.php on line 984.
+ 1 APPPATH\Models\Contacto.php(11): CodeIgniter\Database\BaseBuilder->like('nombre', null, 'both')
+ 2 APPPATH\Controllers\Contactos.php(81): App\Models\Contacto->getContactos(null, null, null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->obtenerContacto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 12:32:55 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\Contacto.php on line 11
+in SYSTEMPATH\Database\BaseBuilder.php on line 984.
+ 1 APPPATH\Models\Contacto.php(11): CodeIgniter\Database\BaseBuilder->like('nombre', null, 'both')
+ 2 APPPATH\Controllers\Contactos.php(81): App\Models\Contacto->getContactos(null, null, null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->obtenerContacto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 12:34:02 --> Undefined property: stdClass::$idempresaext
+in APPPATH\Controllers\Contactos.php on line 155.
+ 1 APPPATH\Controllers\Contactos.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idempresaext', 'APPPATH\\Controllers\\Contactos.php', 155)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->EliminarContacto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 12:35:35 --> Undefined property: stdClass::$idEmpresaExt
+in APPPATH\Controllers\Contactos.php on line 156.
+ 1 APPPATH\Controllers\Contactos.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idEmpresaExt', 'APPPATH\\Controllers\\Contactos.php', 156)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->EliminarContacto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 12:37:12 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\Contacto.php on line 11
+in SYSTEMPATH\Database\BaseBuilder.php on line 984.
+ 1 APPPATH\Models\Contacto.php(11): CodeIgniter\Database\BaseBuilder->like('nombre', null, 'both')
+ 2 APPPATH\Controllers\Contactos.php(81): App\Models\Contacto->getContactos(null, null, null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->obtenerContacto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 12:39:55 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\Contacto.php on line 11
+in SYSTEMPATH\Database\BaseBuilder.php on line 984.
+ 1 APPPATH\Models\Contacto.php(11): CodeIgniter\Database\BaseBuilder->like('nombre', null, 'both')
+ 2 APPPATH\Controllers\Contactos.php(81): App\Models\Contacto->getContactos(null, null, null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->obtenerContacto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 12:40:49 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\Contacto.php on line 11
+in SYSTEMPATH\Database\BaseBuilder.php on line 984.
+ 1 APPPATH\Models\Contacto.php(11): CodeIgniter\Database\BaseBuilder->like('nombre', null, 'both')
+ 2 APPPATH\Controllers\Contactos.php(81): App\Models\Contacto->getContactos(null, null, null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->obtenerContacto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 12:47:54 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\Contacto.php on line 11
+in SYSTEMPATH\Database\BaseBuilder.php on line 984.
+ 1 APPPATH\Models\Contacto.php(11): CodeIgniter\Database\BaseBuilder->like('nombre', null, 'both')
+ 2 APPPATH\Controllers\Contactos.php(81): App\Models\Contacto->getContactos(null, null, null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->obtenerContacto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 12:48:07 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\Contacto.php on line 11
+in SYSTEMPATH\Database\BaseBuilder.php on line 984.
+ 1 APPPATH\Models\Contacto.php(11): CodeIgniter\Database\BaseBuilder->like('nombre', null, 'both')
+ 2 APPPATH\Controllers\Contactos.php(81): App\Models\Contacto->getContactos(null, null, null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->obtenerContacto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 12:51:28 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\Contacto.php on line 11
+in SYSTEMPATH\Database\BaseBuilder.php on line 984.
+ 1 APPPATH\Models\Contacto.php(11): CodeIgniter\Database\BaseBuilder->like('nombre', null, 'both')
+ 2 APPPATH\Controllers\Contactos.php(81): App\Models\Contacto->getContactos(null, null, null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->obtenerContacto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-27 12:57:44 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Contactos.php(58): CodeIgniter\Model->__call('ActualizarContactos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Contactos->LeerExcel()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,69 @@
+<div class="card">
+    <div class="card-header card-header-primary">
+        <h4 class="card-title text-center">Edición del Contacto</h4>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="Contacto" (ngSubmit)="Contacto.valid ? enviar(Contacto.value) : null">
+            <div class="row">
+                <!-- Nombre -->
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput formControlName="nombre" placeholder="Nombre" aria-label="Nombre del Contacto">
+                        <mat-error *ngIf="Contacto.controls['nombre'].hasError('required')">
+                            El nombre es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <!-- Apellido -->
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput formControlName="apellido" placeholder="Apellido" aria-label="Apellido del Contacto">
+                        <mat-error *ngIf="Contacto.controls['apellido'].hasError('required')">
+                            El apellido es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <!-- Correo -->
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput formControlName="correo" placeholder="Correo" aria-label="Correo del Contacto">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- telefono -->
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput formControlName="telefono" placeholder="Telefono" aria-label="Telefono del Contacto">
+                        <mat-error *ngIf="Contacto.controls['telefono'].hasError('required')">
+                            El telefono es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Seleccion de empresa -->
+                <div class="col-md-6">
+                    <mat-form-field>
+                        <mat-label>Seleccione la empresa</mat-label>
+                        <mat-select  formControlName="idempresaext" [(value)]="selected">
+                            <mat-option *ngFor="let Empresa of Empresas" value="{{Empresa.idempresaExt}}">
+                                {{Empresa.nombre}}</mat-option>
+                        </mat-select>
+                        <!-- <mat-error *ngIf="Contacto.controls['idempresaext'].hasError('required')">
+                            El Contacto es obligatoria
+                        </mat-error> -->
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-primary" type="submit" >Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

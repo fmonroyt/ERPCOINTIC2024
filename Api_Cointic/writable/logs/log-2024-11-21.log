@@ -1,0 +1,283 @@
+ERROR - 2024-11-21 09:26:05 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'cointic_template' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cointic_templat...', 3306, '', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `relmarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(81): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(121): App\Models\Watchguard->selectRelProductosSolucion()
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerRelProductosSolucion()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'cointic_template' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `relmarc...', Array, false)
+#3 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(81): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(121): App\Models\Watchguard->selectRelProductosSolucion()
+#5 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerRelProductosSolucion()
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-11-21 09:26:05 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'cointic_template' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cointic_templat...', 3306, '', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProd...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', '', '')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'cointic_template' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProd...', Array, false)
+#3 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', '', '')
+#5 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-11-21 09:26:05 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'cointic_template' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cointic_templat...', 3306, '', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(91): App\Models\Watchguard->getNumeroProductos('0', '5', 'SKU', '', '')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerNumeroProductos()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'cointic_template' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(31): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(91): App\Models\Watchguard->getNumeroProductos('0', '5', 'SKU', '', '')
+#5 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerNumeroProductos()
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-21 09:26:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'cointic_template'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProduct_Watchguard`.*
+FROM `CatProduct_Watchguard`
+WHERE `SKU` LIKE :SKU: ESCAPE \'!\'
+OR  `Description` LIKE :Description: ESCAPE \'!\'
+ORDER BY `CatProduct_Watchguard`.`idproduct_Watchguard`, `SKU`, `Description`, `Precio`, `Category`, `idrel`
+ LIMIT 5', [...], false)
+ 3 APPPATH\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', 'C:\\wamp64\\www\\Api_Template', 'C:\\wamp64\\www\\Api_Template')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-21 09:26:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'cointic_template'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `CatProduct_Watchguard`
+WHERE `SKU` LIKE :SKU: ESCAPE \'!\'
+OR  `Description` LIKE :Description: ESCAPE \'!\'', [...], false)
+ 3 APPPATH\Models\Watchguard.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Watchguards.php(91): App\Models\Watchguard->getNumeroProductos('0', '5', 'SKU', 'C:\\wamp64\\www\\Api_Template', 'C:\\wamp64\\www\\Api_Template')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerNumeroProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-21 09:26:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'cointic_template'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `relmarcasolucion`.`idrel`, CONCAT(CatMarcas.Nombre, \' - \', CatSoluciones.nombre ) as nombreSolucion
+FROM `relmarcasolucion`
+LEFT JOIN `CatSoluciones` ON `CatSoluciones`.`idsoluciones`=`relmarcasolucion`.`idsoluciones`
+LEFT JOIN `CatMarcas` ON `CatMarcas`.`idMarcas`=`relmarcasolucion`.`idmarca`', [], false)
+ 3 APPPATH\Models\Watchguard.php(81): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Watchguards.php(121): App\Models\Watchguard->selectRelProductosSolucion()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerRelProductosSolucion()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-21 09:26:09 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'cointic_template' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cointic_templat...', 3306, '', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(91): App\Models\Watchguard->getNumeroProductos('0', '5', 'SKU', '', '')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerNumeroProductos()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'cointic_template' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(31): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(91): App\Models\Watchguard->getNumeroProductos('0', '5', 'SKU', '', '')
+#5 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerNumeroProductos()
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-21 09:26:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'cointic_template'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `CatProduct_Watchguard`
+WHERE `SKU` LIKE :SKU: ESCAPE \'!\'
+OR  `Description` LIKE :Description: ESCAPE \'!\'', [...], false)
+ 3 APPPATH\Models\Watchguard.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Watchguards.php(91): App\Models\Watchguard->getNumeroProductos('0', '5', 'SKU', 'C:\\wamp64\\www\\Api_Template', 'C:\\wamp64\\www\\Api_Template')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerNumeroProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-21 09:26:09 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'cointic_template' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cointic_templat...', 3306, '', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProd...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', '', '')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'cointic_template' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProd...', Array, false)
+#3 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', '', '')
+#5 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-21 09:26:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'cointic_template'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatProduct_Watchguard`.*
+FROM `CatProduct_Watchguard`
+WHERE `SKU` LIKE :SKU: ESCAPE \'!\'
+OR  `Description` LIKE :Description: ESCAPE \'!\'
+ORDER BY `CatProduct_Watchguard`.`idproduct_Watchguard`, `SKU`, `Description`, `Precio`, `Category`, `idrel`
+ LIMIT 5', [...], false)
+ 3 APPPATH\Models\Watchguard.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Watchguards.php(81): App\Models\Watchguard->getProductos('0', '5', 'SKU', 'C:\\wamp64\\www\\Api_Template', 'C:\\wamp64\\www\\Api_Template')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-21 09:26:09 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'cointic_template' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cointic_templat...', 3306, '', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Permiso.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Permisos.php(18): App\Models\Permiso->getPermisosUsuario('1')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'cointic_template' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\Api_Template\app\Models\Permiso.php(12): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\Api_Template\app\Controllers\Permisos.php(18): App\Models\Permiso->getPermisosUsuario('1')
+#5 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-21 09:26:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'cointic_template'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `RelPermisos`
+WHERE `idPerfil` = :idPerfil:', [...], false)
+ 3 APPPATH\Models\Permiso.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Permisos.php(18): App\Models\Permiso->getPermisosUsuario('1')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permisos->getPermisosUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-21 09:26:10 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'cointic_template' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cointic_templat...', 3306, '', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `relmarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(81): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(121): App\Models\Watchguard->selectRelProductosSolucion()
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerRelProductosSolucion()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'cointic_template' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `relmarc...', Array, false)
+#3 C:\wamp64\www\Api_Template\app\Models\Watchguard.php(81): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\Api_Template\app\Controllers\Watchguards.php(121): App\Models\Watchguard->selectRelProductosSolucion()
+#5 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerRelProductosSolucion()
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-21 09:26:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'cointic_template'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `relmarcasolucion`.`idrel`, CONCAT(CatMarcas.Nombre, \' - \', CatSoluciones.nombre ) as nombreSolucion
+FROM `relmarcasolucion`
+LEFT JOIN `CatSoluciones` ON `CatSoluciones`.`idsoluciones`=`relmarcasolucion`.`idsoluciones`
+LEFT JOIN `CatMarcas` ON `CatMarcas`.`idMarcas`=`relmarcasolucion`.`idmarca`', [], false)
+ 3 APPPATH\Models\Watchguard.php(81): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Watchguards.php(121): App\Models\Watchguard->selectRelProductosSolucion()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Watchguards->obtenerRelProductosSolucion()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Watchguards))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,29 @@
+/* Para que los mat-selects se puedan abrir en modales*/
+.cdk-overlay-container {
+    z-index: 2001 !important;
+  }
+
+/* Para que el dropzone tenga un archivo alineado al centro*/
+ngx-dropzone-preview {
+    min-width: 80% !important;
+    max-width: 80% !important;
+    width: 80% !important;
+    padding: 0 20px !important;
+    margin: 10% !important;
+}
+/* Para mostrar los iconos alineados con el texto. De lo contrario el icono sale un poco por debajo del texto*/
+.material-icons {
+    line-height: 1.3rem !important;
+}
+.alert-error {
+    background-color: rgba(120, 0, 0) !important;
+    color: #ffffff !important;
+  }
+  .alert_error > span {
+      color: #FFFFFF !important;
+  }
+  .alert.alert-error a,
+  .alert.alert-error .alert-link {
+    color: #ffffff;
+  }
+  

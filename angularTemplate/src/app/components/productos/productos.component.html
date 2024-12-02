@@ -1,0 +1,72 @@
+<div class="card">
+    <div class="card-header card-header-primary">
+        <h4 class="card-title pull-center">Fortinet</h4>
+        <div class="row">
+            <!-- Búsqueda -->
+            <div class="col-md-3 offset-md-9 white-text">
+                <mat-form-field class="search-field">
+                    <mat-label>Buscar producto</mat-label>
+                    <input matInput (keyup)="buscarProductos($event.target.value)" placeholder="Nombre del producto">
+                </mat-form-field>
+            </div>
+        </div>
+        <p class="card-category pull-center nuevoproducto">De <span> <a [swal]="nuevoProducto" class="animacionOpacidad">clic aquí</a> para agregar un nuevo producto de Fortinet</span>  </p>
+        <br>
+        <p class="card-category pull-right excel">De <span> <a [swal]="agregarExcel" class="animacionOpacidad">clic aquí</a> para agregar Excel</span></p>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="table-responsive">
+                <table mat-table #tablaProductos [dataSource]="productos" class="table table-hover" #sort1 matSort matSortActive="Unit" matSortDisableClear matSortDirection1="desc">
+                    <!-- Columna Nombre del departamento -->
+                    <ng-container matColumnDef="SKU">
+                        <th mat-header-cell *matHeaderCellDef>SKU del producto</th>
+                        <td mat-cell *matCellDef="let row">{{row.SKU}}</td>
+                    </ng-container>
+                    
+                    <ng-container matColumnDef="Description">
+                        <th mat-header-cell *matHeaderCellDef class="description-column">Description</th>
+                        <td mat-cell *matCellDef="let row" class="description-column">{{ row.Description }}</td>
+                    </ng-container>
+                    
+                    <!-- Columna edición -->
+                    <ng-container matColumnDef="Editar">
+                        <th mat-header-cell *matHeaderCellDef>Editar</th>
+                        <td mat-cell *matCellDef="let row"><button  mat-icon-button class="btn btn-primary" (click)="establecerIdProducto_Fort(row.idProducto_Fort)" [swal]="editarProducto">
+                            <mat-icon>create</mat-icon>
+                          </button> </td>
+                    </ng-container>
+                    <!-- Columna Eliminar -->
+                    <ng-container matColumnDef="Quitar">
+                        <th mat-header-cell *matHeaderCellDef>Quitar</th>
+                        <td mat-cell *matCellDef="let row">
+                            <button *ngIf="row.idProducto_Fort!=productoUsuario" mat-icon-button class="btn btn-primary"  [swal]="{title: 'Precaución', text: '¿Desea eliminar este producto?', icon: 'warning', showCancelButton: true, cancelButtonText: 'Cancelar'}" (confirm)="eliminarProducto(row.idProducto_Fort)" >
+                                <mat-icon>delete</mat-icon>
+                              </button></td>
+                    </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="columnasTablaProducto"></tr>
+                    <tr mat-row *matRowDef="let row; columns: columnasTablaProducto;"></tr>
+                </table>
+            </div>
+            <mat-paginator #paginator1 [length]="resultsLength1" [pageSize]="pageSize1"></mat-paginator>
+        </div>
+    </div>
+</div>
+
+<swal #nuevoProducto [showCloseButton]="false" [showConfirmButton]="false" [showCancelButton]="false" [width]="'60%'"> 
+    <app-nuevoproducto *swalPortal (nuProducto)="nuevoProducto.dismiss();buscarProductos('');">
+
+    </app-nuevoproducto>
+</swal>
+<swal #agregarExcel [showCloseButton]="false" [showConfirmButton]="false" [showCancelButton]="false" [width]="'60%'"> 
+    <app-agregar-excel *swalPortal (nuProducto)="agregarExcel.dismiss();seleccionarArchivo();">
+    </app-agregar-excel>
+</swal>
+
+
+<swal #editarProducto [showCloseButton]="false" [showConfirmButton]="false" [showCancelButton]="false" [width]="'60%'"> 
+    <app-editarproducto *swalPortal  (nuProducto)="editarProducto.dismiss();buscarProductos('');">
+
+    </app-editarproducto>
+</swal>
+

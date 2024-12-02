@@ -1,0 +1,494 @@
+ERROR - 2024-09-25 10:33:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Productos.php(38): App\Models\Producto->insert(Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 10:33:44 --> Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatProduct_Fort` (`Unit`) VALUES (:Unit:)', [...], false)
+ 2 APPPATH\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Productos.php(38): App\Models\Producto->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 10:35:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Productos.php(38): App\Models\Producto->insert(Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 10:35:46 --> Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatProduct_Fort` (`Unit`) VALUES (:Unit:)', [...], false)
+ 2 APPPATH\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Productos.php(38): App\Models\Producto->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 10:37:09 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Productos.php(38): App\Models\Producto->insert(Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 10:37:09 --> Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatProduct_Fort` (`Unit`) VALUES (:Unit:)', [...], false)
+ 2 APPPATH\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Productos.php(38): App\Models\Producto->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 10:37:21 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Productos.php(38): App\Models\Producto->insert(Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 10:37:21 --> Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatProduct_Fort` (`Unit`) VALUES (:Unit:)', [...], false)
+ 2 APPPATH\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Productos.php(38): App\Models\Producto->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 11:28:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Productos.php(38): App\Models\Producto->insert(Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 11:28:16 --> Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatProduct_Fort` (`Unit`) VALUES (:Unit:)', [...], false)
+ 2 APPPATH\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Productos.php(38): App\Models\Producto->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 11:28:17 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Productos.php(38): App\Models\Producto->insert(Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 11:28:17 --> Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatProduct_Fort` (`Unit`) VALUES (:Unit:)', [...], false)
+ 2 APPPATH\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Productos.php(38): App\Models\Producto->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 11:33:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Productos.php(38): App\Models\Producto->insert(Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 11:33:38 --> Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatProduct_Fort` (`Unit`) VALUES (:Unit:)', [...], false)
+ 2 APPPATH\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Productos.php(38): App\Models\Producto->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 11:34:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Productos.php(38): App\Models\Producto->insert(Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 11:34:07 --> Cannot add or update a child row: a foreign key constraint fails (`cointic_template`.`catproduct_fort`, CONSTRAINT `relmarca_products` FOREIGN KEY (`idProducto_Fort`) REFERENCES `relmarcasolucion` (`idrel`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CatProduct_Fort` (`Unit`) VALUES (:Unit:)', [...], false)
+ 2 APPPATH\Models\Producto.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Productos.php(38): App\Models\Producto->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->CrearProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 13:19:26 --> mysqli_sql_exception: Unknown column 'relmarcasolucion.idsoluciones' in 'where clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatMarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatMarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatMarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatMarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Solucion.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Soluciones.php(87): App\Models\Solucion->selectMarcasxIdSolucion('1')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Soluciones->ObtenerMarcasAsignadas()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 13:19:26 --> Unknown column 'relmarcasolucion.idsoluciones' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatMarcas`.*
+FROM `CatMarcas`
+WHERE `relmarcasolucion`.`idsoluciones` = :relmarcasolucion.idsoluciones:', [...], false)
+ 2 APPPATH\Models\Solucion.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Soluciones.php(87): App\Models\Solucion->selectMarcasxIdSolucion('1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->ObtenerMarcasAsignadas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 13:19:33 --> mysqli_sql_exception: Unknown column 'relmarcasolucion.idsoluciones' in 'where clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatMarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatMarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatMarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatMarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Solucion.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Soluciones.php(87): App\Models\Solucion->selectMarcasxIdSolucion('1')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Soluciones->ObtenerMarcasAsignadas()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 13:19:33 --> Unknown column 'relmarcasolucion.idsoluciones' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatMarcas`.*
+FROM `CatMarcas`
+WHERE `relmarcasolucion`.`idsoluciones` = :relmarcasolucion.idsoluciones:', [...], false)
+ 2 APPPATH\Models\Solucion.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Soluciones.php(87): App\Models\Solucion->selectMarcasxIdSolucion('1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->ObtenerMarcasAsignadas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 13:23:07 --> mysqli_sql_exception: Unknown column 'relmarcasolucion.idsoluciones' in 'where clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatMarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatMarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatMarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatMarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Solucion.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Controllers\Soluciones.php(87): App\Models\Solucion->selectMarcasxIdSolucion('1')
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Soluciones->ObtenerMarcasAsignadas()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 13:23:07 --> Unknown column 'relmarcasolucion.idsoluciones' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatMarcas`.*
+FROM `CatMarcas`
+WHERE `relmarcasolucion`.`idsoluciones` = :relmarcasolucion.idsoluciones:', [...], false)
+ 2 APPPATH\Models\Solucion.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Soluciones.php(87): App\Models\Solucion->selectMarcasxIdSolucion('1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->ObtenerMarcasAsignadas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-25 14:00:44 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Soluciones.php(93): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-25 14:00:58 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\wamp64\www\Api_Template\app\Models\WebToken.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 91.
+ 1 APPPATH\Models\WebToken.php(28): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 APPPATH\Controllers\Soluciones.php(93): App\Models\WebToken->decodificarJWT(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-25 14:01:58 --> Undefined property: App\Controllers\Soluciones::$input
+in APPPATH\Controllers\Soluciones.php on line 96.
+ 1 APPPATH\Controllers\Soluciones.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Soluciones::$input', 'APPPATH\\Controllers\\Soluciones.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-25 14:02:06 --> Undefined property: App\Controllers\Soluciones::$input
+in APPPATH\Controllers\Soluciones.php on line 96.
+ 1 APPPATH\Controllers\Soluciones.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Soluciones::$input', 'APPPATH\\Controllers\\Soluciones.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 14:12:14 --> mysqli_sql_exception: Unknown column 'relmarcasolucion.idMarcas' in 'where clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `relmarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `relmarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `relmarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Solucion.php(106): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 14:12:14 --> Unknown column 'relmarcasolucion.idMarcas' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarcasolucion` SET `status` = :status:
+WHERE `relmarcasolucion`.`idsoluciones` = :relmarcasolucion.idsoluciones:
+AND `relmarcasolucion`.`idMarcas` = :relmarcasolucion.idMarcas:', [...], false)
+ 2 APPPATH\Models\Solucion.php(106): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 14:12:23 --> mysqli_sql_exception: Unknown column 'relmarcasolucion.idMarcas' in 'where clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `relmarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `relmarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `relmarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Solucion.php(106): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 14:12:23 --> Unknown column 'relmarcasolucion.idMarcas' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarcasolucion` SET `status` = :status:
+WHERE `relmarcasolucion`.`idsoluciones` = :relmarcasolucion.idsoluciones:
+AND `relmarcasolucion`.`idMarcas` = :relmarcasolucion.idMarcas:', [...], false)
+ 2 APPPATH\Models\Solucion.php(106): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 14:15:41 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `relmarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `relmarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `relmarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Solucion.php(107): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 14:15:41 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarcasolucion` SET `status` = :status:
+WHERE `relmarcasolucion`.`idsoluciones` = :relmarcasolucion.idsoluciones:
+AND `relmarcasolucion`.`idmarca` = :relmarcasolucion.idmarca:', [...], false)
+ 2 APPPATH\Models\Solucion.php(107): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 14:15:54 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `relmarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `relmarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `relmarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Solucion.php(107): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 14:15:54 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarcasolucion` SET `status` = :status:
+WHERE `relmarcasolucion`.`idsoluciones` = :relmarcasolucion.idsoluciones:
+AND `relmarcasolucion`.`idmarca` = :relmarcasolucion.idmarca:', [...], false)
+ 2 APPPATH\Models\Solucion.php(107): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 14:16:04 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `relmarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `relmarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `relmarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Solucion.php(107): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 14:16:04 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarcasolucion` SET `status` = :status:
+WHERE `relmarcasolucion`.`idsoluciones` = :relmarcasolucion.idsoluciones:
+AND `relmarcasolucion`.`idmarca` = :relmarcasolucion.idmarca:', [...], false)
+ 2 APPPATH\Models\Solucion.php(107): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 14:18:02 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `relmarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `relmarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `relmarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Solucion.php(107): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 14:18:02 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarcasolucion` SET `status` = :status:
+WHERE `relmarcasolucion`.`idsoluciones` = :relmarcasolucion.idsoluciones:
+AND `relmarcasolucion`.`idmarca` = :relmarcasolucion.idmarca:', [...], false)
+ 2 APPPATH\Models\Solucion.php(107): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 14:18:08 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `relmarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `relmarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `relmarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Solucion.php(107): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 14:18:08 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarcasolucion` SET `status` = :status:
+WHERE `relmarcasolucion`.`idsoluciones` = :relmarcasolucion.idsoluciones:
+AND `relmarcasolucion`.`idmarca` = :relmarcasolucion.idmarca:', [...], false)
+ 2 APPPATH\Models\Solucion.php(107): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 14:19:51 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `relmarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `relmarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `relmarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Solucion.php(108): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 14:19:51 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarcasolucion` SET `status` = :status:
+WHERE `relmarcasolucion`.`idsoluciones` = :relmarcasolucion.idsoluciones:
+AND `relmarcasolucion`.`idmarca` = :relmarcasolucion.idmarca:', [...], false)
+ 2 APPPATH\Models\Solucion.php(108): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-25 14:23:28 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `relmarc...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `relmarc...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `relmarc...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarc...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Solucion.php(107): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\wamp64\www\Api_Template\app\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', Array)
+#6 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-25 14:23:28 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `relmarcasolucion` SET `status` = :status:
+WHERE `relmarcasolucion`.`idsoluciones` = :relmarcasolucion.idsoluciones:
+AND `relmarcasolucion`.`idmarca` = :relmarcasolucion.idmarca:', [...], false)
+ 2 APPPATH\Models\Solucion.php(107): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Soluciones.php(106): App\Models\Solucion->activarMarcas('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Soluciones->AsignarMarcas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Soluciones))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()

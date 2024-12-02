@@ -1,0 +1,64 @@
+<div class="card">
+    <div class="card-header card-header-primary">
+        <h4 class="card-title pull-center">Creación de productos sonicWall</h4>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="Sonic" (ngSubmit)="(Sonic.valid) ? enviar(Sonic.value): null">
+            <div class="row">
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Sonic.controls['SKU']" placeholder="SKU">
+                        <mat-error *ngIf="Sonic.controls['SKU'].hasError('required')">
+                            SKU
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Sonic.controls['Description']" placeholder="Description">
+                        <mat-error *ngIf="Sonic.controls['Description'].hasError('required')">
+                            Description
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Sonic.controls['Precio']" placeholder="Precio">
+                        <mat-error >
+                            Precio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field>
+                        <input matInput [formControl]="Sonic.controls['HardwareorSoftware']" placeholder="HardwareorSoftware">
+                        <mat-error *ngIf="Sonic.controls['HardwareorSoftware'].hasError('required')">
+                            Hardware o Software
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <mat-form-field>
+                        <mat-label>seleccione la marca y solucion</mat-label>
+                        <mat-select [formControl]="Sonic.controls['idrel']">
+                            <mat-option *ngFor="let Relmarca of Relmarcas"
+                                [value]="Relmarca.idrel">{{Relmarca.nombreSolucion}}</mat-option>
+                        </mat-select>
+                        <mat-error *ngIf="Sonic.controls['idrel'].hasError('required')">
+                            La marca y solucion es obligatorio
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>  
+</div>

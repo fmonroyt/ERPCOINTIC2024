@@ -46,19 +46,19 @@ in APPPATH\Controllers\Usuarios.php on line 3.
  8 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
  9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 10 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
-ERROR - 2024-09-02 12:44:32 --> mysqli_sql_exception: Unknown column 'CatUsuarios.id_cliente' in 'where clause' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+ERROR - 2024-09-02 12:44:32 --> mysqli_sql_exception: Unknown column 'CatUsuarios.id_cliente' in 'where clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
 Stack trace:
-#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatUsua...', 0)
-#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatUsua...')
-#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatUsua...')
-#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatUsua...', Array, false)
-#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(79): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(29): App\Models\Usuario->getUsuario('1')
-#6 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(32): App\Models\Usuario->auth('Cointic', '12345678', NULL)
-#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->Autenticar()
-#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
-#9 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#10 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatUsua...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatUsua...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Usuario.php(79): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Models\Usuario.php(29): App\Models\Usuario->getUsuario('1')
+#6 C:\wamp64\www\Api_Template\app\Controllers\Usuarios.php(32): App\Models\Usuario->auth('Cointic', '12345678', NULL)
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Usuarios->Autenticar()
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
 #11 {main}
 CRITICAL - 2024-09-02 12:44:32 --> Unknown column 'CatUsuarios.id_cliente' in 'where clause'
 in SYSTEMPATH\Database\BaseConnection.php on line 645.
@@ -72,19 +72,19 @@ WHERE `CatUsuarios`.`id_cliente` = :CatUsuarios.id_cliente:', [...], false)
  6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
  7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(73): CodeIgniter\CodeIgniter->run()
-ERROR - 2024-09-02 12:45:04 --> mysqli_sql_exception: Unknown column 'CatUsuarios.id_cliente' in 'where clause' in C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php:295
+ERROR - 2024-09-02 12:45:04 --> mysqli_sql_exception: Unknown column 'CatUsuarios.id_cliente' in 'where clause' in C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php:295
 Stack trace:
-#0 C:\wamp64\www\Api_Cointic\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatUsua...', 0)
-#1 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatUsua...')
-#2 C:\wamp64\www\Api_Cointic\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatUsua...')
-#3 C:\wamp64\www\Api_Cointic\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatUsua...', Array, false)
-#4 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(79): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\wamp64\www\Api_Cointic\app\Models\Usuario.php(29): App\Models\Usuario->getUsuario('1')
-#6 C:\wamp64\www\Api_Cointic\app\Controllers\Usuarios.php(32): App\Models\Usuario->auth('Cointic', '12345678', NULL)
-#7 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(934): App\Controllers\Usuarios->Autenticar()
-#8 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
-#9 C:\wamp64\www\Api_Cointic\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#10 C:\wamp64\www\Api_Cointic\index.php(73): CodeIgniter\CodeIgniter->run()
+#0 C:\wamp64\www\Api_Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `CatUsua...', 0)
+#1 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CatUsua...')
+#2 C:\wamp64\www\Api_Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CatUsua...')
+#3 C:\wamp64\www\Api_Template\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `CatUsua...', Array, false)
+#4 C:\wamp64\www\Api_Template\app\Models\Usuario.php(79): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Api_Template\app\Models\Usuario.php(29): App\Models\Usuario->getUsuario('1')
+#6 C:\wamp64\www\Api_Template\app\Controllers\Usuarios.php(32): App\Models\Usuario->auth('Cointic', '12345678', NULL)
+#7 C:\wamp64\www\Api_Template\system\CodeIgniter.php(934): App\Controllers\Usuarios->Autenticar()
+#8 C:\wamp64\www\Api_Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\wamp64\www\Api_Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\Api_Template\index.php(73): CodeIgniter\CodeIgniter->run()
 #11 {main}
 CRITICAL - 2024-09-02 12:45:04 --> Unknown column 'CatUsuarios.id_cliente' in 'where clause'
 in SYSTEMPATH\Database\BaseConnection.php on line 645.

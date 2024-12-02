@@ -1,0 +1,43 @@
+<div class="wrapper wrapper-full-page background-login">
+    <div class="container">
+        <div class="col-lg-4 col-md-6 col-sm-6 ml-auto mr-auto">
+            <div class="row">
+                <div class="card card-login col-12">
+                    <div class="card-header card-header-primary text-center" style="background:linear-gradient(60deg, #656565, #656565) ;">
+                        <img src='./assets/img/icono_cointic.png'>
+                    </div>
+                    <div class="card-body">
+                        <form [formGroup]="loginForm" (ngSubmit) = "((loginForm.valid) ? login(loginForm.value) : null)">
+                            <p class="card-description text-center">Ingrese sus datos para iniciar sesión</p>
+                            <div class="row justify-content-center">
+                                <mat-form-field>
+                                    <mat-icon class="icon" matPrefix>person</mat-icon>
+                                    <input matInput placeholder="Nombre de usuario" [formControl]="loginForm.controls.email">
+                                    <mat-error *ngIf="loginForm.controls['email'] || loginForm.controls['email'].hasError('required')">
+                                        El nombre de usuario proporcionado no es válido
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="row justify-content-center">
+                                <mat-form-field>
+                                    <mat-icon class="icon" matPrefix>lock_outline</mat-icon>
+                                    <input matInput placeholder="Password" type="password"  [formControl]="loginForm.controls.password">
+                                    <mat-error *ngIf="loginForm.controls['password'].hasError('minLength') || loginForm.controls['password'].hasError('required')">
+                                        El password debe tener al menos 8 caracteres
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div>
+                                    <div class="form-group">
+                                        <button mat-raised-button class="btn btn-default">Acceder</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
